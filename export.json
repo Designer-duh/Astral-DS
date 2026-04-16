@@ -1,0 +1,4781 @@
+[
+  {
+    "Border Radius": {
+      "modes": {
+        "Mode 1": {
+          "None": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-none)",
+              "ANDROID": "var(--astral-border-radius-unit-none)",
+              "iOS": "var(--astral-border-radius-unit-none)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.0}"
+          },
+          "xxs": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-xxs)",
+              "ANDROID": "var(--astral-border-radius-xxs)",
+              "iOS": "var(--astral-border-radius-xxs)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.4}"
+          },
+          "xs": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-xs)",
+              "ANDROID": "var(--astral-border-radius-xs)",
+              "iOS": "var(--astral-border-radius-xs)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.8}"
+          },
+          "s": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-s)",
+              "ANDROID": "var(--astral-border-radius-s)",
+              "iOS": "var(--astral-border-radius-s)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.12}"
+          },
+          "m": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-m)",
+              "ANDROID": "var(--astral-border-radius-m)",
+              "iOS": "var(--astral-border-radius-m)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.16}"
+          },
+          "l": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-l)",
+              "ANDROID": "var(--astral-border-radius-l)",
+              "iOS": "var(--astral-border-radius-l)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.20}"
+          },
+          "xl": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-xl)",
+              "ANDROID": "var(--astral-border-radius-xl)",
+              "iOS": "var(--astral-border-radius-xl)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.24}"
+          },
+          "2xl": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-2xl)",
+              "ANDROID": "var(--astral-border-radius-2xl)",
+              "iOS": "var(--astral-border-radius-2xl)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.28}"
+          },
+          "3xl": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-3xl)",
+              "ANDROID": "var(--astral-border-radius-3xl)",
+              "iOS": "var(--astral-border-radius-3xl)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.32}"
+          },
+          "4xl": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-4xl)",
+              "ANDROID": "var(--astral-border-radius-4xl)",
+              "iOS": "var(--astral-border-radius-4xl)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.40}"
+          },
+          "Full": {
+            "$codeSyntax": {
+              "WEB": "var(--astral-border-radius-full)",
+              "ANDROID": "var(--astral-border-radius-full)",
+              "iOS": "var(--astral-border-radius-full)"
+            },
+            "$scopes": [
+              "CORNER_RADIUS"
+            ],
+            "$type": "float",
+            "$libraryName": "",
+            "$collectionName": "Primitives",
+            "$value": "{Units.Positive.9999}"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Font": {
+      "modes": {
+        "Mode 1": {
+          "font-weight": {
+            "400": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-weight-400)",
+                "ANDROID": "var(--astral-font-weight-400)",
+                "iOS": "var(--astral-font-weight-400)"
+              },
+              "$scopes": [
+                "FONT_STYLE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Regular"
+            },
+            "500": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-weight-500)",
+                "ANDROID": "var(--astral-font-weight-500)",
+                "iOS": "var(--astral-font-weight-500)"
+              },
+              "$scopes": [
+                "FONT_STYLE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Medium"
+            },
+            "600": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-weight-600)",
+                "ANDROID": "var(--astral-font-weight-600)",
+                "iOS": "var(--astral-font-weight-600)"
+              },
+              "$scopes": [
+                "FONT_STYLE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Semi-Bold"
+            },
+            "700": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-weight-700)",
+                "ANDROID": "var(--astral-font-weight-700)",
+                "iOS": "var(--astral-font-weight-700)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Bold"
+            },
+            "800": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-weight-800)",
+                "ANDROID": "var(--astral-font-weight-800)",
+                "iOS": "var(--astral-font-weight-800)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Extra-Bold"
+            },
+            "900": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-weight-900)",
+                "ANDROID": "var(--astral-font-weight-900)",
+                "iOS": "var(--astral-font-weight-900)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Black"
+            }
+          },
+          "font-size": {
+            "xs": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-xs)",
+                "ANDROID": "var(--astral-font-size-xs)",
+                "iOS": "var(--astral-font-size-xs)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.11}"
+            },
+            "s": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-s)",
+                "ANDROID": "var(--astral-font-size-s)",
+                "iOS": "var(--astral-font-size-s)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.12}"
+            },
+            "m": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-m)",
+                "ANDROID": "var(--astral-font-size-m)",
+                "iOS": "var(--astral-font-size-m)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.14}"
+            },
+            "l": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-l)",
+                "ANDROID": "var(--astral-font-size-l)",
+                "iOS": "var(--astral-font-size-l)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.16}"
+            },
+            "xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-xl)",
+                "ANDROID": "var(--astral-font-size-xl)",
+                "iOS": "var(--astral-font-size-xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.18}"
+            },
+            "2xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-2xl)",
+                "ANDROID": "var(--astral-font-size-2xl)",
+                "iOS": "var(--astral-font-size-2xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.24}"
+            },
+            "3xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-3xl)",
+                "ANDROID": "var(--astral-font-size-3xl)",
+                "iOS": "var(--astral-font-size-3xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.32}"
+            },
+            "4xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-4xl)",
+                "ANDROID": "var(--astral-font-size-4xl)",
+                "iOS": "var(--astral-font-size-4xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.40}"
+            },
+            "5xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-5xl)",
+                "ANDROID": "var(--astral-font-size-5xl)",
+                "iOS": "var(--astral-font-size-5xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.48}"
+            },
+            "6xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-6xl)",
+                "ANDROID": "var(--astral-font-size-6xl)",
+                "iOS": "var(--astral-font-size-6xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.56}"
+            },
+            "7xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-7xl)",
+                "ANDROID": "var(--astral-font-size-7xl)",
+                "iOS": "var(--astral-font-size-7xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.64}"
+            },
+            "8xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-size-8xl)",
+                "ANDROID": "var(--astral-font-size-8xl)",
+                "iOS": "var(--astral-font-size-8xl)"
+              },
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.88}"
+            }
+          },
+          "font-family": {
+            "Sans": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-family-sans)",
+                "ANDROID": "var(--astral-font-family-sans)",
+                "iOS": "var(--astral-font-family-sans)"
+              },
+              "$scopes": [
+                "FONT_FAMILY"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Geist"
+            },
+            "Display": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-font-family-display)",
+                "ANDROID": "var(--astral-font-family-display)",
+                "iOS": "var(--astral-font-family-display)"
+              },
+              "$scopes": [
+                "FONT_FAMILY"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Denton Test"
+            }
+          },
+          "line-height": {
+            "xxs": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-xxs)",
+                "ANDROID": "var(--astral-line-height-xxs)",
+                "iOS": "var(--astral-line-height-xxs)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.14}"
+            },
+            "xs": {
+              "$codeSyntax": {
+                "WEB": "var(--astrakl-line-height-xs)",
+                "ANDROID": "var(--astrakl-line-height-xs)",
+                "iOS": "var(--astrakl-line-height-xs)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.16}"
+            },
+            "s": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-s)",
+                "ANDROID": "var(--astral-line-height-s)",
+                "iOS": "var(--astral-line-height-s)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.20}"
+            },
+            "m": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-m)",
+                "ANDROID": "var(--astral-line-height-m)",
+                "iOS": "var(--astral-line-height-m)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.24}"
+            },
+            "l": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-l)",
+                "ANDROID": "var(--astral-line-height-l)",
+                "iOS": "var(--astral-line-height-l)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.28}"
+            },
+            "xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-xl)",
+                "ANDROID": "var(--astral-line-height-xl)",
+                "iOS": "var(--astral-line-height-xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.32}"
+            },
+            "2xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-2xl)",
+                "ANDROID": "var(--astral-line-height-2xl)",
+                "iOS": "var(--astral-line-height-2xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.36}"
+            },
+            "3xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-3xl)",
+                "ANDROID": "var(--astral-line-height-3xl)",
+                "iOS": "var(--astral-line-height-3xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.40}"
+            },
+            "4xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-4xl)",
+                "ANDROID": "var(--astral-line-height-4xl)",
+                "iOS": "var(--astral-line-height-4xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.42}"
+            },
+            "5xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-5xl)",
+                "ANDROID": "var(--astral-line-height-5xl)",
+                "iOS": "var(--astral-line-height-5xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.48}"
+            },
+            "6xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-6xl)",
+                "ANDROID": "var(--astral-line-height-6xl)",
+                "iOS": "var(--astral-line-height-6xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.58}"
+            },
+            "7xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-7xl)",
+                "ANDROID": "var(--astral-line-height-7xl)",
+                "iOS": "var(--astral-line-height-7xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.62}"
+            },
+            "8xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-8xl)",
+                "ANDROID": "var(--astral-line-height-8xl)",
+                "iOS": "var(--astral-line-height-8xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.64}"
+            },
+            "9xl": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-line-height-9xl)",
+                "ANDROID": "var(--astral-line-height-9xl)",
+                "iOS": "var(--astral-line-height-9xl)"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Units.Positive.84}"
+            }
+          },
+          "letter-spacing": {
+            "baggy": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-baggy)",
+                "ANDROID": "var(--astral-letter-spacing-baggy)",
+                "iOS": "var(--astral-letter-spacing-baggy)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 0
+            },
+            "loose": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-loose)",
+                "ANDROID": "var(--astral-letter-spacing-loose)",
+                "iOS": "var(--astral-letter-spacing-loose)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": -0.20000000298023224
+            },
+            "comfy": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-comfy)",
+                "ANDROID": "var(--astral-letter-spacing-comfy)",
+                "iOS": "var(--astral-letter-spacing-comfy)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": -0.4000000059604645
+            },
+            "trim": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-trim)",
+                "ANDROID": "var(--astral-letter-spacing-trim)",
+                "iOS": "var(--astral-letter-spacing-trim)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": -0.6000000238418579
+            },
+            "fitted": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-fitted)",
+                "ANDROID": "var(--astral-letter-spacing-fitted)",
+                "iOS": "var(--astral-letter-spacing-fitted)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": -0.8999999761581421
+            },
+            "snug": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-snug)",
+                "ANDROID": "var(--astral-letter-spacing-snug)",
+                "iOS": "var(--astral-letter-spacing-snug)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": -1
+            },
+            "tight": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-letter-spacing-tight)",
+                "ANDROID": "var(--astral-letter-spacing-tight)",
+                "iOS": "var(--astral-letter-spacing-tight)"
+              },
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": -2
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Modes": {
+      "modes": {
+        "Lights": {
+          "Text": {
+            "Text-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-default)",
+                "ANDROID": "var(--astral-color-text-default)",
+                "iOS": "var(--astral-color-text-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.15}"
+            },
+            "Text-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-secondary)",
+                "ANDROID": "var(--astral-color-text-secondary)",
+                "iOS": "var(--astral-color-text-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.12}"
+            },
+            "Text-Tertiary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-tertiary)",
+                "ANDROID": "var(--astral-color-text-tertiary)",
+                "iOS": "var(--astral-color-text-tertiary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.10}"
+            },
+            "Text-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-disabled)",
+                "ANDROID": "var(--astral-color-text-disabled)",
+                "iOS": "var(--astral-color-text-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.8}"
+            },
+            "Text-Inverse-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-inverse-disabled)",
+                "ANDROID": "var(--astral-color-text-inverse-disabled)",
+                "iOS": "var(--astral-color-text-inverse-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.1}"
+            },
+            "Text-Inverse-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-inverse-secondary)",
+                "ANDROID": "var(--astral-color-text-inverse-secondary)",
+                "iOS": "var(--astral-color-text-inverse-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.2}"
+            },
+            "Text-Inverse-Tertiary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-inverse-tertiary)",
+                "ANDROID": "var(--astral-color-text-inverse-tertiary)",
+                "iOS": "var(--astral-color-text-inverse-tertiary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Text-Brand-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-brand-default)",
+                "ANDROID": "var(--astral-color-text-brand-default)",
+                "iOS": "var(--astral-color-text-brand-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.9}"
+            },
+            "Text-Brand-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-brand-secondary)",
+                "ANDROID": "var(--astral-color-text-brand-secondary)",
+                "iOS": "var(--astral-color-text-brand-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.14}"
+            },
+            "Text-Success-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-success-default)",
+                "ANDROID": "var(--astral-color-text-success-default)",
+                "iOS": "var(--astral-color-text-success-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.13}"
+            },
+            "Text-Error-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-error-default)",
+                "ANDROID": "var(--astral-color-text-error-default)",
+                "iOS": "var(--astral-color-text-error-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Red.11}"
+            },
+            "Text-warning-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-text-warning-default)",
+                "ANDROID": "var(--astral-color-text-warning-default)",
+                "iOS": "var(--astral-color-text-warning-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Yellow.10}"
+            }
+          },
+          "Border": {
+            "Stroke-Subtle": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-subtle)",
+                "ANDROID": "var(--astral-color-stroke-subtle)",
+                "iOS": "var(--astral-color-stroke-subtle)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.3}"
+            },
+            "Stroke-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-default)",
+                "ANDROID": "var(--astral-color-stroke-default)",
+                "iOS": "var(--astral-color-stroke-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Stroke-Medium": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-medium)",
+                "ANDROID": "var(--astral-color-stroke-medium)",
+                "iOS": "var(--astral-color-stroke-medium)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.7}"
+            },
+            "Stroke-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-hover)",
+                "ANDROID": "var(--astral-color-stroke-hover)",
+                "iOS": "var(--astral-color-stroke-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.6}"
+            },
+            "Stroke-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-pressed)",
+                "ANDROID": "var(--astral-color-stroke-pressed)",
+                "iOS": "var(--astral-color-stroke-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Stroke-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-disabled)",
+                "ANDROID": "var(--astral-color-stroke-disabled)",
+                "iOS": "var(--astral-color-stroke-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.6}"
+            },
+            "Stroke-White": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-white)",
+                "ANDROID": "var(--astral-color-stroke-white)",
+                "iOS": "var(--astral-color-stroke-white)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.1}"
+            },
+            "Stroke-Brand": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-brand)",
+                "ANDROID": "var(--astral-color-stroke-brand)",
+                "iOS": "var(--astral-color-stroke-brand)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.2}"
+            },
+            "Stroke-Brand-Active": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-brand-active)",
+                "ANDROID": "var(--astral-color-stroke-brand-active)",
+                "iOS": "var(--astral-color-stroke-brand-active)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.10}"
+            },
+            "Stroke-Success": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-success)",
+                "ANDROID": "var(--astral-color-stroke-success)",
+                "iOS": "var(--astral-color-stroke-success)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.9}"
+            },
+            "Stroke-Error": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-error)",
+                "ANDROID": "var(--astral-color-stroke-error)",
+                "iOS": "var(--astral-color-stroke-error)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Red.9}"
+            },
+            "Stroke-Warning": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-stroke-warning)",
+                "ANDROID": "var(--astral-color-stroke-warning)",
+                "iOS": "var(--astral-color-stroke-warning)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Yellow.9}"
+            }
+          },
+          "Surface": {
+            "Surface-Background": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-background)",
+                "ANDROID": "var(--astral-color-surface-background)",
+                "iOS": "var(--astral-color-surface-background)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.2}"
+            },
+            "Surface-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-default)",
+                "ANDROID": "var(--astral-color-surface-default)",
+                "iOS": "var(--astral-color-surface-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.1}"
+            },
+            "Surface-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-hover)",
+                "ANDROID": "var(--astral-color-surface-hover)",
+                "iOS": "var(--astral-color-surface-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.3}"
+            },
+            "Surface-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-pressed)",
+                "ANDROID": "var(--astral-color-surface-pressed)",
+                "iOS": "var(--astral-color-surface-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.5}"
+            },
+            "Surface-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-selected)",
+                "ANDROID": "var(--astral-color-surface-selected)",
+                "iOS": "var(--astral-color-surface-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Surface-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-disabled)",
+                "ANDROID": "var(--astral-color-surface-disabled)",
+                "iOS": "var(--astral-color-surface-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.3}"
+            },
+            "Surface-Secondary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-secondary-default)",
+                "ANDROID": "var(--astral-color-surface-secondary-default)",
+                "iOS": "var(--astral-color-surface-secondary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.1}"
+            },
+            "Surface-Secondary-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-secondary-hover)",
+                "ANDROID": "var(--astral-color-surface-secondary-hover)",
+                "iOS": "var(--astral-color-surface-secondary-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Surface-Secondary-Pressed": {
+              "$codeSyntax": {
+                "WEB": "Surface/Surface-Secondary-Pressed",
+                "ANDROID": "Surface/Surface-Secondary-Pressed",
+                "iOS": "Surface/Surface-Secondary-Pressed"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.6}"
+            },
+            "Surface-Secondary-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-secondary-selected)",
+                "ANDROID": "var(--astral-color-surface-secondary-selected)",
+                "iOS": "var(--astral-color-surface-secondary-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.5}"
+            },
+            "Surface-Secondary-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-secondary-disabled)",
+                "ANDROID": "var(--astral-color-surface-secondary-disabled)",
+                "iOS": "var(--astral-color-surface-secondary-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Surface-Tertiary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-tertiary-default)",
+                "ANDROID": "var(--astral-color-surface-tertiary-default)",
+                "iOS": "var(--astral-color-surface-tertiary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.4}"
+            },
+            "Surface-Tertiary-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-tertiary-hover)",
+                "ANDROID": "var(--astral-color-surface-tertiary-hover)",
+                "iOS": "var(--astral-color-surface-tertiary-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.5}"
+            },
+            "Surface-Tertiary-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-tertiary-pressed)",
+                "ANDROID": "var(--astral-color-surface-tertiary-pressed)",
+                "iOS": "var(--astral-color-surface-tertiary-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.7}"
+            },
+            "Surface-Tertiary-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-tertiary-selected)",
+                "ANDROID": "var(--astral-color-surface-tertiary-selected)",
+                "iOS": "var(--astral-color-surface-tertiary-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.6}"
+            },
+            "Surface-Tertiary-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-tertiary-disabled)",
+                "ANDROID": "var(--astral-color-surface-tertiary-disabled)",
+                "iOS": "var(--astral-color-surface-tertiary-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.5}"
+            },
+            "Surface-Brand-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-default)",
+                "ANDROID": "var(--astral-color-surface-brand-default)",
+                "iOS": "var(--astral-color-surface-brand-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.1}"
+            },
+            "Surface-Brand-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-hover)",
+                "ANDROID": "var(--astral-color-surface-brand-hover)",
+                "iOS": "var(--astral-color-surface-brand-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.2}"
+            },
+            "Surface-Brand-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-pressed)",
+                "ANDROID": "var(--astral-color-surface-brand-pressed)",
+                "iOS": "var(--astral-color-surface-brand-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.4}"
+            },
+            "Surface-Brand-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-selected)",
+                "ANDROID": "var(--astral-color-surface-brand-selected)",
+                "iOS": "var(--astral-color-surface-brand-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.1}"
+            },
+            "Surface-Brand-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-disabled)",
+                "ANDROID": "var(--astral-color-surface-brand-disabled)",
+                "iOS": "var(--astral-color-surface-brand-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.3}"
+            },
+            "Surface-Brand-Secondary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-secondary-default)",
+                "ANDROID": "var(--astral-color-surface-brand-secondary-default)",
+                "iOS": "var(--astral-color-surface-brand-secondary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.2}"
+            },
+            "Surface-Brand-Secondary-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-secondary-hover)",
+                "ANDROID": "var(--astral-color-surface-brand-secondary-hover)",
+                "iOS": "var(--astral-color-surface-brand-secondary-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.3}"
+            },
+            "Surface-Brand-Secondary-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-secondary-pressed)",
+                "ANDROID": "var(--astral-color-surface-brand-secondary-pressed)",
+                "iOS": "var(--astral-color-surface-brand-secondary-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.5}"
+            },
+            "Surface-Brand-Secondary-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-secondary-selected)",
+                "ANDROID": "var(--astral-color-surface-brand-secondary-selected)",
+                "iOS": "var(--astral-color-surface-brand-secondary-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.2}"
+            },
+            "Surface-Brand-Secondary-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-secondary-disabled)",
+                "ANDROID": "var(--astral-color-surface-brand-secondary-disabled)",
+                "iOS": "var(--astral-color-surface-brand-secondary-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.4}"
+            },
+            "Surface-Brand-Tertiary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-tertiary-default)",
+                "ANDROID": "var(--astral-color-surface-brand-tertiary-default)",
+                "iOS": "var(--astral-color-surface-brand-tertiary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.9}"
+            },
+            "Surface-Brand-Tertiary-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-surface-tertiary-hover)",
+                "ANDROID": "var(--astral-color-brand-surface-tertiary-hover)",
+                "iOS": "var(--astral-color-brand-surface-tertiary-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.12}"
+            },
+            "Surface-Brand-Tertiary-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-tertiary-pressed)",
+                "ANDROID": "var(--astral-color-surface-brand-tertiary-pressed)",
+                "iOS": "var(--astral-color-surface-brand-tertiary-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.14}"
+            },
+            "Surface-Brand-Tertiary-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-tertiary-selected)",
+                "ANDROID": "var(--astral-color-surface-brand-tertiary-selected)",
+                "iOS": "var(--astral-color-surface-brand-tertiary-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.9}"
+            },
+            "Surface-Brand-Tertiary-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-tertiary-disabled)",
+                "ANDROID": "var(--astral-color-surface-brand-tertiary-disabled)",
+                "iOS": "var(--astral-color-surface-brand-tertiary-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.5}"
+            },
+            "Surface-Brand-Quaternary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-brand-Quaternary-default)",
+                "ANDROID": "var(--astral-color-surface-brand-Quaternary-default)",
+                "iOS": "var(--astral-color-surface-brand-Quaternary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Themes",
+              "$value": "{Brand.12}"
+            },
+            "Surface-Neutral-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-neutral-default)",
+                "ANDROID": "var(--astral-color-surface-neutral-default)",
+                "iOS": "var(--astral-color-surface-neutral-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.5}"
+            },
+            "Surface-Neutral-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-neutral-secondary)",
+                "ANDROID": "var(--astral-color-surface-neutral-secondary)",
+                "iOS": "var(--astral-color-surface-neutral-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.12}"
+            },
+            "Surface-Neutral-Tertiary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-neutral-tertiary)",
+                "ANDROID": "var(--astral-color-surface-neutral-tertiary)",
+                "iOS": "var(--astral-color-surface-neutral-tertiary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.14}"
+            },
+            "Surface-Success-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-success-default)",
+                "ANDROID": "var(--astral-color-surface-success-default)",
+                "iOS": "var(--astral-color-surface-success-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.2}"
+            },
+            "Surface-Success-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-success-secondary)",
+                "ANDROID": "var(--astral-color-surface-success-secondary)",
+                "iOS": "var(--astral-color-surface-success-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.9}"
+            },
+            "Surface-Success-Tertiary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-success-tertiary)",
+                "ANDROID": "var(--astral-color-surface-success-tertiary)",
+                "iOS": "var(--astral-color-surface-success-tertiary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.12}"
+            },
+            "Surface-Error-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-error-default)",
+                "ANDROID": "var(--astral-color-surface-error-default)",
+                "iOS": "var(--astral-color-surface-error-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Red.2}"
+            },
+            "Surface-Error-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-error-secondary)",
+                "ANDROID": "var(--astral-color-surface-error-secondary)",
+                "iOS": "var(--astral-color-surface-error-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Red.9}"
+            },
+            "Surface-Error-Tertiary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-error-tertiary)",
+                "ANDROID": "var(--astral-color-surface-error-tertiary)",
+                "iOS": "var(--astral-color-surface-error-tertiary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Red.12}"
+            },
+            "Surface-Warning-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-warning-default)",
+                "ANDROID": "var(--astral-color-surface-warning-default)",
+                "iOS": "var(--astral-color-surface-warning-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Yellow.2}"
+            },
+            "Surface-Warning-Secondary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-warning-secondary)",
+                "ANDROID": "var(--astral-color-surface-warning-secondary)",
+                "iOS": "var(--astral-color-surface-warning-secondary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Yellow.9}"
+            },
+            "Surface-Warning-Tertiary": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-warning-tertiary)",
+                "ANDROID": "var(--astral-color-surface-warning-tertiary)",
+                "iOS": "var(--astral-color-surface-warning-tertiary)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Yellow.12}"
+            },
+            "Surface-Inverse-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-default)",
+                "ANDROID": "var(--astral-color-surface-inverse-default)",
+                "iOS": "var(--astral-color-surface-inverse-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.16}"
+            },
+            "Surface-Inverse-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-hover)",
+                "ANDROID": "var(--astral-color-surface-inverse-hover)",
+                "iOS": "var(--astral-color-surface-inverse-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.14}"
+            },
+            "Surface-Inverse-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-pressed)",
+                "ANDROID": "var(--astral-color-surface-inverse-pressed)",
+                "iOS": "var(--astral-color-surface-inverse-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.13}"
+            },
+            "Surface-Inverse-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-selected)",
+                "ANDROID": "var(--astral-color-surface-inverse-selected)",
+                "iOS": "var(--astral-color-surface-inverse-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.12}"
+            },
+            "Surface-Inverse-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-disabled)",
+                "ANDROID": "var(--astral-color-surface-inverse-disabled)",
+                "iOS": "var(--astral-color-surface-inverse-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.11}"
+            },
+            "Surface-Inverse-Secondary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-secondary-default)",
+                "ANDROID": "var(--astral-color-surface-inverse-secondary-default)",
+                "iOS": "var(--astral-color-surface-inverse-secondary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.15}"
+            },
+            "Surface-Inverse-Secondary-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-secondary-hover)",
+                "ANDROID": "var(--astral-color-surface-inverse-secondary-hover)",
+                "iOS": "var(--astral-color-surface-inverse-secondary-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.13}"
+            },
+            "Surface-Inverse-Secondary-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-secondary-pressed)",
+                "ANDROID": "var(--astral-color-surface-inverse-secondary-pressed)",
+                "iOS": "var(--astral-color-surface-inverse-secondary-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.12}"
+            },
+            "Surface-Inverse-Secondary-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-secondary-selected)",
+                "ANDROID": "var(--astral-color-surface-inverse-secondary-selected)",
+                "iOS": "var(--astral-color-surface-inverse-secondary-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.11}"
+            },
+            "Surface-Inverse-Secondary-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-secondary-disabled)",
+                "ANDROID": "var(--astral-color-surface-inverse-secondary-disabled)",
+                "iOS": "var(--astral-color-surface-inverse-secondary-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.10}"
+            },
+            "Surface-Inverse-Tertiary-Default": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-tertiary-default)",
+                "ANDROID": "var(--astral-color-surface-inverse-tertiary-default)",
+                "iOS": "var(--astral-color-surface-inverse-tertiary-default)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.13}"
+            },
+            "Surface-Inverse-Tertiary-Hover": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-tertiary-hover)",
+                "ANDROID": "var(--astral-color-surface-inverse-tertiary-hover)",
+                "iOS": "var(--astral-color-surface-inverse-tertiary-hover)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.12}"
+            },
+            "Surface-Inverse-Tertiary-Pressed": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-tertiary-pressed)",
+                "ANDROID": "var(--astral-color-surface-inverse-tertiary-pressed)",
+                "iOS": "var(--astral-color-surface-inverse-tertiary-pressed)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.11}"
+            },
+            "Surface-Inverse-Tertiary-Selected": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-tertiary-selected)",
+                "ANDROID": "var(--astral-color-surface-inverse-tertiary-selected)",
+                "iOS": "var(--astral-color-surface-inverse-tertiary-selected)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.10}"
+            },
+            "Surface-Inverse-Tertiary-Disabled": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-surface-inverse-tertiary-disabled)",
+                "ANDROID": "var(--astral-color-surface-inverse-tertiary-disabled)",
+                "iOS": "var(--astral-color-surface-inverse-tertiary-disabled)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Grey.9}"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Primitives": {
+      "modes": {
+        "Value": {
+          "Green": {
+            "1": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-1)",
+                "ANDROID": "var(--astral-color-green-1)",
+                "iOS": "var(--astral-color-green-1)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f2f7f4"
+            },
+            "2": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-2)",
+                "ANDROID": "var(--astral-color-green-2)",
+                "iOS": "var(--astral-color-green-2)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#d7ebdf"
+            },
+            "3": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-3)",
+                "ANDROID": "var(--astral-color-green-3)",
+                "iOS": "var(--astral-color-green-3)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#b8e3c8"
+            },
+            "4": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-4)",
+                "ANDROID": "var(--astral-color-green-4)",
+                "iOS": "var(--astral-color-green-4)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#95deaf"
+            },
+            "5": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-5)",
+                "ANDROID": "var(--astral-color-green-5)",
+                "iOS": "var(--astral-color-green-5)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#6fdd95"
+            },
+            "6": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-6)",
+                "ANDROID": "var(--astral-color-green-6)",
+                "iOS": "var(--astral-color-green-6)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#44e079"
+            },
+            "7": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-7)",
+                "ANDROID": "var(--astral-color-green-7)",
+                "iOS": "var(--astral-color-green-7)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#18e55b"
+            },
+            "8": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-8)",
+                "ANDROID": "var(--astral-color-green-8)",
+                "iOS": "var(--astral-color-green-8)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#0acb47"
+            },
+            "9": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-9)",
+                "ANDROID": "var(--astral-color-green-9)",
+                "iOS": "var(--astral-color-green-9)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#00ae35"
+            },
+            "10": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-10)",
+                "ANDROID": "var(--astral-color-green-10)",
+                "iOS": "var(--astral-color-green-10)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#02972c"
+            },
+            "11": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-11)",
+                "ANDROID": "var(--astral-color-green-11)",
+                "iOS": "var(--astral-color-green-11)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#048124"
+            },
+            "12": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-12)",
+                "ANDROID": "var(--astral-color-green-12)",
+                "iOS": "var(--astral-color-green-12)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#056c1d"
+            },
+            "13": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-13)",
+                "ANDROID": "var(--astral-color-green-13)",
+                "iOS": "var(--astral-color-green-13)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#055716"
+            },
+            "14": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-14)",
+                "ANDROID": "var(--astral-color-green-14)",
+                "iOS": "var(--astral-color-green-14)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#054210"
+            },
+            "15": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-15)",
+                "ANDROID": "var(--astral-color-green-15)",
+                "iOS": "var(--astral-color-green-15)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#042f0b"
+            },
+            "16": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-green-16)",
+                "ANDROID": "var(--astral-color-green-16)",
+                "iOS": "var(--astral-color-green-16)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#031c06"
+            }
+          },
+          "Grey": {
+            "1": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-1)",
+                "ANDROID": "var(--astral-color-grey-1)",
+                "iOS": "var(--astral-color-grey-1)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#ffffff"
+            },
+            "2": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-2)",
+                "ANDROID": "var(--astral-color-grey-2)",
+                "iOS": "var(--astral-color-grey-2)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#fafafa"
+            },
+            "3": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-3)",
+                "ANDROID": "var(--astral-color-grey-3)",
+                "iOS": "var(--astral-color-grey-3)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f4f4f4"
+            },
+            "4": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-4)",
+                "ANDROID": "var(--astral-color-grey-4)",
+                "iOS": "var(--astral-color-grey-4)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#eeeeee"
+            },
+            "5": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-5)",
+                "ANDROID": "var(--astral-color-grey-5)",
+                "iOS": "var(--astral-color-grey-5)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#e5e5e5"
+            },
+            "6": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-6)",
+                "ANDROID": "var(--astral-color-grey-6)",
+                "iOS": "var(--astral-color-grey-6)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#d9d9d9"
+            },
+            "7": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-7)",
+                "ANDROID": "var(--astral-color-grey-7)",
+                "iOS": "var(--astral-color-grey-7)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#c9c9c9"
+            },
+            "8": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-8)",
+                "ANDROID": "var(--astral-color-grey-8)",
+                "iOS": "var(--astral-color-grey-8)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#b5b5b5"
+            },
+            "9": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-9)",
+                "ANDROID": "var(--astral-color-grey-9)",
+                "iOS": "var(--astral-color-grey-9)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#a0a0a0"
+            },
+            "10": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-10)",
+                "ANDROID": "var(--astral-color-grey-10)",
+                "iOS": "var(--astral-color-grey-10)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#8a8a8a"
+            },
+            "11": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-11)",
+                "ANDROID": "var(--astral-color-grey-11)",
+                "iOS": "var(--astral-color-grey-11)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#747474"
+            },
+            "12": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-12)",
+                "ANDROID": "var(--astral-color-grey-12)",
+                "iOS": "var(--astral-color-grey-12)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#5e5e5e"
+            },
+            "13": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-13)",
+                "ANDROID": "var(--astral-color-grey-13)",
+                "iOS": "var(--astral-color-grey-13)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#424242"
+            },
+            "14": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-14)",
+                "ANDROID": "var(--astral-color-grey-14)",
+                "iOS": "var(--astral-color-grey-14)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#2c2c2c"
+            },
+            "15": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-15)",
+                "ANDROID": "var(--astral-color-grey-15)",
+                "iOS": "var(--astral-color-grey-15)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#191919"
+            },
+            "16": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-grey-16)",
+                "ANDROID": "var(--astral-color-grey-16)",
+                "iOS": "var(--astral-color-grey-16)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#141414"
+            }
+          },
+          "Red": {
+            "1": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-1)",
+                "ANDROID": "var(--astral-color-red-1)",
+                "iOS": "var(--astral-color-red-1)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#fcf3f3"
+            },
+            "2": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-2)",
+                "ANDROID": "var(--astral-color-red-2)",
+                "iOS": "var(--astral-color-red-2)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#fce9ea"
+            },
+            "3": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-3)",
+                "ANDROID": "var(--astral-color-red-3)",
+                "iOS": "var(--astral-color-red-3)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f9dcde"
+            },
+            "4": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-4)",
+                "ANDROID": "var(--astral-color-red-4)",
+                "iOS": "var(--astral-color-red-4)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f7cbcd"
+            },
+            "5": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-5)",
+                "ANDROID": "var(--astral-color-red-5)",
+                "iOS": "var(--astral-color-red-5)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f4b4b9"
+            },
+            "6": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-6)",
+                "ANDROID": "var(--astral-color-red-6)",
+                "iOS": "var(--astral-color-red-6)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f1979f"
+            },
+            "7": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-7)",
+                "ANDROID": "var(--astral-color-red-7)",
+                "iOS": "var(--astral-color-red-7)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#eb7382"
+            },
+            "8": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-8)",
+                "ANDROID": "var(--astral-color-red-8)",
+                "iOS": "var(--astral-color-red-8)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#e14562"
+            },
+            "9": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-9)",
+                "ANDROID": "var(--astral-color-red-9)",
+                "iOS": "var(--astral-color-red-9)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#ec0033"
+            },
+            "10": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-10)",
+                "ANDROID": "var(--astral-color-red-10)",
+                "iOS": "var(--astral-color-red-10)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#b30032"
+            },
+            "11": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-11)",
+                "ANDROID": "var(--astral-color-red-11)",
+                "iOS": "var(--astral-color-red-11)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#940023"
+            },
+            "12": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-12)",
+                "ANDROID": "var(--astral-color-red-12)",
+                "iOS": "var(--astral-color-red-12)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#740018"
+            },
+            "13": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-13)",
+                "ANDROID": "var(--astral-color-red-13)",
+                "iOS": "var(--astral-color-red-13)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#53000d"
+            },
+            "14": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-14)",
+                "ANDROID": "var(--astral-color-red-14)",
+                "iOS": "var(--astral-color-red-14)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#360007"
+            },
+            "15": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-15)",
+                "ANDROID": "var(--astral-color-red-15)",
+                "iOS": "var(--astral-color-red-15)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#1d0004"
+            },
+            "16": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-red-16)",
+                "ANDROID": "var(--astral-color-red-16)",
+                "iOS": "var(--astral-color-red-16)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#1e0005"
+            }
+          },
+          "Yellow": {
+            "1": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-1)",
+                "ANDROID": "var(--astral-color-yellow-1)",
+                "iOS": "var(--astral-color-yellow-1)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f9f4ec"
+            },
+            "2": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-2)",
+                "ANDROID": "var(--astral-color-yellow-2)",
+                "iOS": "var(--astral-color-yellow-2)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f6ede0"
+            },
+            "3": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-3)",
+                "ANDROID": "var(--astral-color-yellow-3)",
+                "iOS": "var(--astral-color-yellow-3)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f4e6d1"
+            },
+            "4": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-4)",
+                "ANDROID": "var(--astral-color-yellow-4)",
+                "iOS": "var(--astral-color-yellow-4)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#f0dbbb"
+            },
+            "5": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-5)",
+                "ANDROID": "var(--astral-color-yellow-5)",
+                "iOS": "var(--astral-color-yellow-5)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#eacc9f"
+            },
+            "6": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-6)",
+                "ANDROID": "var(--astral-color-yellow-6)",
+                "iOS": "var(--astral-color-yellow-6)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#e0b676"
+            },
+            "7": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-7)",
+                "ANDROID": "var(--astral-color-yellow-7)",
+                "iOS": "var(--astral-color-yellow-7)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#d19942"
+            },
+            "8": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-8)",
+                "ANDROID": "var(--astral-color-yellow-8)",
+                "iOS": "var(--astral-color-yellow-8)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#bb7400"
+            },
+            "9": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-9)",
+                "ANDROID": "var(--astral-color-yellow-9)",
+                "iOS": "var(--astral-color-yellow-9)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#cd4b00"
+            },
+            "10": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-10)",
+                "ANDROID": "var(--astral-color-yellow-10)",
+                "iOS": "var(--astral-color-yellow-10)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#8d3200"
+            },
+            "11": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-11)",
+                "ANDROID": "var(--astral-color-yellow-11)",
+                "iOS": "var(--astral-color-yellow-11)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#702400"
+            },
+            "12": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-12)",
+                "ANDROID": "var(--astral-color-yellow-12)",
+                "iOS": "var(--astral-color-yellow-12)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#541700"
+            },
+            "13": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-13)",
+                "ANDROID": "var(--astral-color-yellow-13)",
+                "iOS": "var(--astral-color-yellow-13)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#3b1000"
+            },
+            "14": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-14)",
+                "ANDROID": "var(--astral-color-yellow-14)",
+                "iOS": "var(--astral-color-yellow-14)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#280900"
+            },
+            "15": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-15)",
+                "ANDROID": "var(--astral-color-yellow-15)",
+                "iOS": "var(--astral-color-yellow-15)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#150500"
+            },
+            "16": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-yellow-16)",
+                "ANDROID": "var(--astral-color-yellow-16)",
+                "iOS": "var(--astral-color-yellow-16)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#1a0700"
+            }
+          },
+          "Units": {
+            "Negitive": {
+              "-1": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-1)",
+                  "ANDROID": "var(--astral-units-neg-1)",
+                  "iOS": "var(--astral-units-neg-1)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -1
+              },
+              "-2": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-2)",
+                  "ANDROID": "var(--astral-units-neg-2)",
+                  "iOS": "var(--astral-units-neg-2)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -2
+              },
+              "-3": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-3)",
+                  "ANDROID": "var(--astral-units-neg-3)",
+                  "iOS": "var(--astral-units-neg-3)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -3
+              },
+              "-4": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-4)",
+                  "ANDROID": "var(--astral-units-neg-4)",
+                  "iOS": "var(--astral-units-neg-4)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -4
+              },
+              "-5": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-5)",
+                  "ANDROID": "var(--astral-units-neg-5)",
+                  "iOS": "var(--astral-units-neg-5)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -5
+              },
+              "-6": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-6)",
+                  "ANDROID": "var(--astral-units-neg-6)",
+                  "iOS": "var(--astral-units-neg-6)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -6
+              },
+              "-7": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-7)",
+                  "ANDROID": "var(--astral-units-neg-7)",
+                  "iOS": "var(--astral-units-neg-7)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -7
+              },
+              "-8": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-8)",
+                  "ANDROID": "var(--astral-units-neg-8)",
+                  "iOS": "var(--astral-units-neg-8)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -8
+              },
+              "-9": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-9)",
+                  "ANDROID": "var(--astral-units-neg-9)",
+                  "iOS": "var(--astral-units-neg-9)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -9
+              },
+              "-10": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-neg-10)",
+                  "ANDROID": "var(--astral-units-neg-10)",
+                  "iOS": "var(--astral-units-neg-10)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "GAP"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": -10
+              }
+            },
+            "Positive": {
+              "0": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-0)",
+                  "ANDROID": "var(--astral-units-pos-0)",
+                  "iOS": "var(--astral-units-pos-0)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 0
+              },
+              "1": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-1)",
+                  "ANDROID": "var(--astral-units-pos-1)",
+                  "iOS": "var(--astral-units-pos-1)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 1
+              },
+              "2": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-2)",
+                  "ANDROID": "var(--astral-units-pos-2)",
+                  "iOS": "var(--astral-units-pos-2)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 2
+              },
+              "3": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-3)",
+                  "ANDROID": "var(--astral-units-pos-3)",
+                  "iOS": "var(--astral-units-pos-3)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 3
+              },
+              "4": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-4)",
+                  "ANDROID": "var(--astral-units-pos-4)",
+                  "iOS": "var(--astral-units-pos-4)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 4
+              },
+              "5": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-5)",
+                  "ANDROID": "var(--astral-units-pos-5)",
+                  "iOS": "var(--astral-units-pos-5)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 5
+              },
+              "6": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-6)",
+                  "ANDROID": "var(--astral-units-pos-6)",
+                  "iOS": "var(--astral-units-pos-6)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 6
+              },
+              "7": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-7)",
+                  "ANDROID": "var(--astral-units-pos-7)",
+                  "iOS": "var(--astral-units-pos-7)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 7
+              },
+              "8": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-8)",
+                  "ANDROID": "var(--astral-units-pos-8)",
+                  "iOS": "var(--astral-units-pos-8)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 8
+              },
+              "9": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-9)",
+                  "ANDROID": "var(--astral-units-pos-9)",
+                  "iOS": "var(--astral-units-pos-9)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 9
+              },
+              "10": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-10)",
+                  "ANDROID": "var(--astral-units-pos-10)",
+                  "iOS": "var(--astral-units-pos-10)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 10
+              },
+              "11": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-11)",
+                  "ANDROID": "var(--astral-units-pos-11)",
+                  "iOS": "var(--astral-units-pos-11)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 11
+              },
+              "12": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-12)",
+                  "ANDROID": "var(--astral-units-pos-12)",
+                  "iOS": "var(--astral-units-pos-12)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 12
+              },
+              "13": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-13)",
+                  "ANDROID": "var(--astral-units-pos-13)",
+                  "iOS": "var(--astral-units-pos-13)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 13
+              },
+              "14": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-14)",
+                  "ANDROID": "var(--astral-units-pos-14)",
+                  "iOS": "var(--astral-units-pos-14)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 14
+              },
+              "15": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-15)",
+                  "ANDROID": "var(--astral-units-pos-15)",
+                  "iOS": "var(--astral-units-pos-15)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 15
+              },
+              "16": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-16)",
+                  "ANDROID": "var(--astral-units-pos-16)",
+                  "iOS": "var(--astral-units-pos-16)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 16
+              },
+              "17": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-17)",
+                  "ANDROID": "var(--astral-units-pos-17)",
+                  "iOS": "var(--astral-units-pos-17)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 17
+              },
+              "18": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-18)",
+                  "ANDROID": "var(--astral-units-pos-18)",
+                  "iOS": "var(--astral-units-pos-18)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 18
+              },
+              "19": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-19)",
+                  "ANDROID": "var(--astral-units-pos-19)",
+                  "iOS": "var(--astral-units-pos-19)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 19
+              },
+              "20": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-20)",
+                  "ANDROID": "var(--astral-units-pos-20)",
+                  "iOS": "var(--astral-units-pos-20)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 20
+              },
+              "21": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-21)",
+                  "ANDROID": "var(--astral-units-pos-21)",
+                  "iOS": "var(--astral-units-pos-21)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 21
+              },
+              "22": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-22)",
+                  "ANDROID": "var(--astral-units-pos-22)",
+                  "iOS": "var(--astral-units-pos-22)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 22
+              },
+              "23": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-23)",
+                  "ANDROID": "var(--astral-units-pos-23)",
+                  "iOS": "var(--astral-units-pos-23)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 23
+              },
+              "24": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-24)",
+                  "ANDROID": "var(--astral-units-pos-24)",
+                  "iOS": "var(--astral-units-pos-24)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 24
+              },
+              "25": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-25)",
+                  "ANDROID": "var(--astral-units-pos-25)",
+                  "iOS": "var(--astral-units-pos-25)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 25
+              },
+              "26": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-26)",
+                  "ANDROID": "var(--astral-units-pos-26)",
+                  "iOS": "var(--astral-units-pos-26)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 26
+              },
+              "27": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-27)",
+                  "ANDROID": "var(--astral-units-pos-27)",
+                  "iOS": "var(--astral-units-pos-27)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 27
+              },
+              "28": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-28)",
+                  "ANDROID": "var(--astral-units-pos-28)",
+                  "iOS": "var(--astral-units-pos-28)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 28
+              },
+              "29": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-29)",
+                  "ANDROID": "var(--astral-units-pos-29)",
+                  "iOS": "var(--astral-units-pos-29)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 29
+              },
+              "30": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-30)",
+                  "ANDROID": "var(--astral-units-pos-30)",
+                  "iOS": "var(--astral-units-pos-30)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 30
+              },
+              "31": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-31)",
+                  "ANDROID": "var(--astral-units-pos-31)",
+                  "iOS": "var(--astral-units-pos-31)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 31
+              },
+              "32": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-32)",
+                  "ANDROID": "var(--astral-units-pos-32)",
+                  "iOS": "var(--astral-units-pos-32)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 32
+              },
+              "33": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-33)",
+                  "ANDROID": "var(--astral-units-pos-33)",
+                  "iOS": "var(--astral-units-pos-33)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 33
+              },
+              "34": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-34)",
+                  "ANDROID": "var(--astral-units-pos-34)",
+                  "iOS": "var(--astral-units-pos-34)'"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 34
+              },
+              "35": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-35)",
+                  "ANDROID": "var(--astral-units-pos-35)",
+                  "iOS": "var(--astral-units-pos-35)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 35
+              },
+              "36": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-36)",
+                  "ANDROID": "var(--astral-units-pos-36)",
+                  "iOS": "var(--astral-units-pos-36)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 36
+              },
+              "37": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-37)",
+                  "ANDROID": "var(--astral-units-pos-37)",
+                  "iOS": "var(--astral-units-pos-37)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 37
+              },
+              "38": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-38)",
+                  "ANDROID": "var(--astral-units-pos-38)",
+                  "iOS": "var(--astral-units-pos-38)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 38
+              },
+              "39": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-39)",
+                  "ANDROID": "var(--astral-units-pos-39)",
+                  "iOS": "var(--astral-units-pos-39)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 39
+              },
+              "40": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-40)",
+                  "ANDROID": "var(--astral-units-pos-40)",
+                  "iOS": "var(--astral-units-pos-40)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 40
+              },
+              "41": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-41)",
+                  "ANDROID": "var(--astral-units-pos-41)",
+                  "iOS": "var(--astral-units-pos-41)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 41
+              },
+              "42": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-42)",
+                  "ANDROID": "var(--astral-units-pos-42)",
+                  "iOS": "var(--astral-units-pos-42)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 42
+              },
+              "43": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-43)",
+                  "ANDROID": "var(--astral-units-pos-43)",
+                  "iOS": "var(--astral-units-pos-43)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 43
+              },
+              "44": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-44)",
+                  "ANDROID": "var(--astral-units-pos-44)",
+                  "iOS": "var(--astral-units-pos-44)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 44
+              },
+              "45": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-45)",
+                  "ANDROID": "var(--astral-units-pos-45)",
+                  "iOS": "var(--astral-units-pos-45)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 45
+              },
+              "46": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-46)",
+                  "ANDROID": "var(--astral-units-pos-46)",
+                  "iOS": "var(--astral-units-pos-46)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 46
+              },
+              "47": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-47)",
+                  "ANDROID": "var(--astral-units-pos-47)",
+                  "iOS": "var(--astral-units-pos-47)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 47
+              },
+              "48": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-48)",
+                  "ANDROID": "var(--astral-units-pos-48)",
+                  "iOS": "var(--astral-units-pos-48)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 48
+              },
+              "49": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-49)",
+                  "ANDROID": "var(--astral-units-pos-49)",
+                  "iOS": "var(--astral-units-pos-49)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 49
+              },
+              "50": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-50)",
+                  "ANDROID": "var(--astral-units-pos-50)",
+                  "iOS": "var(--astral-units-pos-50)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 50
+              },
+              "51": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-51)",
+                  "ANDROID": "var(--astral-units-pos-51)",
+                  "iOS": "var(--astral-units-pos-51)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 51
+              },
+              "52": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-52)",
+                  "ANDROID": "var(--astral-units-pos-52)",
+                  "iOS": "var(--astral-units-pos-52)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 52
+              },
+              "53": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-53)",
+                  "ANDROID": "var(--astral-units-pos-53)",
+                  "iOS": "var(--astral-units-pos-53)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 53
+              },
+              "54": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-54)",
+                  "ANDROID": "var(--astral-units-pos-54)",
+                  "iOS": "var(--astral-units-pos-54)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 54
+              },
+              "55": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-55)",
+                  "ANDROID": "var(--astral-units-pos-55)",
+                  "iOS": "var(--astral-units-pos-55)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 55
+              },
+              "56": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-56)",
+                  "ANDROID": "var(--astral-units-pos-56)",
+                  "iOS": "var(--astral-units-pos-56)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 56
+              },
+              "57": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-57)",
+                  "ANDROID": "var(--astral-units-pos-57)",
+                  "iOS": "var(--astral-units-pos-57)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 57
+              },
+              "58": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-58)",
+                  "ANDROID": "var(--astral-units-pos-58)",
+                  "iOS": "var(--astral-units-pos-58)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 58
+              },
+              "59": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-59)",
+                  "ANDROID": "var(--astral-units-pos-59)",
+                  "iOS": "var(--astral-units-pos-59)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 59
+              },
+              "60": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-60)",
+                  "ANDROID": "var(--astral-units-pos-60)",
+                  "iOS": "var(--astral-units-pos-60)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 60
+              },
+              "61": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-61)",
+                  "ANDROID": "var(--astral-units-pos-61)",
+                  "iOS": "var(--astral-units-pos-61)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 61
+              },
+              "62": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-62)",
+                  "ANDROID": "var(--astral-units-pos-62)",
+                  "iOS": "var(--astral-units-pos-62)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 62
+              },
+              "63": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-63)",
+                  "ANDROID": "var(--astral-units-pos-63)",
+                  "iOS": "var(--astral-units-pos-63)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 63
+              },
+              "64": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-64)",
+                  "ANDROID": "var(--astral-units-pos-64)",
+                  "iOS": "var(--astral-units-pos-64)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 64
+              },
+              "65": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-65)",
+                  "ANDROID": "var(--astral-units-pos-65)",
+                  "iOS": "var(--astral-units-pos-65)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 65
+              },
+              "66": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-66)",
+                  "ANDROID": "var(--astral-units-pos-66)",
+                  "iOS": "var(--astral-units-pos-66)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 66
+              },
+              "67": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-67)",
+                  "ANDROID": "var(--astral-units-pos-67)",
+                  "iOS": "var(--astral-units-pos-67)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 67
+              },
+              "68": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-68)",
+                  "ANDROID": "var(--astral-units-pos-68)",
+                  "iOS": "var(--astral-units-pos-68)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 68
+              },
+              "69": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-69)",
+                  "ANDROID": "var(--astral-units-pos-69)",
+                  "iOS": "var(--astral-units-pos-69)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 69
+              },
+              "70": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-70)",
+                  "ANDROID": "var(--astral-units-pos-70)",
+                  "iOS": "var(--astral-units-pos-70)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 70
+              },
+              "71": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-71)",
+                  "ANDROID": "var(--astral-units-pos-71)",
+                  "iOS": "var(--astral-units-pos-71)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 71
+              },
+              "72": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-72)",
+                  "ANDROID": "var(--astral-units-pos-72)",
+                  "iOS": "var(--astral-units-pos-72)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 72
+              },
+              "73": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-73)",
+                  "ANDROID": "var(--astral-units-pos-73)",
+                  "iOS": "var(--astral-units-pos-73)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 73
+              },
+              "74": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-74)",
+                  "ANDROID": "var(--astral-units-pos-74)",
+                  "iOS": "var(--astral-units-pos-74)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 74
+              },
+              "75": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-75)",
+                  "ANDROID": "var(--astral-units-pos-75)",
+                  "iOS": "var(--astral-units-pos-75)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 75
+              },
+              "76": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-76)",
+                  "ANDROID": "var(--astral-units-pos-76)",
+                  "iOS": "var(--astral-units-pos-76)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 76
+              },
+              "77": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-77)",
+                  "ANDROID": "var(--astral-units-pos-77)",
+                  "iOS": "var(--astral-units-pos-77)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 77
+              },
+              "78": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-78)",
+                  "ANDROID": "var(--astral-units-pos-78)",
+                  "iOS": "var(--astral-units-pos-78)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 78
+              },
+              "79": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-79)",
+                  "ANDROID": "var(--astral-units-pos-79)",
+                  "iOS": "var(--astral-units-pos-79)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 79
+              },
+              "80": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-80)",
+                  "ANDROID": "var(--astral-units-pos-80)",
+                  "iOS": "var(--astral-units-pos-80)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 80
+              },
+              "81": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-81)",
+                  "ANDROID": "var(--astral-units-pos-81)",
+                  "iOS": "var(--astral-units-pos-81)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 81
+              },
+              "82": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-82)",
+                  "ANDROID": "var(--astral-units-pos-82)",
+                  "iOS": "var(--astral-units-pos-82)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 82
+              },
+              "83": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-83)",
+                  "ANDROID": "var(--astral-units-pos-83)",
+                  "iOS": "var(--astral-units-pos-83)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 83
+              },
+              "84": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-84)",
+                  "ANDROID": "var(--astral-units-pos-84)",
+                  "iOS": "var(--astral-units-pos-84)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 84
+              },
+              "85": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-85)",
+                  "ANDROID": "var(--astral-units-pos-85)",
+                  "iOS": "var(--astral-units-pos-85)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 85
+              },
+              "86": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-86)",
+                  "ANDROID": "var(--astral-units-pos-86)",
+                  "iOS": "var(--astral-units-pos-86)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 86
+              },
+              "87": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-87)",
+                  "ANDROID": "var(--astral-units-pos-87)",
+                  "iOS": "var(--astral-units-pos-87)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 87
+              },
+              "88": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-88)",
+                  "ANDROID": "var(--astral-units-pos-88)",
+                  "iOS": "var(--astral-units-pos-88)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 88
+              },
+              "89": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-89)",
+                  "ANDROID": "var(--astral-units-pos-89)",
+                  "iOS": "var(--astral-units-pos-89)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 89
+              },
+              "90": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-90)",
+                  "ANDROID": "var(--astral-units-pos-90)",
+                  "iOS": "var(--astral-units-pos-90)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 90
+              },
+              "91": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-91)",
+                  "ANDROID": "var(--astral-units-pos-91)",
+                  "iOS": "var(--astral-units-pos-91)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 91
+              },
+              "92": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-92)",
+                  "ANDROID": "var(--astral-units-pos-92)",
+                  "iOS": "var(--astral-units-pos-92)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 92
+              },
+              "93": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-93)",
+                  "ANDROID": "var(--astral-units-pos-93)",
+                  "iOS": "var(--astral-units-pos-93)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 93
+              },
+              "94": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-94)",
+                  "ANDROID": "var(--astral-units-pos-94)",
+                  "iOS": "var(--astral-units-pos-94)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 94
+              },
+              "95": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-95)",
+                  "ANDROID": "var(--astral-units-pos-95)",
+                  "iOS": "var(--astral-units-pos-95)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 95
+              },
+              "96": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-96)",
+                  "ANDROID": "var(--astral-units-pos-96)",
+                  "iOS": "var(--astral-units-pos-96)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 96
+              },
+              "97": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-97)",
+                  "ANDROID": "var(--astral-units-pos-97)",
+                  "iOS": "var(--astral-units-pos-97)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 97
+              },
+              "98": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-98)",
+                  "ANDROID": "var(--astral-units-pos-98)",
+                  "iOS": "var(--astral-units-pos-98)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 98
+              },
+              "99": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-99)",
+                  "ANDROID": "var(--astral-units-pos-99)",
+                  "iOS": "var(--astral-units-pos-99)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 99
+              },
+              "9999": {
+                "$codeSyntax": {
+                  "WEB": "var(--astral-units-pos-9999)",
+                  "ANDROID": "var(--astral-units-pos-9999)",
+                  "iOS": "var(--astral-units-pos-9999)"
+                },
+                "$scopes": [
+                  "TEXT_CONTENT",
+                  "WIDTH_HEIGHT",
+                  "GAP",
+                  "STROKE_FLOAT"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "float",
+                "$value": 9999
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Themes": {
+      "modes": {
+        "Equal AI": {
+          "Brand": {
+            "1": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-1)",
+                "ANDROID": "var(--astral-color-brand-1)",
+                "iOS": "var(--astral-color-brand-1)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.1}"
+            },
+            "2": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-2)",
+                "ANDROID": "var(--astral-color-brand-2)",
+                "iOS": "var(--astral-color-brand-2)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.2}"
+            },
+            "3": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-3)",
+                "ANDROID": "var(--astral-color-brand-3)",
+                "iOS": "var(--astral-color-brand-3)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.3}"
+            },
+            "4": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-4)",
+                "ANDROID": "var(--astral-color-brand-4)",
+                "iOS": "var(--astral-color-brand-4)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.4}"
+            },
+            "5": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-5)",
+                "ANDROID": "var(--astral-color-brand-5)",
+                "iOS": "var(--astral-color-brand-5)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.5}"
+            },
+            "6": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-6)",
+                "ANDROID": "var(--astral-color-brand-6)",
+                "iOS": "var(--astral-color-brand-6)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.6}"
+            },
+            "7": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-7)",
+                "ANDROID": "var(--astral-color-brand-7)",
+                "iOS": "var(--astral-color-brand-7)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.7}"
+            },
+            "8": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-8)",
+                "ANDROID": "var(--astral-color-brand-8)",
+                "iOS": "var(--astral-color-brand-8)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.8}"
+            },
+            "9": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-9)",
+                "ANDROID": "var(--astral-color-brand-9)",
+                "iOS": "var(--astral-color-brand-9)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.9}"
+            },
+            "10": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-10)",
+                "ANDROID": "var(--astral-color-brand-10)",
+                "iOS": "var(--astral-color-brand-10)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.10}"
+            },
+            "11": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-11)",
+                "ANDROID": "var(--astral-color-brand-11)",
+                "iOS": "var(--astral-color-brand-11)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.11}"
+            },
+            "12": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-12)",
+                "ANDROID": "var(--astral-color-brand-12)",
+                "iOS": "var(--astral-color-brand-12)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.12}"
+            },
+            "13": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-13)",
+                "ANDROID": "var(--astral-color-brand-13)",
+                "iOS": "var(--astral-color-brand-13)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.13}"
+            },
+            "14": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-14)",
+                "ANDROID": "var(--astral-color-brand-14)",
+                "iOS": "var(--astral-color-brand-14)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.14}"
+            },
+            "15": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-15)",
+                "ANDROID": "var(--astral-color-brand-15)",
+                "iOS": "var(--astral-color-brand-15)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.15}"
+            },
+            "16": {
+              "$codeSyntax": {
+                "WEB": "var(--astral-color-brand-16)",
+                "ANDROID": "var(--astral-color-brand-16)",
+                "iOS": "var(--astral-color-brand-16)"
+              },
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Green.16}"
+            }
+          }
+        }
+      }
+    }
+  }
+]
