@@ -1,0 +1,134 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/How to Use" />
+
+export const S = {
+  root: { fontFamily: 'var(--astral-font-family-sans)', color: 'var(--astral-color-text-default)', lineHeight: 1.6, maxWidth: '760px' },
+  eyebrow: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8a8a8a', marginBottom: '12px' },
+  h1: { fontSize: '32px', fontWeight: 700, letterSpacing: '-0.8px', color: '#191919', margin: '0 0 16px 0', lineHeight: 1.2 },
+  lead: { fontSize: '15px', lineHeight: 1.8, color: '#5e5e5e', margin: '0 0 48px 0', maxWidth: '580px' },
+  h2: { fontSize: '20px', fontWeight: 700, letterSpacing: '-0.3px', color: '#191919', margin: '0 0 10px 0' },
+  h3: { fontSize: '14px', fontWeight: 600, color: '#191919', margin: '0 0 8px 0' },
+  p: { fontSize: '14px', lineHeight: 1.8, color: '#5e5e5e', margin: '0 0 12px 0' },
+  hr: { border: 'none', borderTop: '1px solid #eeeeee', margin: '44px 0' },
+  section: { marginBottom: '44px' },
+  code: { backgroundColor: '#f4f4f4', padding: '2px 7px', borderRadius: '4px', fontSize: '12.5px', fontFamily: '"Geist Mono", monospace', color: '#191919' },
+  codeBlock: { backgroundColor: '#141414', color: '#f4f4f4', borderRadius: '10px', padding: '20px 24px', fontFamily: '"Geist Mono", "SFMono-Regular", Consolas, monospace', fontSize: '12.5px', lineHeight: 1.8, overflowX: 'auto', marginTop: '12px', marginBottom: '20px' },
+  cmt: { color: '#5e5e5e' },
+  key: { color: '#95deaf' },
+  val: { color: '#44e079' },
+  str: { color: '#f4b4b9' },
+  tokenRow: { display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 0', borderBottom: '1px solid #eeeeee' },
+  tokenSwatch: { width: '32px', height: '32px', borderRadius: '6px', border: '1px solid rgba(0,0,0,0.08)', flexShrink: 0 },
+  tokenName: { fontSize: '12.5px', fontFamily: '"Geist Mono", monospace', color: '#191919', flex: 1 },
+  tokenHex: { fontSize: '12px', color: '#8a8a8a', fontFamily: '"Geist Mono", monospace' },
+  tip: { backgroundColor: '#f2f7f4', border: '1px solid #b8e3c8', borderRadius: '10px', padding: '16px 20px', fontSize: '13px', color: '#056c1d', marginTop: '12px', lineHeight: 1.6 },
+  warn: { backgroundColor: '#fcf3f3', border: '1px solid #f4b4b9', borderRadius: '10px', padding: '16px 20px', fontSize: '13px', color: '#940023', marginTop: '12px', lineHeight: 1.6 },
+};
+
+<div style={S.root}>
+
+<div style={S.eyebrow}>Guides</div>
+<h1 style={S.h1}>How to Use Astral DS</h1>
+<p style={S.lead}>Learn how to integrate design tokens into your project and apply them correctly in code and design tools.</p>
+
+<div style={S.section}>
+  <h2 style={S.h2}>Token Architecture</h2>
+  <p style={S.p}>Astral DS uses a three-layer token model. Each layer has a specific role and consuming rule.</p>
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginTop: '16px' }}>
+    {[
+      { layer: 'Primitive', example: '--astral-color-grey-8', role: 'Raw values. Never use in components directly.', bg: '#fafafa', border: '#eeeeee' },
+      { layer: 'Semantic', example: '--astral-color-text-disabled', role: 'Purpose-driven aliases. Use these in all components.', bg: '#f2f7f4', border: '#b8e3c8' },
+      { layer: 'Theme', example: '--astral-color-brand-9', role: 'Brand-specific overrides. Applied at the theme level.', bg: '#fafafa', border: '#eeeeee' },
+    ].map(t => (
+      <div key={t.layer} style={{ padding: '18px', borderRadius: '10px', border: `1px solid ${t.border}`, backgroundColor: t.bg }}>
+        <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8a8a', marginBottom: '8px' }}>{t.layer}</div>
+        <code style={{ fontSize: '11.5px', fontFamily: '"Geist Mono", monospace', color: '#191919', display: 'block', marginBottom: '8px', wordBreak: 'break-all' }}>{t.example}</code>
+        <p style={{ fontSize: '12px', color: '#5e5e5e', margin: 0, lineHeight: 1.5 }}>{t.role}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+<hr style={S.hr} />
+
+<div style={S.section}>
+  <h2 style={S.h2}>Using Tokens in CSS</h2>
+  <p style={S.p}>Import the tokens stylesheet once at the root of your application or in your global stylesheet.</p>
+  <div style={S.codeBlock}>
+    <div style={S.cmt}>{'/* Step 1 — import once at app root */'}</div>
+    <div><span style={S.str}>{"@import"}</span>{" '../tokens/tokens.css';"}</div>
+    <br />
+    <div style={S.cmt}>{'/* Step 2 — use semantic tokens in your styles */'}</div>
+    <div>{'.button {'}</div>
+    <div>&nbsp;&nbsp;<span style={S.key}>background-color</span>{': var(--astral-color-surface-default);'}</div>
+    <div>&nbsp;&nbsp;<span style={S.key}>color</span>{': var(--astral-color-text-default);'}</div>
+    <div>&nbsp;&nbsp;<span style={S.key}>border</span>{': 1px solid var(--astral-color-stroke-default);'}</div>
+    <div>&nbsp;&nbsp;<span style={S.key}>border-radius</span>{': var(--astral-border-radius-m);'}</div>
+    <div>&nbsp;&nbsp;<span style={S.key}>font-size</span>{': var(--astral-font-size-m);'}</div>
+    <div>&nbsp;&nbsp;<span style={S.key}>font-weight</span>{': var(--astral-font-weight-600);'}</div>
+    <div>{'}'}</div>
+  </div>
+  <div style={S.tip}>
+    <strong>Tip:</strong> Always reference semantic tokens (e.g. <code style={{ fontFamily: '"Geist Mono", monospace' }}>--astral-color-text-default</code>) in component styles — not primitive tokens (e.g. <code style={{ fontFamily: '"Geist Mono", monospace' }}>--astral-color-grey-15</code>). Semantic tokens remain stable across theme changes.
+  </div>
+</div>
+
+<hr style={S.hr} />
+
+<div style={S.section}>
+  <h2 style={S.h2}>Using Tokens in React / TSX</h2>
+  <p style={S.p}>Tokens are plain CSS custom properties, so they work in any CSS-in-JS solution, inline styles, or CSS Modules.</p>
+  <div style={S.codeBlock}>
+    <div style={S.cmt}>{'// Inline styles'}</div>
+    <div>{'const Button = () => ('}</div>
+    <div>&nbsp;&nbsp;{'<button style={{'}</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.key}>backgroundColor</span>{': '}<span style={S.str}>{"'var(--astral-color-surface-default)'"}</span>{','}</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.key}>color</span>{': '}<span style={S.str}>{"'var(--astral-color-text-default)'"}</span>{','}</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.key}>borderRadius</span>{': '}<span style={S.str}>{"'var(--astral-border-radius-m)'"}</span>{','}</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.key}>fontSize</span>{': '}<span style={S.str}>{"'var(--astral-font-size-m)'"}</span>{','}</div>
+    <div>&nbsp;&nbsp;{'}}>'}</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;{'Click me'}</div>
+    <div>&nbsp;&nbsp;{'</button>'}</div>
+    <div>{');'}</div>
+  </div>
+</div>
+
+<hr style={S.hr} />
+
+<div style={S.section}>
+  <h2 style={S.h2}>Token Naming Convention</h2>
+  <p style={S.p}>All tokens follow a predictable naming pattern:</p>
+  <div style={S.codeBlock}>
+    <div><span style={S.val}>--astral</span>{'-[category]-[modifier]'}</div>
+    <br />
+    <div style={S.cmt}>{'/* Examples */'}</div>
+    <div><span style={S.val}>--astral-color-text-secondary</span>&nbsp;&nbsp;&nbsp;<span style={S.cmt}>{'/* Semantic color */'}</span></div>
+    <div><span style={S.val}>--astral-color-grey-8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.cmt}>{'/* Primitive color */'}</span></div>
+    <div><span style={S.val}>--astral-font-size-2xl</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.cmt}>{'/* Typography */'}</span></div>
+    <div><span style={S.val}>--astral-border-radius-m</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={S.cmt}>{'/* Geometry */'}</span></div>
+  </div>
+  <div style={S.warn}>
+    <strong>Avoid:</strong> Never hard-code hex values or pixel values from the scale directly in component code. If a token doesn't exist for your use case, propose a new semantic token rather than bypassing the system.
+  </div>
+</div>
+
+<hr style={S.hr} />
+
+<div style={S.section}>
+  <h2 style={S.h2}>Using Tokens in Figma</h2>
+  <p style={S.p}>All tokens are published as Figma Variables in the Astral DS library. To use them:</p>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '16px' }}>
+    {[
+      '1. Enable the Astral DS shared library in your Figma file (Assets panel → Libraries).',
+      '2. Apply color variables from the "Modes" collection for semantic colors and "Themes" for brand colors.',
+      '3. Use the "Border Radius" collection for corner radius variables.',
+      '4. Use the "Font" collection variables for typography properties.',
+      '5. Never detach or override variables with raw values — maintain the token reference chain.',
+    ].map(step => (
+      <div key={step} style={{ fontSize: '13.5px', color: '#424242', lineHeight: 1.6, padding: '12px 16px', backgroundColor: '#fafafa', borderRadius: '8px', border: '1px solid #eeeeee' }}>{step}</div>
+    ))}
+  </div>
+</div>
+
+</div>

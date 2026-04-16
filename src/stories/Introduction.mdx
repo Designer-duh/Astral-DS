@@ -1,0 +1,107 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/Introduction" />
+
+export const S = {
+  root: { fontFamily: 'var(--astral-font-family-sans)', color: 'var(--astral-color-text-default)', lineHeight: 1.6 },
+  hero: { position: 'relative', width: '100%', minHeight: '460px', borderRadius: '16px', overflow: 'hidden', marginBottom: '56px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' },
+  heroBg: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' },
+  heroOverlay: { position: 'absolute', inset: 0, background: 'linear-gradient(110deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.12) 100%)' },
+  heroContent: { position: 'relative', zIndex: 2, maxWidth: '400px', padding: '48px 52px 48px 0', textAlign: 'left' },
+  heroEyebrow: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(0,0,0,0.45)', marginBottom: '10px' },
+  heroH1: { margin: 0, fontSize: '42px', fontWeight: 700, lineHeight: 1.12, letterSpacing: '-1px', color: '#191919' },
+  heroAccent: { color: '#0029CC' },
+  heroBody: { marginTop: '18px', fontSize: '14px', lineHeight: 1.75, color: '#424242', maxWidth: '340px' },
+  logo: { width: '188px', marginBottom: '28px', display: 'block' },
+  badge: { display: 'inline-flex', alignItems: 'center', gap: '7px', padding: '4px 12px', borderRadius: '9999px', backgroundColor: '#f2f7f4', border: '1px solid #b8e3c8', fontSize: '12px', fontWeight: 600, color: '#056c1d', marginBottom: '36px' },
+  badgeDot: { width: '7px', height: '7px', borderRadius: '50%', backgroundColor: '#00ae35', display: 'inline-block', flexShrink: 0 },
+  section: { marginBottom: '52px' },
+  eyebrow: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8a8a8a', marginBottom: '14px' },
+  h2: { fontSize: '26px', fontWeight: 700, letterSpacing: '-0.5px', color: '#191919', margin: '0 0 14px 0', lineHeight: 1.3 },
+  p: { fontSize: '14px', lineHeight: 1.8, color: '#5e5e5e', margin: '0 0 14px 0', maxWidth: '620px' },
+  hr: { border: 'none', borderTop: '1px solid #eeeeee', margin: '52px 0' },
+  pillRow: { display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '18px' },
+  pill: { display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '4px 12px', borderRadius: '9999px', border: '1px solid #eeeeee', fontSize: '12px', color: '#424242', backgroundColor: '#fff', textDecoration: 'none' },
+  pillDot: { width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#0029CC', flexShrink: 0 },
+  cardGrid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '14px', marginTop: '20px' },
+  card: { padding: '22px', borderRadius: '12px', border: '1px solid #eeeeee', backgroundColor: '#fafafa', textDecoration: 'none', display: 'block' },
+  cardIcon: { fontSize: '22px', marginBottom: '10px' },
+  cardTitle: { fontSize: '13px', fontWeight: 600, color: '#191919', margin: '0 0 5px 0' },
+  cardDesc: { fontSize: '12px', color: '#8a8a8a', margin: 0, lineHeight: 1.5 },
+  principleGrid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '16px', marginTop: '20px' },
+  principleCard: { padding: '24px 20px', borderRadius: '12px', border: '1px solid #eeeeee', backgroundColor: '#ffffff' },
+  principleNum: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', color: '#0029CC', marginBottom: '8px' },
+  principleTitle: { fontSize: '15px', fontWeight: 600, color: '#191919', margin: '0 0 6px 0' },
+  principleDesc: { fontSize: '12px', color: '#8a8a8a', margin: 0, lineHeight: 1.6 },
+};
+
+<div style={S.root}>
+
+<div style={S.hero}>
+  <img src="/welcome.jpg" alt="" style={S.heroBg} />
+  <div style={S.heroOverlay} />
+  <div style={S.heroContent}>
+    <img src="/main-logo.svg" alt="Astral DS" style={S.logo} />
+    <div style={S.heroEyebrow}>Design System · v0.1</div>
+    <h1 style={S.heroH1}>Building<br /><span style={S.heroAccent}>Beyond Earth</span></h1>
+    <p style={S.heroBody}>The components that outlast trends aren't the cleverest ones — they're the ones someone cared enough to get right.</p>
+  </div>
+</div>
+
+<div style={S.badge}><span style={S.badgeDot} />Current release: v0.1.0 — Foundation</div>
+
+<div style={S.section}>
+  <div style={S.eyebrow}>Overview</div>
+  <h2 style={S.h2}>What is Astral Design System?</h2>
+  <p style={S.p}>Astral DS is the single source of truth for building consistent, accessible, and intentional product experiences. It encapsulates the design decisions, token architecture, and conventions that power our products.</p>
+  <p style={S.p}>What we're handing you isn't just tokens and components — it's the residue of a thousand small decisions made with intention. That, after all, is where the real system lives.</p>
+  <div style={S.pillRow}>
+    {['Design Tokens', 'Typography Scale', 'Color System', 'Border Radius', 'Spacing (soon)', 'Components (soon)'].map(l => (
+      <span key={l} style={S.pill}><span style={S.pillDot} />{l}</span>
+    ))}
+  </div>
+</div>
+
+<hr style={S.hr} />
+
+<div style={S.section}>
+  <div style={S.eyebrow}>Tokens</div>
+  <h2 style={S.h2}>Explore the foundation</h2>
+  <p style={S.p}>Every decision starts here — raw design tokens before components are even considered.</p>
+  <div style={S.cardGrid}>
+    {[
+      { icon: '🎨', title: 'Colors', desc: 'Primitives, semantic roles, and brand palette.' },
+      { icon: 'Aa', title: 'Typography', desc: 'Families, size scale, weights, line-heights, tracking.' },
+      { icon: '⬛', title: 'Border Radius', desc: 'Full corner-radius scale from 0 to pill.' },
+    ].map(c => (
+      <div key={c.title} style={S.card}>
+        <div style={S.cardIcon}>{c.icon}</div>
+        <p style={S.cardTitle}>{c.title}</p>
+        <p style={S.cardDesc}>{c.desc}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+<hr style={S.hr} />
+
+<div style={S.section}>
+  <div style={S.eyebrow}>Principles</div>
+  <h2 style={S.h2}>How we make decisions</h2>
+  <div style={S.principleGrid}>
+    {[
+      { n: '01', title: 'Intentional', desc: 'Every token exists because a deliberate decision was made. Nothing is arbitrary.' },
+      { n: '02', title: 'Composable', desc: 'Primitives build semantics. Semantics build components. Each layer is independent.' },
+      { n: '03', title: 'Legible', desc: 'Token names describe purpose, not value. `text-default` not `color-191919`.' },
+      { n: '04', title: 'Scalable', desc: 'Adding a theme or new scale means touching one layer — not hunting across files.' },
+    ].map(p => (
+      <div key={p.n} style={S.principleCard}>
+        <div style={S.principleNum}>{p.n}</div>
+        <p style={S.principleTitle}>{p.title}</p>
+        <p style={S.principleDesc}>{p.desc}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+</div>
