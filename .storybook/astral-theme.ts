@@ -8,9 +8,8 @@ export default create({
   brandImage: '/nav-logo.svg',
   brandTarget: '_self',
 
-  // Primary palette — pulled from the Astral logomark blue
-  colorPrimary: '#0029CC',
-  colorSecondary: '#0029CC',
+  colorPrimary: '#0069FF',
+  colorSecondary: '#0069FF',
 
   // App chrome
   appBg: '#ffffff',
@@ -27,7 +26,7 @@ export default create({
   // Toolbar
   barTextColor: '#5e5e5e',
   barHoverColor: '#191919',
-  barSelectedColor: '#0029CC',
+  barSelectedColor: '#ffffff', // surface-default
   barBg: '#ffffff',
 
   // Inputs

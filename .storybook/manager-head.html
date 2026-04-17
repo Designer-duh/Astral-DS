@@ -1,0 +1,45 @@
+<style>
+  /* ── Unselected icons — #0069FF ── */
+  #root [data-selected]:not([data-selected="true"]) svg {
+    color: #0069FF !important;
+  }
+
+  /* ── Selected icon — white ── */
+  #root [data-selected="true"] svg {
+    color: #ffffff !important;
+  }
+
+  /* ── Selected state — rounded corners, no stroke ── */
+  #root [data-selected="true"] > a {
+    border-radius: 6px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* ── Hover state — #E7F1FF ── */
+  #root [data-selected]:not([data-selected="true"]) > a:hover {
+    background-color: #E7F1FF !important;
+    color: #191919 !important;
+    border-radius: 6px !important;
+  }
+
+  /* ── Remove all focus/active/pressed strokes ── */
+  #root a[href*="?path="]:focus,
+  #root a[href*="?path="]:active,
+  #root a[href*="?path="]:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* ── Kill hover borders ── */
+  #root a[href*="?path="]:hover,
+  #root a[href*="?path="]:hover *,
+  #root div:has(> a[href*="?path="]:hover),
+  #root li:has(a[href*="?path="]:hover) {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+</style>

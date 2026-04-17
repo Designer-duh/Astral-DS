@@ -1,0 +1,258 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/Design MCP" />
+
+export const S = {
+  root: { fontFamily: 'var(--astral-font-family-sans)', color: '#191919', lineHeight: 1.6 },
+  inner: { maxWidth: '860px', margin: '0 auto', padding: '48px 24px 80px' },
+  eyebrow: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#8a8a8a', marginBottom: '10px' },
+  h1: { fontSize: '36px', fontWeight: 800, letterSpacing: '-0.8px', margin: '0 0 14px', lineHeight: 1.15 },
+  lead: { fontSize: '15px', lineHeight: 1.8, color: '#5e5e5e', margin: '0 0 48px', maxWidth: '620px' },
+  h2: { fontSize: '20px', fontWeight: 700, letterSpacing: '-0.3px', margin: '0 0 6px', color: '#191919' },
+  h2sub: { fontSize: '13px', color: '#8a8a8a', margin: '0 0 24px', lineHeight: 1.5 },
+  hr: { border: 'none', borderTop: '1px solid #eeeeee', margin: '52px 0' },
+  section: { marginBottom: '56px' },
+  inlineCode: { fontFamily: '"Geist Mono", monospace', fontSize: '12px', backgroundColor: '#f4f4f4', padding: '2px 7px', borderRadius: '4px', color: '#191919' },
+  stepRow: { display: 'flex', gap: '16px', alignItems: 'flex-start', marginBottom: '24px' },
+  stepNum: { width: '28px', height: '28px', borderRadius: '50%', backgroundColor: '#0069FF', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700, flexShrink: 0, marginTop: '2px' },
+  stepTitle: { fontSize: '14px', fontWeight: 700, color: '#191919', marginBottom: '4px' },
+  stepDesc: { fontSize: '13px', color: '#5e5e5e', lineHeight: 1.7 },
+  promptBox: { backgroundColor: '#0f1117', borderRadius: '12px', overflow: 'hidden', marginBottom: '8px' },
+  promptHeader: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 20px', borderBottom: '1px solid #1e2130' },
+  promptLabel: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#4a5568', fontFamily: '"Geist Mono", monospace' },
+  promptBody: { padding: '20px 24px', fontFamily: '"Geist Mono", monospace', fontSize: '12px', color: '#e2e8f0', lineHeight: 1.9, whiteSpace: 'pre-wrap', wordBreak: 'break-word' },
+  ruleCard: { border: '1px solid #f0f0f0', borderRadius: '10px', padding: '14px 18px', marginBottom: '8px', display: 'flex', gap: '12px', alignItems: 'flex-start' },
+  tokenItem: { fontSize: '11.5px', fontFamily: '"Geist Mono", monospace', color: '#0069FF', backgroundColor: '#EBF3FF', padding: '3px 8px', borderRadius: '5px', width: 'fit-content', display: 'inline-block' },
+};
+
+export const MASTER_PROMPT = `You are a UI engineer building screens for the Astral Design System.
+
+CRITICAL RULES — never break these:
+1. NEVER output a raw hex color. Use var(--astral-color-*) always.
+2. NEVER output raw pixel spacing. Use var(--astral-units-pos-*) always.
+3. NEVER output raw font-size or font-weight. Use var(--astral-font-*) always.
+4. NEVER output raw border-radius. Use var(--astral-border-radius-*) always.
+5. Run a self-check before every response. If any raw value exists → fix it first.
+
+TOKEN NAMESPACES:
+  Colors        →  var(--astral-color-{name})
+  Font size     →  var(--astral-font-size-{xs|s|m|l|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl})
+  Font weight   →  var(--astral-font-weight-{400|500|600|700|800|900})
+  Font family   →  var(--astral-font-family-sans)  ← all UI text
+                   var(--astral-font-family-display) ← hero headings only
+  Spacing       →  var(--astral-units-pos-{0-99}) / var(--astral-units-neg-{1-10})
+  Border radius →  var(--astral-border-radius-{none|xxs|xs|s|m|l|xl|2xl|3xl|4xl|full})
+
+KEY COLOR TOKENS:
+  Primary CTA / brand  →  var(--astral-color-brand-9)         ← green, NOT blue
+  Page background      →  var(--astral-color-surface-default)
+  Card background      →  var(--astral-color-surface-secondary)
+  Primary text         →  var(--astral-color-text-default)
+  Subtle text          →  var(--astral-color-text-subtle)
+  Border               →  var(--astral-color-border-default)
+  Hover state          →  var(--astral-color-surface-hover)
+
+SPACING CHEATSHEET (use multiples of 4):
+  Tight inline gap     →  var(--astral-units-pos-4)   = 4px
+  Default icon gap     →  var(--astral-units-pos-8)   = 8px
+  Small padding        →  var(--astral-units-pos-12)  = 12px
+  Default padding      →  var(--astral-units-pos-16)  = 16px
+  Button padding (h)   →  var(--astral-units-pos-20)  = 20px
+  Section gap          →  var(--astral-units-pos-24)  = 24px
+  Large gap            →  var(--astral-units-pos-32)  = 32px
+  Page padding         →  var(--astral-units-pos-48)  = 48px
+
+BORDER RADIUS CHEATSHEET:
+  Badges / tags        →  var(--astral-border-radius-xxs)  = 4px
+  Inputs / buttons     →  var(--astral-border-radius-xs)   = 8px
+  Cards / dialogs      →  var(--astral-border-radius-m)    = 16px
+  Pill / avatar        →  var(--astral-border-radius-full) = 9999px
+
+WHEN BUILDING A SCREEN OR COMPONENT:
+  1. Layout  → use spacing tokens for all padding/gap/margin
+  2. Color   → apply surface/text/border tokens to every element
+  3. Type    → set font-family, size, weight all from tokens
+  4. Radius  → pick the correct border-radius token for the shape
+  5. Output  → complete production-ready code, no placeholders
+
+If a component doesn't exist in Astral DS yet → build it from scratch using ONLY the token system above.
+
+OUTPUT FORMAT:
+  Prefer React with inline styles using CSS variable strings.
+  OR plain HTML + a <style> block using CSS variables.
+  Add a brief comment showing which tokens are used in each section.
+
+SELF-CHECK (run before every response):
+  □ Zero raw hex values
+  □ Zero raw pixel spacing values  
+  □ Zero raw font-size / font-weight values
+  □ Zero raw border-radius values
+  □ Every value is a var(--astral-*) token
+  If any box is unchecked → fix before sending.
+
+Ready. Ask the designer: "What would you like to build?"`;
+
+<div style={S.root}>
+<div style={S.inner}>
+
+<div style={S.eyebrow}>Guides</div>
+<h1 style={S.h1}>Design MCP</h1>
+<p style={S.lead}>
+  One prompt. Any screen. Full token consistency.<br/>
+  Share this with any designer on your team — they paste one prompt into Claude and every component they build automatically uses Astral DS colors, spacing, typography and radius. No setup. No repo. No config.
+</p>
+
+{/* ── MASTER PROMPT ───────────────────────────────────────────────── */}
+<div style={S.section}>
+  <h2 style={S.h2}>The Prompt — copy this entire block</h2>
+  <p style={S.h2sub}>Paste it at the start of any Claude conversation. One paste per session is all it takes.</p>
+  <div style={S.promptBox}>
+    <div style={S.promptHeader}>
+      <span style={S.promptLabel}>Astral DS · Master Prompt</span>
+      <span style={{ fontSize: '11px', fontFamily: '"Geist Mono", monospace', color: '#4a5568' }}>paste into any Claude chat</span>
+    </div>
+    <div style={S.promptBody}>{MASTER_PROMPT}</div>
+  </div>
+  <div style={{ fontSize: '12px', color: '#a0a0a0', marginTop: '8px' }}>
+    💡 Tip: after pasting, just describe what you want — "build a settings page" or "create a card component" — Claude does the rest.
+  </div>
+</div>
+
+<div style={S.hr} />
+
+{/* ── CLAUDE SKILL VIA REPO ───────────────────────────────────────── */}
+<div style={S.section}>
+  <h2 style={S.h2}>For developers — Claude Code skill</h2>
+  <p style={S.h2sub}>
+    The repo ships a built-in slash command at <span style={S.inlineCode}>.claude/commands/use-astral-ds.md</span>.
+    Clone the repo once and every teammate who opens Claude Code from inside it gets <span style={S.inlineCode}>/use-astral-ds</span> automatically — no sharing, no pasting, no setup.
+  </p>
+
+  <div style={{ backgroundColor: '#0f1117', borderRadius: '12px', padding: '20px 24px', marginBottom: '24px' }}>
+    <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#4a5568', fontFamily: '"Geist Mono", monospace', marginBottom: '12px' }}>Installation</div>
+    <div style={{ fontFamily: '"Geist Mono", monospace', fontSize: '12.5px', color: '#e2e8f0', lineHeight: 2 }}>
+      <div style={{ color: '#6a737d' }}># 1. Clone the repo</div>
+      <div>git clone https://github.com/Designer-duh/Astral-DS.git</div>
+      <div>cd Astral-DS</div>
+      <br/>
+      <div style={{ color: '#6a737d' }}># 2. Install dependencies</div>
+      <div>npm install</div>
+      <br/>
+      <div style={{ color: '#6a737d' }}># 3. Open Claude Code from inside this folder</div>
+      <div>claude</div>
+      <br/>
+      <div style={{ color: '#6a737d' }}># 4. In Claude Code, type the slash command</div>
+      <div style={{ color: '#95deaf' }}>/use-astral-ds</div>
+    </div>
+  </div>
+
+  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+    {[
+      { icon: '📦', title: 'Ships with the repo', desc: 'The command file is committed at .claude/commands/use-astral-ds.md — anyone who clones gets it.' },
+      { icon: '🔄', title: 'Always up to date', desc: 'The skill reads tokens.css live on each run — if tokens change, the skill is already accurate.' },
+      { icon: '✅', title: 'Self-checking output', desc: 'Claude runs an internal checklist — zero raw hex, zero raw px, zero raw fonts — before every response.' },
+      { icon: '⚡', title: 'Reads actual values', desc: 'Unlike the copy-paste prompt, the skill reads the real token file — 100% accurate on every token.' },
+    ].map(({ icon, title, desc }) => (
+      <div key={title} style={{ border: '1px solid #f0f0f0', borderRadius: '10px', padding: '16px', backgroundColor: '#fafafa' }}>
+        <div style={{ fontSize: '20px', marginBottom: '8px' }}>{icon}</div>
+        <div style={{ fontSize: '13px', fontWeight: 700, color: '#191919', marginBottom: '4px' }}>{title}</div>
+        <div style={{ fontSize: '12px', color: '#5e5e5e', lineHeight: 1.6 }}>{desc}</div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div style={S.hr} />
+
+{/* ── TEAM SETUP ──────────────────────────────────────────────────── */}
+<div style={S.section}>
+  <h2 style={S.h2}>Set it up once for your whole team</h2>
+  <p style={S.h2sub}>Create a shared Claude Project so every designer on the team never has to paste anything — it just works automatically.</p>
+
+  <div style={S.stepRow}>
+    <div style={S.stepNum}>1</div>
+    <div style={{ flex: 1 }}>
+      <div style={S.stepTitle}>Create a Claude Project</div>
+      <div style={S.stepDesc}>Go to <strong>claude.ai → Projects → New Project</strong>. Name it <span style={S.inlineCode}>Astral DS</span>. This is a shared workspace — the system prompt runs automatically before every conversation.</div>
+    </div>
+  </div>
+
+  <div style={S.stepRow}>
+    <div style={S.stepNum}>2</div>
+    <div style={{ flex: 1 }}>
+      <div style={S.stepTitle}>Paste the Master Prompt into Project Instructions</div>
+      <div style={S.stepDesc}>In the Project → click <strong>Edit Project Instructions</strong> → paste the full prompt above → save. Done. Every conversation in this project now has Astral DS context loaded automatically.</div>
+    </div>
+  </div>
+
+  <div style={S.stepRow}>
+    <div style={S.stepNum}>3</div>
+    <div style={{ flex: 1 }}>
+      <div style={S.stepTitle}>Upload tokens.css as Project Knowledge</div>
+      <div style={S.stepDesc}>
+        Click <strong>Add Content → Upload File</strong> → upload <span style={S.inlineCode}>src/tokens/tokens.css</span> from the Astral DS repo. This gives Claude the actual pixel values — not just the variable names — so output is 100% accurate even for uncommon tokens.
+      </div>
+    </div>
+  </div>
+
+  <div style={S.stepRow}>
+    <div style={S.stepNum}>4</div>
+    <div style={{ flex: 1 }}>
+      <div style={S.stepTitle}>Share the Project with your team</div>
+      <div style={S.stepDesc}>Click <strong>Share Project</strong> → invite teammates by email. They join once and from then on every chat they start inside the project is automatically Astral DS-aware. No pasting, no setup on their end.</div>
+    </div>
+  </div>
+</div>
+
+<div style={S.hr} />
+
+{/* ── RULES ───────────────────────────────────────────────────────── */}
+<div style={S.section}>
+  <h2 style={S.h2}>What Claude will and won't do</h2>
+  <p style={S.h2sub}>The prompt enforces these constraints on every single output.</p>
+  <div>
+    {[
+      { icon: '🚫', title: 'Never outputs a raw hex color', desc: 'No #191919, no rgba(), no hsl(). Every color is a CSS variable from the Astral palette.' },
+      { icon: '📐', title: 'Never outputs raw pixel spacing', desc: 'No padding: 16px, no gap: 8px. Every spacing value uses var(--astral-units-pos-*).' },
+      { icon: '🔤', title: 'Never outputs raw font values', desc: 'No font-size: 14px, no font-weight: 600. All type tokens from var(--astral-font-*).' },
+      { icon: '🔁', title: 'Self-checks before every response', desc: 'Claude runs a checklist internally — if any raw value slips through, it catches and fixes it before sending.' },
+      { icon: '🧱', title: 'Builds missing components from scratch', desc: 'No Button in the DS yet? Claude builds one using only Astral tokens — not its own defaults or assumptions.' },
+      { icon: '🎯', title: 'Brand green for CTAs, never blue', desc: 'Primary actions use var(--astral-color-brand-9). Blue (#0069FF) is for docs/links only — never product UI.' },
+    ].map(rule => (
+      <div key={rule.title} style={S.ruleCard}>
+        <div style={{ fontSize: '18px', flexShrink: 0, marginTop: '1px' }}>{rule.icon}</div>
+        <div>
+          <div style={{ fontSize: '13px', fontWeight: 700, color: '#191919', marginBottom: '3px' }}>{rule.title}</div>
+          <div style={{ fontSize: '12.5px', color: '#5e5e5e', lineHeight: 1.5 }}>{rule.desc}</div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div style={S.hr} />
+
+{/* ── EXAMPLE PROMPTS ─────────────────────────────────────────────── */}
+<div style={S.section}>
+  <h2 style={S.h2}>Example prompts to try</h2>
+  <p style={S.h2sub}>After the Astral DS prompt is loaded, just describe what you need.</p>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+    {[
+      'Build a login screen with email + password fields and a primary CTA button.',
+      'Create a dashboard card showing a metric, label, and trend indicator.',
+      'Design a mobile bottom navigation bar with 4 icon tabs and an active state.',
+      'Build a settings page with toggle switches, section headers, and a save button.',
+      'Create a notification toast in success, warning, and error variants.',
+    ].map((prompt, i) => (
+      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', padding: '14px 18px', backgroundColor: '#fafafa', borderRadius: '10px', border: '1px solid #f0f0f0' }}>
+        <span style={{ fontSize: '11px', fontWeight: 700, color: '#0069FF', fontFamily: '"Geist Mono", monospace', backgroundColor: '#EBF3FF', padding: '2px 7px', borderRadius: '4px', flexShrink: 0, marginTop: '1px' }}>
+          {String(i + 1).padStart(2, '0')}
+        </span>
+        <span style={{ fontSize: '13.5px', color: '#191919', lineHeight: 1.5 }}>{prompt}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+</div>
+</div>

@@ -10,16 +10,7 @@ const preview: Preview = {
       },
     },
     docs: {
-      toc: {
-        contentsSelector: '.sbdocs-content',
-        headingSelector: 'h1, h2, h3',
-        ignoreSelector: '#primary',
-        title: 'On this page',
-        disable: false,
-        unsafeTocbotOptions: {
-          orderedList: false,
-        },
-      },
+      toc: false,
     },
     backgrounds: {
       default: 'Light',
@@ -33,9 +24,9 @@ const preview: Preview = {
       storySort: {
         order: [
           'Guides',
-          ['Introduction', 'How to Use', 'How to Maintain', 'Contributing'],
+          ['Introduction', 'How to Use', 'Design MCP', 'Contributing'],
           'Tokens',
-          ['Colors', 'Typography', 'Border Radius'],
+          ['Colors', 'Typography', 'Spacing', 'Border Radius'],
           'Components',
         ],
       },
