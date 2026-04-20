@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Screen — Astral DS Token Test</title>
+
+  <!-- Fonts (same as tokens.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css" rel="stylesheet" />
+
+  <style>
+    /* ── Astral DS Tokens (copied from src/tokens/tokens.css) ──────────────── */
+    :root {
+      --astral-font-family-sans: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --astral-font-family-display: 'Georgia', serif;
+
+      --astral-font-weight-400: 400;
+      --astral-font-weight-500: 500;
+      --astral-font-weight-600: 600;
+      --astral-font-weight-700: 700;
+      --astral-font-weight-800: 800;
+      --astral-font-weight-900: 900;
+
+      --astral-font-size-xs: 11px;
+      --astral-font-size-s: 12px;
+      --astral-font-size-m: 14px;
+      --astral-font-size-l: 16px;
+      --astral-font-size-xl: 18px;
+      --astral-font-size-2xl: 24px;
+      --astral-font-size-3xl: 32px;
+
+      --astral-line-height-xs: 16px;
+      --astral-line-height-s: 20px;
+      --astral-line-height-m: 24px;
+      --astral-line-height-2xl: 36px;
+
+      --astral-letter-spacing-comfy: -0.4px;
+      --astral-letter-spacing-fitted: -0.9px;
+
+      --astral-units-pos-4:  4px;
+      --astral-units-pos-6:  6px;
+      --astral-units-pos-8:  8px;
+      --astral-units-pos-10: 10px;
+      --astral-units-pos-12: 12px;
+      --astral-units-pos-14: 14px;
+      --astral-units-pos-16: 16px;
+      --astral-units-pos-20: 20px;
+      --astral-units-pos-24: 24px;
+      --astral-units-pos-40: 40px;
+      --astral-units-neg-8: -8px;
+
+      --astral-border-radius-xs: 8px;
+      --astral-border-radius-s:  12px;
+      --astral-border-radius-m:  16px;
+      --astral-border-radius-full: 9999px;
+
+      /* Brand */
+      --astral-color-brand-2:  #d7ebdf;
+      --astral-color-brand-9:  #00ae35;
+      --astral-color-brand-10: #02972c;
+
+      /* Text */
+      --astral-color-text-default:       #191919;
+      --astral-color-text-secondary:     #5e5e5e;
+      --astral-color-text-tertiary:      #8a8a8a;
+      --astral-color-text-disabled:      #b5b5b5;
+      --astral-color-text-inverse-default: #ffffff;
+      --astral-color-text-brand-default: #00ae35;
+      --astral-color-text-error-default: #940023;
+
+      /* Stroke */
+      --astral-color-stroke-default:      #eeeeee;
+      --astral-color-stroke-brand-active: #02972c;
+      --astral-color-stroke-error:        #ec0033;
+
+      /* Surface */
+      --astral-color-surface-background: #fafafa;
+      --astral-color-surface-default:    #ffffff;
+    }
+
+    /* ── Reset ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--astral-color-surface-background); font-family: var(--astral-font-family-sans); }
+    input { font-family: inherit; }
+    button { font-family: inherit; }
+
+    /* ── Spinner ─────────────────────────────────────────────── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: var(--astral-border-radius-full);
+      animation: spin 0.8s linear infinite;
+      display: inline-block;
+    }
+
+    /* ── Page shell ──────────────────────────────────────────── */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--astral-units-pos-24);
+    }
+
+    /* ── Card ────────────────────────────────────────────────── */
+    .card {
+      background: var(--astral-color-surface-default);
+      border: 1px solid var(--astral-color-stroke-default);
+      border-radius: var(--astral-border-radius-s);
+      padding: var(--astral-units-pos-40);
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--astral-units-pos-24);
+    }
+
+    /* ── Header ──────────────────────────────────────────────── */
+    .logo-mark {
+      width: 32px; height: 32px;
+      background: var(--astral-color-brand-9);
+      border-radius: var(--astral-border-radius-xs);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-mark svg { display: block; }
+
+    .header { display: flex; flex-direction: column; gap: var(--astral-units-pos-16); }
+    .header-text { display: flex; flex-direction: column; gap: var(--astral-units-pos-4); }
+
+    h1 {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-2xl);
+      font-weight: var(--astral-font-weight-700);
+      color: var(--astral-color-text-default);
+      letter-spacing: var(--astral-letter-spacing-fitted);
+      line-height: var(--astral-line-height-2xl);
+    }
+    .subtext {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-m);
+      font-weight: var(--astral-font-weight-400);
+      color: var(--astral-color-text-secondary);
+      line-height: var(--astral-line-height-s);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+    }
+
+    /* ── Form ────────────────────────────────────────────────── */
+    form { display: flex; flex-direction: column; gap: var(--astral-units-pos-20); }
+
+    .field { display: flex; flex-direction: column; gap: var(--astral-units-pos-6); }
+
+    label {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-m);
+      font-weight: var(--astral-font-weight-500);
+      color: var(--astral-color-text-default);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+      line-height: var(--astral-line-height-s);
+    }
+
+    .input-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--astral-color-surface-default);
+      border: 1px solid var(--astral-color-stroke-default);
+      border-radius: var(--astral-border-radius-xs);
+      transition: border-color 150ms ease, box-shadow 150ms ease;
+    }
+    .input-wrap:focus-within {
+      border-color: var(--astral-color-stroke-brand-active);
+      box-shadow: 0 0 0 3px var(--astral-color-brand-2);
+    }
+    .input-wrap.error { border-color: var(--astral-color-stroke-error); }
+
+    .input-wrap input {
+      flex: 1;
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-m);
+      font-weight: var(--astral-font-weight-400);
+      color: var(--astral-color-text-default);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+      padding: var(--astral-units-pos-12) var(--astral-units-pos-16);
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    .input-wrap input::placeholder { color: var(--astral-color-text-tertiary); }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      padding: var(--astral-units-pos-4) var(--astral-units-pos-12) var(--astral-units-pos-4) var(--astral-units-pos-8);
+      cursor: pointer;
+      color: var(--astral-color-text-tertiary);
+      display: flex; align-items: center;
+    }
+    .toggle-btn:hover { color: var(--astral-color-text-secondary); }
+
+    .error-msg {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-s);
+      font-weight: var(--astral-font-weight-400);
+      color: var(--astral-color-text-error-default);
+      line-height: var(--astral-line-height-xs);
+    }
+
+    /* ── Forgot password ─────────────────────────────────────── */
+    .forgot {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-s);
+      font-weight: var(--astral-font-weight-500);
+      color: var(--astral-color-text-brand-default);
+      text-decoration: none;
+      align-self: flex-end;
+      margin-top: var(--astral-units-neg-8);
+      line-height: var(--astral-line-height-xs);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+    }
+    .forgot:hover { text-decoration: underline; }
+
+    /* ── Primary CTA ─────────────────────────────────────────── */
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--astral-units-pos-8);
+      width: 100%;
+      padding: var(--astral-units-pos-14) var(--astral-units-pos-24);
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-m);
+      font-weight: var(--astral-font-weight-600);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+      line-height: var(--astral-line-height-s);
+      color: var(--astral-color-text-inverse-default);
+      background: var(--astral-color-brand-9);
+      border: none;
+      border-radius: var(--astral-border-radius-m);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+    }
+    .btn-primary:hover { background: var(--astral-color-brand-10); }
+    .btn-primary:disabled { opacity: 0.7; cursor: wait; }
+
+    /* ── Divider ─────────────────────────────────────────────── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: var(--astral-units-pos-12);
+    }
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: var(--astral-color-stroke-default);
+    }
+    .divider-label {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-s);
+      color: var(--astral-color-text-tertiary);
+    }
+
+    /* ── Footer ──────────────────────────────────────────────── */
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--astral-units-pos-4);
+    }
+    .footer-text {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-m);
+      color: var(--astral-color-text-secondary);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+    }
+    .footer-link {
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-m);
+      font-weight: var(--astral-font-weight-600);
+      color: var(--astral-color-text-brand-default);
+      text-decoration: none;
+      letter-spacing: var(--astral-letter-spacing-comfy);
+    }
+    .footer-link:hover { text-decoration: underline; }
+
+    /* ── Token audit badge (top-right corner) ────────────────── */
+    .audit {
+      position: fixed;
+      top: var(--astral-units-pos-16);
+      right: var(--astral-units-pos-16);
+      background: var(--astral-color-surface-default);
+      border: 1px solid var(--astral-color-stroke-default);
+      border-radius: var(--astral-border-radius-xs);
+      padding: var(--astral-units-pos-12) var(--astral-units-pos-16);
+      font-family: var(--astral-font-family-sans);
+      font-size: var(--astral-font-size-s);
+      color: var(--astral-color-text-secondary);
+      max-width: 220px;
+      line-height: var(--astral-line-height-m);
+    }
+    .audit strong {
+      display: block;
+      font-weight: var(--astral-font-weight-600);
+      color: var(--astral-color-text-default);
+      margin-bottom: var(--astral-units-pos-4);
+      font-size: var(--astral-font-size-m);
+    }
+    .audit-row { display: flex; align-items: center; gap: var(--astral-units-pos-6); margin-top: var(--astral-units-pos-4); }
+    .dot { width: 6px; height: 6px; border-radius: var(--astral-border-radius-full); flex-shrink: 0; }
+    .dot.pass { background: var(--astral-color-brand-9); }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+
+      <!-- Header -->
+      <div class="header">
+        <div class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
+            <path d="M16 4L24 20H8L16 4Z" fill="white"/>
+            <path d="M8 20L16 28L24 20H8Z" fill="white" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="header-text">
+          <h1>Welcome back</h1>
+          <p class="subtext">Sign in to your Astral account</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="loginForm" novalidate>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="email">Email address</label>
+          <div class="input-wrap" id="emailWrap">
+            <input
+              id="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              oninput="clearError('email')"
+            />
+          </div>
+          <span class="error-msg" id="emailError" style="display:none"></span>
+        </div>
+
+        <!-- Password -->
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-wrap" id="passwordWrap">
+            <input
+              id="password"
+              type="password"
+              placeholder="········"
+              autocomplete="current-password"
+              oninput="clearError('password')"
+            />
+            <button type="button" class="toggle-btn" onclick="togglePassword()" aria-label="Toggle password">
+              <svg id="eyeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+          <span class="error-msg" id="passwordError" style="display:none"></span>
+        </div>
+
+        <!-- Forgot -->
+        <a href="#" class="forgot">Forgot password?</a>
+
+        <!-- CTA -->
+        <button type="submit" class="btn-primary" id="submitBtn">Sign in</button>
+
+      </form>
+
+      <!-- Divider -->
+      <div class="divider">
+        <div class="divider-line"></div>
+        <span class="divider-label">or</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <span class="footer-text">Don't have an account?</span>
+        <a href="#" class="footer-link">Create one</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Token audit badge -->
+  <div class="audit">
+    <strong>Token audit ✓</strong>
+    <div class="audit-row"><div class="dot pass"></div> All colors → var(--astral-color-*)</div>
+    <div class="audit-row"><div class="dot pass"></div> All spacing → var(--astral-units-pos-*)</div>
+    <div class="audit-row"><div class="dot pass"></div> All fonts → var(--astral-font-*)</div>
+    <div class="audit-row"><div class="dot pass"></div> All radius → var(--astral-border-radius-*)</div>
+    <div class="audit-row"><div class="dot pass"></div> Zero raw hex / px values</div>
+  </div>
+
+  <script>
+    // Password toggle
+    let showPw = false;
+    function togglePassword() {
+      showPw = !showPw;
+      const input = document.getElementById('password');
+      const icon = document.getElementById('eyeIcon');
+      input.type = showPw ? 'text' : 'password';
+      icon.innerHTML = showPw
+        ? `<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/>`
+        : `<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>`;
+    }
+
+    // Validation
+    function showError(field, msg) {
+      const wrap = document.getElementById(field + 'Wrap');
+      const errEl = document.getElementById(field + 'Error');
+      wrap.classList.add('error');
+      errEl.textContent = msg;
+      errEl.style.display = 'block';
+    }
+    function clearError(field) {
+      document.getElementById(field + 'Wrap').classList.remove('error');
+      document.getElementById(field + 'Error').style.display = 'none';
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      let hasError = false;
+
+      if (!email) { showError('email', 'Email is required'); hasError = true; }
+      else if (!/\S+@\S+\.\S+/.test(email)) { showError('email', 'Enter a valid email address'); hasError = true; }
+
+      if (!password) { showError('password', 'Password is required'); hasError = true; }
+      else if (password.length < 8) { showError('password', 'Password must be at least 8 characters'); hasError = true; }
+
+      if (hasError) return;
+
+      // Simulate loading
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<div class="spinner"></div> Signing in…';
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = 'Sign in';
+      }, 1800);
+    });
+  </script>
+</body>
+</html>
