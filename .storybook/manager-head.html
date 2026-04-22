@@ -1,102 +1,80 @@
 <style>
   /* ═══════════════════════════════════════════════════════════════════
-     ASTRAL DS — Storybook Sidebar Overrides
-     Nuclear option: kill all strokes/borders/shadows on every state
+     ASTRAL DS — Storybook Manager Overrides
      ═══════════════════════════════════════════════════════════════════ */
 
-  /* ── Brand logo — bumped to compensate for new SVG's internal padding ── */
+  /* ── Brand logo sizing ── */
   #root img[src*="nav-logo"] {
     height: 60px !important;
     width: auto !important;
     max-width: none !important;
   }
 
-  /* ── Icons → brand green by default ── */
-  #root svg {
-    color: #00AE35 !important;
-  }
+  /* ── SVG icons → brand green ── */
+  #root svg { color: #00AE35 !important; }
   #root [data-selected="true"] svg,
-  #root [data-selected="true"] svg * {
+  #root [data-selected="true"] svg *,
+  #root a[data-selected="true"] svg,
+  #root a[data-selected="true"] svg * {
     color: #ffffff !important;
     fill: currentColor !important;
   }
 
-  /* ── Kill ALL strokes on every sidebar item, every state ── */
-  #root a,
-  #root a *,
-  #root a:hover,
-  #root a:hover *,
-  #root a:focus,
-  #root a:focus *,
-  #root a:focus-visible,
-  #root a:focus-visible *,
-  #root a:active,
-  #root a:active *,
-  #root a::before,
-  #root a::after,
-  #root a:hover::before,
-  #root a:hover::after,
-  #root button,
-  #root button:hover,
-  #root button:focus,
-  #root button:focus-visible,
-  #root button:active,
-  #root [data-selected],
-  #root [data-selected] > *,
-  #root [data-selected]:hover,
-  #root [data-selected]:hover > *,
-  #root [data-selected="true"],
-  #root [data-selected="true"] > *,
-  #root li,
-  #root li:hover,
-  #root li > * {
+  /* ═══════════════════════════════════════════════════════════════════
+     NUCLEAR FOCUS/ACTIVE/PRESSED RING KILLER
+     Applies to EVERY element inside #root, on EVERY state.
+     This must come BEFORE the colored rules below.
+     ═══════════════════════════════════════════════════════════════════ */
+  #root *,
+  #root *::before,
+  #root *::after,
+  #root *:hover,
+  #root *:focus,
+  #root *:focus-visible,
+  #root *:focus-within,
+  #root *:active,
+  #root *:target {
     outline: 0 none transparent !important;
     outline-offset: 0 !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    outline-color: transparent !important;
     box-shadow: none !important;
-    border: 0 none transparent !important;
-    border-top: 0 none transparent !important;
-    border-bottom: 0 none transparent !important;
-    border-left: 0 none transparent !important;
-    border-right: 0 none transparent !important;
-    text-decoration: none !important;
+    border-color: transparent !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
 
-  /* ── Hover bg → soft green tint only ── */
-  #root a[href*="path="]:hover,
-  #root [data-selected]:not([data-selected="true"]):hover,
+  /* ── Hover ONLY on non-selected sidebar items → soft green tint ── */
+  #root a[href*="path="]:not([data-selected="true"]):hover,
+  #root [data-selected="false"]:hover > a,
+  #root [data-selected]:not([data-selected="true"]):hover > a,
   #root [data-selected]:not([data-selected="true"]) > a:hover {
     background-color: #F2F7F4 !important;
     color: #191919 !important;
     border-radius: 6px !important;
   }
-
-  /* ── Hovered icon stays green ── */
-  #root a[href*="path="]:hover svg,
-  #root a[href*="path="]:hover svg *,
+  #root a[href*="path="]:not([data-selected="true"]):hover svg,
   #root [data-selected]:not([data-selected="true"]) > a:hover svg {
     color: #00AE35 !important;
   }
 
-  /* ── Selected state → brand green rounded pill ── */
+  /* ── Selected state — brand green pill (stays the same on hover/focus/active) ── */
   #root [data-selected="true"] > a,
-  #root a[data-selected="true"] {
+  #root [data-selected="true"] > a:hover,
+  #root [data-selected="true"] > a:focus,
+  #root [data-selected="true"] > a:focus-visible,
+  #root [data-selected="true"] > a:active,
+  #root a[data-selected="true"],
+  #root a[data-selected="true"]:hover,
+  #root a[data-selected="true"]:focus,
+  #root a[data-selected="true"]:focus-visible,
+  #root a[data-selected="true"]:active {
     background-color: #00AE35 !important;
     color: #ffffff !important;
     border-radius: 6px !important;
   }
 
-  /* ── Universal pressed/focus kill switch — no stroke on click, ever ── */
-  #root *:focus,
-  #root *:focus-visible,
-  #root *:active,
-  #root *:focus-within {
-    outline: 0 none transparent !important;
-    outline-offset: 0 !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-  }
-
-  /* ── Kill inline blue tint backgrounds if Storybook injects them ── */
+  /* ── Strip inline Storybook blue tints if any slip through ── */
   #root [style*="rgb(235, 243, 255)"],
   #root [style*="#EBF3FF"],
   #root [style*="#ebf3ff"],
