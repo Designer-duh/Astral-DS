@@ -1,10 +1,10 @@
 <style>
-  /* ── Unselected icons — #00AE35 ── */
-  #root [data-selected]:not([data-selected="true"]) svg {
+  /* ── All sidebar SVG icons → brand green ── */
+  #root svg {
     color: #00AE35 !important;
   }
 
-  /* ── Selected icon — white ── */
+  /* ── Selected icon → white ── */
   #root [data-selected="true"] svg {
     color: #ffffff !important;
   }
@@ -17,11 +17,21 @@
     border: none !important;
   }
 
-  /* ── Hover state — #E7F1FF ── */
-  #root [data-selected]:not([data-selected="true"]) > a:hover {
+  /* ── Hover state → brand green tint ── */
+  #root [data-selected]:not([data-selected="true"]) > a:hover,
+  #root a[href*="?path="]:hover {
     background-color: #D7EBDF !important;
     color: #191919 !important;
     border-radius: 6px !important;
+  }
+
+  /* ── Any remaining blue tint backgrounds → green tint ── */
+  #root [style*="rgb(235, 243, 255)"],
+  #root [style*="#EBF3FF"],
+  #root [style*="#ebf3ff"],
+  #root [style*="rgb(231, 241, 255)"],
+  #root [style*="#E7F1FF"] {
+    background-color: #D7EBDF !important;
   }
 
   /* ── Remove all focus/active/pressed strokes ── */
