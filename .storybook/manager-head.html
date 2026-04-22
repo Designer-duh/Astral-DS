@@ -17,12 +17,20 @@
     border: none !important;
   }
 
-  /* ── Hover state → brand green tint ── */
+  /* ── Hover state → brand green tint only, no strokes ── */
   #root [data-selected]:not([data-selected="true"]) > a:hover,
-  #root a[href*="?path="]:hover {
+  #root a[href*="?path="]:hover,
+  #root a[href*="?path="]:hover *,
+  #root [data-selected]:not([data-selected="true"]) > a:hover * {
     background-color: #D7EBDF !important;
     color: #191919 !important;
     border-radius: 6px !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
   }
 
   /* ── Any remaining blue tint backgrounds → green tint ── */
