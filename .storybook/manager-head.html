@@ -75,20 +75,35 @@
     color: #00AE35 !important;
   }
 
-  /* ── Selected state → solid green pill, UNCHANGED on hover/focus/active ── */
+  /* ── Selected state → solid green pill, FROZEN on every state ── */
   #root [data-selected="true"] > a,
   #root [data-selected="true"] > a:hover,
   #root [data-selected="true"] > a:focus,
   #root [data-selected="true"] > a:focus-visible,
+  #root [data-selected="true"] > a:focus-within,
   #root [data-selected="true"] > a:active,
+  #root [data-selected="true"] > a:visited,
   #root a[data-selected="true"],
   #root a[data-selected="true"]:hover,
   #root a[data-selected="true"]:focus,
   #root a[data-selected="true"]:focus-visible,
-  #root a[data-selected="true"]:active {
+  #root a[data-selected="true"]:focus-within,
+  #root a[data-selected="true"]:active,
+  #root a[data-selected="true"]:visited,
+  #root [data-selected="true"]:hover,
+  #root [data-selected="true"]:focus,
+  #root [data-selected="true"]:focus-visible,
+  #root [data-selected="true"]:focus-within,
+  #root [data-selected="true"]:active {
     background-color: #00AE35 !important;
     color: #ffffff !important;
     border-radius: 6px !important;
+    outline: 0 none transparent !important;
+    outline-offset: 0 !important;
+    box-shadow: none !important;
+    border: 0 none transparent !important;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
   #root [data-selected="true"] svg,
   #root [data-selected="true"] svg *,
