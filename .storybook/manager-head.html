@@ -72,16 +72,23 @@
     -webkit-tap-highlight-color: transparent !important;
   }
 
-  /* ── Hover on NON-selected items → soft green tint (the good hover) ── */
-  #root a[href*="path="]:not([data-selected="true"]):hover,
-  #root [data-selected]:not([data-selected="true"]):hover,
-  #root [data-selected]:not([data-selected="true"]) > a:hover {
+  /* ── Hover on NON-selected items → soft green tint ──
+     IMPORTANT: we check data-selected on the PARENT only, never on <a> itself.
+     The <a> tag doesn't carry data-selected — the <li>/wrapper does.
+     Using a[href*="path="] without parent check causes it to fire inside
+     selected items (because the <a> itself lacks the attribute). ── */
+  #root [data-selected="false"]:hover,
+  #root [data-selected="false"] > a:hover,
+  #root [data-selected="false"] a:hover,
+  #root [data-item-id]:not([data-selected="true"]):hover,
+  #root [data-item-id]:not([data-selected="true"]) > a:hover,
+  #root [data-item-id]:not([data-selected="true"]) a:hover {
     background-color: #F2F7F4 !important;
     color: #191919 !important;
     border-radius: 6px !important;
   }
-  #root a[href*="path="]:not([data-selected="true"]):hover svg,
-  #root [data-selected]:not([data-selected="true"]) > a:hover svg {
+  #root [data-selected="false"] a:hover svg,
+  #root [data-item-id]:not([data-selected="true"]) a:hover svg {
     color: #00AE35 !important;
   }
 
