@@ -8,8 +8,8 @@ export default create({
   brandImage: '/nav-logo.svg',
   brandTarget: '_self',
 
-  colorPrimary: '#0069FF',
-  colorSecondary: '#0069FF',
+  colorPrimary: '#00AE35',
+  colorSecondary: '#00AE35',
 
   // App chrome
   appBg: '#ffffff',

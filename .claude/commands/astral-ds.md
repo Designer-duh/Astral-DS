@@ -39,11 +39,61 @@ Every design decision traces back to a CSS variable from `tokens.css`.
 - Display headings only = `var(--astral-font-family-display)`
 - Font size = `var(--astral-font-size-{xs|s|m|l|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl})`
 - Font weight = `var(--astral-font-weight-{400|500|600|700|800|900})`
+- **Mobile body text letter-spacing = always `var(--astral-letter-spacing-baggy)` (0px)**
+- **Mobile headings letter-spacing = see scale below — NEVER use `fitted` for body**
 
 ### Border Radius  
 - ❌ NEVER: `border-radius: 8px`
 - ✅ ALWAYS: `border-radius: var(--astral-border-radius-xs)`
 - Scale: none(0) → xxs(4px) → xs(8px) → s(12px) → m(16px) → l(20px) → xl(24px) → 2xl(28px) → 3xl(32px) → 4xl(40px) → full(9999px)
+
+### Card & Content Body Text — ALWAYS Medium
+- ❌ NEVER use `font-weight-400` (Regular) for body text inside cards, list items, settings rows, or any UI content area
+- ✅ ALWAYS use `font-weight-500` (Medium) for descriptive/body copy inside cards and content
+- Regular (400) is only for large editorial text (e.g. long-form paragraphs, marketing copy)
+- **Rule: subtitles, descriptions, preview text, subtext, metadata inside any card/row/panel = `var(--astral-font-weight-500)`**
+
+---
+
+## Mobile text style system (from Figma — textStyles.json)
+
+These are the exact Figma text styles mapped to Astral tokens. Always use this table for mobile screens.
+
+### Mobile Headings (Geist, Bold/700, letter-spacing varies)
+| Figma style | Size token | Letter-spacing token |
+|-------------|-----------|---------------------|
+| Mobile/Heading/XL | `--astral-font-size-7xl` (64px) | `--astral-letter-spacing-fitted` (-0.9px) |
+| Mobile/Heading/L  | `--astral-font-size-5xl` (48px) | `--astral-letter-spacing-trim` (-0.6px) |
+| Mobile/Heading/M  | `--astral-font-size-4xl` (40px) | `--astral-letter-spacing-trim` (-0.6px) |
+| Mobile/Heading/S  | `--astral-font-size-3xl` (32px) | `--astral-letter-spacing-comfy` (-0.4px) |
+| Mobile/Heading/XS | `--astral-font-size-2xl` (24px) | `--astral-letter-spacing-loose` (-0.2px) |
+| Mobile/Heading/XXS| `--astral-font-size-xl` (18px)  | `--astral-letter-spacing-baggy` (0px) |
+
+### Mobile Body (Geist, letter-spacing always 0 = `--astral-letter-spacing-baggy`)
+| Figma style | Size token | Weight token |
+|-------------|-----------|-------------|
+| Body/L-Bold | `--astral-font-size-2xl` (24px) | `--astral-font-weight-700` |
+| Body/L-Med  | `--astral-font-size-2xl` (24px) | `--astral-font-weight-500` |
+| Body/L-Reg  | `--astral-font-size-2xl` (24px) | `--astral-font-weight-400` |
+| Body/M-Bold | `--astral-font-size-xl` (18px)  | `--astral-font-weight-700` |
+| Body/M-Med  | `--astral-font-size-xl` (18px)  | `--astral-font-weight-500` |
+| Body/M-Reg  | `--astral-font-size-xl` (18px)  | `--astral-font-weight-400` |
+| Body/S-Bold | `--astral-font-size-l` (16px)   | `--astral-font-weight-700` |
+| Body/S-Med  | `--astral-font-size-l` (16px)   | `--astral-font-weight-500` |
+| Body/S-Reg  | `--astral-font-size-l` (16px)   | `--astral-font-weight-400` |
+| Body/XS-Bold| `--astral-font-size-m` (14px)   | `--astral-font-weight-700` |
+| Body/XS-Med | `--astral-font-size-m` (14px)   | `--astral-font-weight-500` |
+| Body/XS-Reg | `--astral-font-size-m` (14px)   | `--astral-font-weight-400` |
+| Body/XXS-Bold| `--astral-font-size-s` (12px)  | `--astral-font-weight-700` |
+| Body/XXS-Med | `--astral-font-size-s` (12px)  | `--astral-font-weight-500` |
+| Body/XXS-Reg | `--astral-font-size-s` (12px)  | `--astral-font-weight-400` |
+
+### Mobile Utility
+| Figma style | Tokens |
+|-------------|--------|
+| List/List-title | `font-size-l` + `font-weight-500` + `letter-spacing-baggy` |
+| Overline | `font-size-s` + `font-weight-700` + `letter-spacing-baggy` |
+| Button | `font-size-l` + `font-weight-700` + `letter-spacing-baggy` |
 
 ---
 

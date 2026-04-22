@@ -149,7 +149,7 @@ function SpacingRow({
           padding: '3px 8px',
           fontSize: '11px',
           fontFamily: '"Geist Mono", monospace',
-          color: '#0069FF',
+          color: '#00AE35',
           whiteSpace: 'nowrap',
         }}
       >

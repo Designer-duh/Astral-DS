@@ -171,6 +171,7 @@
       padding: var(--astral-units-pos-8) var(--astral-units-pos-20) var(--astral-units-pos-12);
       flex-shrink: 0;
     }
+    /* Mobile/Body/S-Med → 16px Medium 0 */
     .back-btn {
       display: flex;
       align-items: center;
@@ -182,7 +183,7 @@
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-l);
       font-weight: var(--astral-font-weight-500);
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      letter-spacing: var(--astral-letter-spacing-baggy);
       padding: 0;
     }
     .back-btn:active { opacity: 0.6; }
@@ -308,11 +309,11 @@
       color: var(--astral-color-text-default);
       letter-spacing: var(--astral-letter-spacing-baggy);
     }
-    /* Mobile/Body/XS-Reg → 14px Regular 0 */
+    /* Mobile/Body/XS-Med → 14px Medium 0 — card body text always Medium */
     .ai-banner-sub {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-m);
-      font-weight: var(--astral-font-weight-400);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-secondary);
       margin-top: var(--astral-units-pos-2);
       letter-spacing: var(--astral-letter-spacing-baggy);
@@ -405,7 +406,7 @@
       text-overflow: ellipsis;
       max-width: 200px;
     }
-    .conv-name.unread { color: var(--astral-color-text-default); font-weight: var(--astral-font-weight-700); }
+    .conv-name.unread { color: var(--astral-color-text-default); font-weight: var(--astral-font-weight-600); }
     .conv-name.read   { font-weight: var(--astral-font-weight-400); color: var(--astral-color-text-secondary); }
     .conv-time {
       font-family: var(--astral-font-family-sans);
@@ -417,7 +418,7 @@
     .conv-preview {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-s);
-      font-weight: var(--astral-font-weight-400);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-secondary);
       white-space: nowrap;
       overflow: hidden;
@@ -468,11 +469,11 @@
       color: var(--astral-color-text-default);
       letter-spacing: var(--astral-letter-spacing-loose);
     }
-    /* Mobile/Body/XS-Reg → 14px Regular 0 */
+    /* Mobile/Body/XS-Med → 14px Medium 0 — card body text always Medium */
     .profile-phone {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-m);
-      font-weight: var(--astral-font-weight-400);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-secondary);
       margin-top: var(--astral-units-pos-4);
       letter-spacing: var(--astral-letter-spacing-baggy);
@@ -511,18 +512,18 @@
       flex-shrink: 0;
     }
     .settings-row-text { flex: 1; }
-    /* Mobile/Body/S-Bold → 16px Bold 0 */
+    /* Mobile/Body/S-Med → 16px Medium 0 */
     .settings-row-title {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-l);
-      font-weight: var(--astral-font-weight-700);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-default);
       letter-spacing: var(--astral-letter-spacing-baggy);
     }
     .settings-row-sub {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-s);
-      font-weight: var(--astral-font-weight-400);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-tertiary);
       margin-top: var(--astral-units-pos-2);
     }
@@ -543,16 +544,18 @@
     }
     .support-card:hover { background: var(--astral-color-surface-hover); }
     .support-text { flex: 1; }
+    /* Mobile/Body/S-Bold → 16px Bold 0 */
     .support-title {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-l);
       font-weight: var(--astral-font-weight-700);
       color: var(--astral-color-text-default);
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
     .support-sub {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-s);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-secondary);
       margin-top: var(--astral-units-pos-4);
     }
@@ -581,22 +584,24 @@
     .personal-heading {
       text-align: center;
     }
+    /* Mobile/Heading/S → 32px Bold -0.4px */
     .personal-title {
       font-family: var(--astral-font-family-sans);
-      font-size: var(--astral-font-size-2xl);
+      font-size: var(--astral-font-size-3xl);
       font-weight: var(--astral-font-weight-700);
       color: var(--astral-color-text-default);
-      letter-spacing: var(--astral-letter-spacing-fitted);
-      line-height: var(--astral-line-height-2xl);
+      letter-spacing: var(--astral-letter-spacing-comfy);
+      line-height: var(--astral-line-height-3xl);
     }
+    /* Mobile/Body/M-Reg → 18px Regular 0 */
     .personal-sub {
       font-family: var(--astral-font-family-sans);
-      font-size: var(--astral-font-size-l);
+      font-size: var(--astral-font-size-xl);
       font-weight: var(--astral-font-weight-400);
       color: var(--astral-color-text-secondary);
       margin-top: var(--astral-units-pos-8);
-      line-height: var(--astral-line-height-m);
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      line-height: var(--astral-line-height-l);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
 
     .name-field { display: flex; flex-direction: column; gap: var(--astral-units-pos-8); }
@@ -666,12 +671,13 @@
       border-radius: var(--astral-border-radius-full);
       background: var(--astral-color-surface-default);
     }
+    /* Mobile/Body/S-Med → 16px Medium 0 */
     .gender-label {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-l);
       font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-default);
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
     .gender-emoji {
       font-size: 28px;
@@ -686,6 +692,7 @@
     }
 
     /* Confirm button */
+    /* Mobile/Button → 16px Bold 0 */
     .confirm-btn {
       width: 100%;
       padding: var(--astral-units-pos-16) var(--astral-units-pos-24);
@@ -693,8 +700,8 @@
       border: none;
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-l);
-      font-weight: var(--astral-font-weight-600);
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      font-weight: var(--astral-font-weight-700);
+      letter-spacing: var(--astral-letter-spacing-baggy);
       cursor: pointer;
       transition: all 150ms;
       margin-top: auto;
@@ -723,20 +730,24 @@
     .voice-heading {
       text-align: center;
     }
+    /* Mobile/Heading/XS → 24px Bold -0.2px */
     .voice-title {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-2xl);
       font-weight: var(--astral-font-weight-700);
       color: var(--astral-color-text-default);
-      letter-spacing: var(--astral-letter-spacing-fitted);
+      letter-spacing: var(--astral-letter-spacing-loose);
       line-height: var(--astral-line-height-2xl);
     }
+    /* Mobile/Body/M-Reg → 18px Regular 0 */
     .voice-sub {
       font-family: var(--astral-font-family-sans);
-      font-size: var(--astral-font-size-l);
+      font-size: var(--astral-font-size-xl);
+      font-weight: var(--astral-font-weight-400);
       color: var(--astral-color-text-secondary);
       margin-top: var(--astral-units-pos-8);
-      line-height: var(--astral-line-height-m);
+      line-height: var(--astral-line-height-l);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
 
     /* Voice avatars */
@@ -812,12 +823,13 @@
     }
     .voice-check.visible { opacity: 1; transform: scale(1); }
 
+    /* Mobile/Body/XS-Med → 14px Medium 0 */
     .voice-name {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-m);
-      font-weight: var(--astral-font-weight-600);
+      font-weight: var(--astral-font-weight-500);
       color: var(--astral-color-text-secondary);
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
 
     /* Voice preview card */
@@ -852,12 +864,13 @@
     .wave-bar:nth-child(6) { height: 14px; animation-delay: 0.25s; }
     .wave-bar:nth-child(7) { height: 8px;  animation-delay: 0.05s; }
 
+    /* Mobile/Body/L-Bold → 24px Bold 0 */
     .voice-preview-greeting {
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-2xl);
       font-weight: var(--astral-font-weight-700);
       color: var(--astral-color-text-default);
-      letter-spacing: var(--astral-letter-spacing-fitted);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
     .voice-preview-text {
       font-family: var(--astral-font-family-sans);
@@ -887,6 +900,7 @@
     .pause-btn:active { transform: scale(0.93); }
 
     /* Proceed button */
+    /* Mobile/Button → 16px Bold 0 */
     .proceed-btn {
       width: 100%;
       padding: var(--astral-units-pos-16) var(--astral-units-pos-24);
@@ -894,13 +908,13 @@
       border: none;
       font-family: var(--astral-font-family-sans);
       font-size: var(--astral-font-size-l);
-      font-weight: var(--astral-font-weight-600);
+      font-weight: var(--astral-font-weight-700);
       color: var(--astral-color-text-inverse-default);
       background: var(--astral-color-brand-9);
       cursor: pointer;
       transition: background 150ms;
       margin-top: auto;
-      letter-spacing: var(--astral-letter-spacing-comfy);
+      letter-spacing: var(--astral-letter-spacing-baggy);
     }
     .proceed-btn:hover { background: var(--astral-color-brand-10); }
     .proceed-btn:active { transform: scale(0.98); }

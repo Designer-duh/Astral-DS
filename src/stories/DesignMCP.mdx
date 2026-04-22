@@ -14,7 +14,7 @@ export const S = {
   section: { marginBottom: '56px' },
   inlineCode: { fontFamily: '"Geist Mono", monospace', fontSize: '12px', backgroundColor: '#f4f4f4', padding: '2px 7px', borderRadius: '4px', color: '#191919' },
   stepRow: { display: 'flex', gap: '16px', alignItems: 'flex-start', marginBottom: '24px' },
-  stepNum: { width: '28px', height: '28px', borderRadius: '50%', backgroundColor: '#0069FF', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700, flexShrink: 0, marginTop: '2px' },
+  stepNum: { width: '28px', height: '28px', borderRadius: '50%', backgroundColor: '#00AE35', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700, flexShrink: 0, marginTop: '2px' },
   stepTitle: { fontSize: '14px', fontWeight: 700, color: '#191919', marginBottom: '4px' },
   stepDesc: { fontSize: '13px', color: '#5e5e5e', lineHeight: 1.7 },
   promptBox: { backgroundColor: '#0f1117', borderRadius: '12px', overflow: 'hidden', marginBottom: '8px' },
@@ -22,7 +22,7 @@ export const S = {
   promptLabel: { fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#4a5568', fontFamily: '"Geist Mono", monospace' },
   promptBody: { padding: '20px 24px', fontFamily: '"Geist Mono", monospace', fontSize: '12px', color: '#e2e8f0', lineHeight: 1.9, whiteSpace: 'pre-wrap', wordBreak: 'break-word' },
   ruleCard: { border: '1px solid #f0f0f0', borderRadius: '10px', padding: '14px 18px', marginBottom: '8px', display: 'flex', gap: '12px', alignItems: 'flex-start' },
-  tokenItem: { fontSize: '11.5px', fontFamily: '"Geist Mono", monospace', color: '#0069FF', backgroundColor: '#EBF3FF', padding: '3px 8px', borderRadius: '5px', width: 'fit-content', display: 'inline-block' },
+  tokenItem: { fontSize: '11.5px', fontFamily: '"Geist Mono", monospace', color: '#00AE35', backgroundColor: '#d7ebdf', padding: '3px 8px', borderRadius: '5px', width: 'fit-content', display: 'inline-block' },
 };
 
 export const MASTER_PROMPT = `You are a UI engineer building screens for the Astral Design System.
@@ -245,7 +245,7 @@ Ready. Ask the designer: "What would you like to build?"`;
       'Create a notification toast in success, warning, and error variants.',
     ].map((prompt, i) => (
       <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', padding: '14px 18px', backgroundColor: '#fafafa', borderRadius: '10px', border: '1px solid #f0f0f0' }}>
-        <span style={{ fontSize: '11px', fontWeight: 700, color: '#0069FF', fontFamily: '"Geist Mono", monospace', backgroundColor: '#EBF3FF', padding: '2px 7px', borderRadius: '4px', flexShrink: 0, marginTop: '1px' }}>
+        <span style={{ fontSize: '11px', fontWeight: 700, color: '#00AE35', fontFamily: '"Geist Mono", monospace', backgroundColor: '#d7ebdf', padding: '2px 7px', borderRadius: '4px', flexShrink: 0, marginTop: '1px' }}>
           {String(i + 1).padStart(2, '0')}
         </span>
         <span style={{ fontSize: '13.5px', color: '#191919', lineHeight: 1.5 }}>{prompt}</span>
