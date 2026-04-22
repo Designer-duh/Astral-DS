@@ -144,7 +144,7 @@ function SpacingRow({
           display: 'inline-flex',
           alignItems: 'center',
           width: 'fit-content',
-          backgroundColor: '#EBF3FF',
+          backgroundColor: '#D7EBDF',
           borderRadius: '6px',
           padding: '3px 8px',
           fontSize: '11px',
