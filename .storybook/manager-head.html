@@ -85,6 +85,17 @@
     border-radius: 6px !important;
   }
 
+  /* ── Universal pressed/focus kill switch — no stroke on click, ever ── */
+  #root *:focus,
+  #root *:focus-visible,
+  #root *:active,
+  #root *:focus-within {
+    outline: 0 none transparent !important;
+    outline-offset: 0 !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
   /* ── Kill inline blue tint backgrounds if Storybook injects them ── */
   #root [style*="rgb(235, 243, 255)"],
   #root [style*="#EBF3FF"],
