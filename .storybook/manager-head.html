@@ -85,27 +85,32 @@
     color: #00AE35 !important;
   }
 
-  /* ── Selected state → solid green pill, FROZEN on every state ── */
-  #root [data-selected="true"] > a,
-  #root [data-selected="true"] > a:hover,
-  #root [data-selected="true"] > a:focus,
-  #root [data-selected="true"] > a:focus-visible,
-  #root [data-selected="true"] > a:focus-within,
-  #root [data-selected="true"] > a:active,
-  #root [data-selected="true"] > a:visited,
-  #root a[data-selected="true"],
-  #root a[data-selected="true"]:hover,
-  #root a[data-selected="true"]:focus,
-  #root a[data-selected="true"]:focus-visible,
-  #root a[data-selected="true"]:focus-within,
-  #root a[data-selected="true"]:active,
-  #root a[data-selected="true"]:visited,
-  #root [data-selected="true"]:hover,
-  #root [data-selected="true"]:focus,
-  #root [data-selected="true"]:focus-visible,
-  #root [data-selected="true"]:focus-within,
-  #root [data-selected="true"]:active {
+  /* ── Selected state → solid green pill, FROZEN on every state ──
+     Note: html body prefix raises specificity above Storybook's Emotion CSS ── */
+  html body #root [data-selected="true"],
+  html body #root [data-selected="true"]:hover,
+  html body #root [data-selected="true"]:focus,
+  html body #root [data-selected="true"]:focus-visible,
+  html body #root [data-selected="true"]:focus-within,
+  html body #root [data-selected="true"]:active,
+  html body #root [data-selected="true"] > a,
+  html body #root [data-selected="true"] > a:hover,
+  html body #root [data-selected="true"] > a:focus,
+  html body #root [data-selected="true"] > a:focus-visible,
+  html body #root [data-selected="true"] > a:focus-within,
+  html body #root [data-selected="true"] > a:active,
+  html body #root [data-selected="true"] > a:visited,
+  html body #root a[data-selected="true"],
+  html body #root a[data-selected="true"]:hover,
+  html body #root a[data-selected="true"]:focus,
+  html body #root a[data-selected="true"]:focus-visible,
+  html body #root a[data-selected="true"]:focus-within,
+  html body #root a[data-selected="true"]:active,
+  html body #root a[data-selected="true"]:visited,
+  html body #root button[data-selected="true"],
+  html body #root button[data-selected="true"]:hover {
     background-color: #00AE35 !important;
+    background-image: none !important;
     color: #ffffff !important;
     border-radius: 6px !important;
     outline: 0 none transparent !important;
@@ -114,6 +119,31 @@
     border: 0 none transparent !important;
     text-decoration: none !important;
     -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* ── Kill any Storybook selected-hover inline style override ── */
+  html body #root [data-selected="true"]:hover *,
+  html body #root [data-selected="true"] > a:hover *,
+  html body #root a[data-selected="true"]:hover * {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    outline: 0 none transparent !important;
+    box-shadow: none !important;
+    border: 0 none transparent !important;
+  }
+
+  /* ── Selected svg icons stay white even on hover ── */
+  html body #root [data-selected="true"] svg,
+  html body #root [data-selected="true"]:hover svg,
+  html body #root [data-selected="true"] > a svg,
+  html body #root [data-selected="true"] > a:hover svg,
+  html body #root a[data-selected="true"] svg,
+  html body #root a[data-selected="true"]:hover svg,
+  html body #root [data-selected="true"] svg *,
+  html body #root [data-selected="true"]:hover svg * {
+    color: #ffffff !important;
+    fill: currentColor !important;
   }
   #root [data-selected="true"] svg,
   #root [data-selected="true"] svg *,
