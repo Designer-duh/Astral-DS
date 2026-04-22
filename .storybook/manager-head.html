@@ -4,6 +4,13 @@
      Nuclear option: kill all strokes/borders/shadows on every state
      ═══════════════════════════════════════════════════════════════════ */
 
+  /* ── Brand logo — lock to same height as original nav-logo (312×75 → ~22px tall) ── */
+  #root img[src*="nav-logo"] {
+    height: 22px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
   /* ── Icons → brand green by default ── */
   #root svg {
     color: #00AE35 !important;
