@@ -1,74 +1,89 @@
 <style>
-  /* ── All sidebar SVG icons → brand green ── */
+  /* ═══════════════════════════════════════════════════════════════════
+     ASTRAL DS — Storybook Sidebar Overrides
+     Nuclear option: kill all strokes/borders/shadows on every state
+     ═══════════════════════════════════════════════════════════════════ */
+
+  /* ── Icons → brand green by default ── */
   #root svg {
     color: #00AE35 !important;
   }
-
-  /* ── Selected icon → white ── */
-  #root [data-selected="true"] svg {
+  #root [data-selected="true"] svg,
+  #root [data-selected="true"] svg * {
     color: #ffffff !important;
+    fill: currentColor !important;
   }
 
-  /* ── Selected state — rounded corners, no stroke ── */
-  #root [data-selected="true"] > a {
-    border-radius: 6px !important;
-    outline: none !important;
+  /* ── Kill ALL strokes on every sidebar item, every state ── */
+  #root a,
+  #root a *,
+  #root a:hover,
+  #root a:hover *,
+  #root a:focus,
+  #root a:focus *,
+  #root a:focus-visible,
+  #root a:focus-visible *,
+  #root a:active,
+  #root a:active *,
+  #root a::before,
+  #root a::after,
+  #root a:hover::before,
+  #root a:hover::after,
+  #root button,
+  #root button:hover,
+  #root button:focus,
+  #root button:focus-visible,
+  #root button:active,
+  #root [data-selected],
+  #root [data-selected] > *,
+  #root [data-selected]:hover,
+  #root [data-selected]:hover > *,
+  #root [data-selected="true"],
+  #root [data-selected="true"] > *,
+  #root li,
+  #root li:hover,
+  #root li > * {
+    outline: 0 none transparent !important;
+    outline-offset: 0 !important;
     box-shadow: none !important;
-    border: none !important;
-  }
-
-  /* ── Hover state → very soft green tint, no strokes anywhere ── */
-  #root [data-selected]:not([data-selected="true"]) > a:hover,
-  #root a[href*="?path="]:hover,
-  #root a[href*="?path="]:hover *,
-  #root [data-selected]:not([data-selected="true"]) > a:hover *,
-  #root li:has(a[href*="?path="]:hover),
-  #root li:has(a[href*="?path="]:hover) * {
-    background-color: #F2F7F4 !important;
-    color: #191919 !important;
-    border-radius: 6px !important;
-    border: 0 none #F2F7F4 !important;
-    border-top: 0 none #F2F7F4 !important;
-    border-bottom: 0 none #F2F7F4 !important;
-    border-left: 0 none #F2F7F4 !important;
-    border-right: 0 none #F2F7F4 !important;
-    outline: 0 none #F2F7F4 !important;
-    box-shadow: none !important;
+    border: 0 none transparent !important;
+    border-top: 0 none transparent !important;
+    border-bottom: 0 none transparent !important;
+    border-left: 0 none transparent !important;
+    border-right: 0 none transparent !important;
     text-decoration: none !important;
   }
 
-  /* ── Icons inside hovered items keep green for contrast ── */
-  #root a[href*="?path="]:hover svg,
-  #root [data-selected]:not([data-selected="true"]) > a:hover svg {
-    color: #00AE35 !important;
-    background: transparent !important;
+  /* ── Hover bg → soft green tint only ── */
+  #root a[href*="path="]:hover,
+  #root [data-selected]:not([data-selected="true"]):hover,
+  #root [data-selected]:not([data-selected="true"]) > a:hover {
+    background-color: #F2F7F4 !important;
+    color: #191919 !important;
+    border-radius: 6px !important;
   }
 
-  /* ── Any remaining blue tint backgrounds → green tint ── */
+  /* ── Hovered icon stays green ── */
+  #root a[href*="path="]:hover svg,
+  #root a[href*="path="]:hover svg *,
+  #root [data-selected]:not([data-selected="true"]) > a:hover svg {
+    color: #00AE35 !important;
+  }
+
+  /* ── Selected state → brand green rounded pill ── */
+  #root [data-selected="true"] > a,
+  #root a[data-selected="true"] {
+    background-color: #00AE35 !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+  }
+
+  /* ── Kill inline blue tint backgrounds if Storybook injects them ── */
   #root [style*="rgb(235, 243, 255)"],
   #root [style*="#EBF3FF"],
   #root [style*="#ebf3ff"],
   #root [style*="rgb(231, 241, 255)"],
   #root [style*="#E7F1FF"] {
-    background-color: #D7EBDF !important;
-  }
-
-  /* ── Remove all focus/active/pressed strokes ── */
-  #root a[href*="?path="]:focus,
-  #root a[href*="?path="]:active,
-  #root a[href*="?path="]:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-
-  /* ── Kill hover borders ── */
-  #root a[href*="?path="]:hover,
-  #root a[href*="?path="]:hover *,
-  #root div:has(> a[href*="?path="]:hover),
-  #root li:has(a[href*="?path="]:hover) {
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    background-color: #F2F7F4 !important;
   }
 </style>
