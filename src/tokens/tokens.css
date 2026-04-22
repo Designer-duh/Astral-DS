@@ -310,49 +310,737 @@
   /* ----------------------------------------------------------
      Semantic Colors — Text (Light Mode)
      ---------------------------------------------------------- */
-  --astral-color-text-default: #191919;         /* Grey.15 */
-  --astral-color-text-secondary: #5e5e5e;       /* Grey.12 */
-  --astral-color-text-tertiary: #8a8a8a;        /* Grey.10 */
-  --astral-color-text-disabled: #b5b5b5;        /* Grey.8  */
-  --astral-color-text-inverse-default: #ffffff;   /* Grey.1  */
-  --astral-color-text-inverse-secondary: #fafafa; /* Grey.2  */
-  --astral-color-text-inverse-tertiary: #eeeeee;  /* Grey.4  */
-  --astral-color-text-brand-default: #00ae35;   /* Brand.9  = Green.9  */
-  --astral-color-text-brand-secondary: #054210; /* Brand.14 = Green.14 */
-  --astral-color-text-success-default: #055716; /* Green.13 */
-  --astral-color-text-error-default: #940023;   /* Red.11   */
-  --astral-color-text-warning-default: #8d3200; /* Yellow.10 */
+  --astral-color-text-default: #191919;            /* Grey.15 */
+  --astral-color-text-secondary: #5e5e5e;          /* Grey.12 */
+  --astral-color-text-tertiary: #8a8a8a;           /* Grey.10 */
+  --astral-color-text-disabled: #b5b5b5;           /* Grey.8  */
+  --astral-color-text-inverse-default: #ffffff;    /* Grey.1  */
+  --astral-color-text-inverse-secondary: #fafafa;  /* Grey.2  */
+  --astral-color-text-inverse-tertiary: #eeeeee;   /* Grey.4  */
+  --astral-color-text-brand-default: #00ae35;      /* Brand.9  */
+  --astral-color-text-brand-secondary: #054210;    /* Brand.14 */
+  --astral-color-text-success-default: #055716;    /* Green.13 */
+  --astral-color-text-error-default: #940023;      /* Red.11   */
+  --astral-color-text-warning-default: #8d3200;    /* Yellow.10 */
 
   /* ----------------------------------------------------------
      Semantic Colors — Stroke / Border (Light Mode)
      ---------------------------------------------------------- */
-  --astral-color-stroke-subtle: #f4f4f4;        /* Grey.3  */
-  --astral-color-stroke-default: #eeeeee;       /* Grey.4  */
-  --astral-color-stroke-medium: #c9c9c9;        /* Grey.7  */
-  --astral-color-stroke-hover: #d9d9d9;         /* Grey.6  */
-  --astral-color-stroke-pressed: #eeeeee;       /* Grey.4  */
-  --astral-color-stroke-disabled: #d9d9d9;      /* Grey.6  */
-  --astral-color-stroke-white: #ffffff;         /* Grey.1  */
-  --astral-color-stroke-brand: #d7ebdf;         /* Brand.2 = Green.2 */
-  --astral-color-stroke-brand-active: #02972c;  /* Brand.10 = Green.10 */
-  --astral-color-stroke-success: #00ae35;       /* Green.9 */
-  --astral-color-stroke-error: #ec0033;         /* Red.9   */
-  --astral-color-stroke-warning: #cd4b00;       /* Yellow.9 */
+  --astral-color-stroke-subtle: #f4f4f4;           /* Grey.3  */
+  --astral-color-stroke-default: #eeeeee;          /* Grey.4  */
+  --astral-color-stroke-medium: #c9c9c9;           /* Grey.7  */
+  --astral-color-stroke-hover: #d9d9d9;            /* Grey.6  */
+  --astral-color-stroke-pressed: #eeeeee;          /* Grey.4  */
+  --astral-color-stroke-disabled: #d9d9d9;         /* Grey.6  */
+  --astral-color-stroke-white: #ffffff;            /* Grey.1  */
+  --astral-color-stroke-brand: #d7ebdf;            /* Brand.2  */
+  --astral-color-stroke-brand-active: #02972c;     /* Brand.10 */
+  --astral-color-stroke-success: #00ae35;          /* Green.9  */
+  --astral-color-stroke-error: #ec0033;            /* Red.9    */
+  --astral-color-stroke-warning: #cd4b00;          /* Yellow.9 */
 
   /* ----------------------------------------------------------
      Semantic Colors — Surface (Light Mode)
      ---------------------------------------------------------- */
-  --astral-color-surface-background: #fafafa;          /* Grey.2 */
-  --astral-color-surface-default: #ffffff;              /* Grey.1 */
-  --astral-color-surface-hover: #f4f4f4;                /* Grey.3 */
-  --astral-color-surface-pressed: #e5e5e5;              /* Grey.5 */
-  --astral-color-surface-selected: #eeeeee;             /* Grey.4 */
-  --astral-color-surface-disabled: #f4f4f4;             /* Grey.3 */
-  --astral-color-surface-secondary-default: #ffffff;    /* Grey.1 */
-  --astral-color-surface-secondary-hover: #eeeeee;      /* Grey.4 */
-  --astral-color-surface-inverse-default: #191919;      /* Grey.15 */
-  --astral-color-surface-inverse-hover: #2c2c2c;        /* Grey.14 */
-  --astral-color-surface-inverse-pressed: #424242;      /* Grey.13 */
-  --astral-color-surface-inverse-selected: #5e5e5e;     /* Grey.12 */
-  --astral-color-surface-inverse-disabled: #747474;     /* Grey.11 */
+  --astral-color-surface-background: #fafafa;                   /* Grey.2  */
+  --astral-color-surface-default: #ffffff;                       /* Grey.1  */
+  --astral-color-surface-hover: #f4f4f4;                         /* Grey.3  */
+  --astral-color-surface-pressed: #e5e5e5;                       /* Grey.5  */
+  --astral-color-surface-selected: #eeeeee;                      /* Grey.4  */
+  --astral-color-surface-disabled: #f4f4f4;                      /* Grey.3  */
+
+  --astral-color-surface-secondary-default: #fafafa;             /* Grey.2  */
+  --astral-color-surface-secondary-hover: #eeeeee;               /* Grey.4  */
+  --astral-color-surface-secondary-pressed: #d9d9d9;             /* Grey.6  */
+  --astral-color-surface-secondary-selected: #e5e5e5;            /* Grey.5  */
+  --astral-color-surface-secondary-disabled: #eeeeee;            /* Grey.4  */
+
+  --astral-color-surface-tertiary-default: #eeeeee;              /* Grey.4  */
+  --astral-color-surface-tertiary-hover: #e5e5e5;                /* Grey.5  */
+  --astral-color-surface-tertiary-pressed: #c9c9c9;              /* Grey.7  */
+  --astral-color-surface-tertiary-selected: #d9d9d9;             /* Grey.6  */
+  --astral-color-surface-tertiary-disabled: #e5e5e5;             /* Grey.5  */
+
+  --astral-color-surface-brand-default: #f2f7f4;                 /* Brand.1  */
+  --astral-color-surface-brand-hover: #d7ebdf;                   /* Brand.2  */
+  --astral-color-surface-brand-pressed: #95deaf;                 /* Brand.4  */
+  --astral-color-surface-brand-selected: #f2f7f4;                /* Brand.1  */
+  --astral-color-surface-brand-disabled: #b8e3c8;                /* Brand.3  */
+
+  --astral-color-surface-brand-secondary-default: #d7ebdf;       /* Brand.2  */
+  --astral-color-surface-brand-secondary-hover: #b8e3c8;         /* Brand.3  */
+  --astral-color-surface-brand-secondary-pressed: #6fdd95;       /* Brand.5  */
+  --astral-color-surface-brand-secondary-selected: #d7ebdf;      /* Brand.2  */
+  --astral-color-surface-brand-secondary-disabled: #95deaf;      /* Brand.4  */
+
+  --astral-color-surface-brand-tertiary-default: #00ae35;        /* Brand.9  */
+  --astral-color-surface-brand-tertiary-hover: #056c1d;          /* Brand.12 */
+  --astral-color-surface-brand-tertiary-pressed: #054210;        /* Brand.14 */
+  --astral-color-surface-brand-tertiary-selected: #00ae35;       /* Brand.9  */
+  --astral-color-surface-brand-tertiary-disabled: #6fdd95;       /* Brand.5  */
+
+  --astral-color-surface-brand-quaternary-default: #056c1d;      /* Brand.12 */
+
+  --astral-color-surface-neutral-default: #e5e5e5;               /* Grey.5  */
+  --astral-color-surface-neutral-secondary: #5e5e5e;             /* Grey.12 */
+  --astral-color-surface-neutral-tertiary: #2c2c2c;              /* Grey.14 */
+
+  --astral-color-surface-success-default: #d7ebdf;               /* Green.2  */
+  --astral-color-surface-success-secondary: #00ae35;             /* Green.9  */
+  --astral-color-surface-success-tertiary: #056c1d;              /* Green.12 */
+
+  --astral-color-surface-error-default: #fce9ea;                 /* Red.2   */
+  --astral-color-surface-error-secondary: #ec0033;               /* Red.9   */
+  --astral-color-surface-error-tertiary: #740018;                /* Red.12  */
+
+  --astral-color-surface-warning-default: #f6ede0;               /* Yellow.2  */
+  --astral-color-surface-warning-secondary: #cd4b00;             /* Yellow.9  */
+  --astral-color-surface-warning-tertiary: #541700;              /* Yellow.12 */
+
+  --astral-color-surface-inverse-default: #141414;               /* Grey.16 */
+  --astral-color-surface-inverse-hover: #2c2c2c;                 /* Grey.14 */
+  --astral-color-surface-inverse-pressed: #424242;               /* Grey.13 */
+  --astral-color-surface-inverse-selected: #5e5e5e;              /* Grey.12 */
+  --astral-color-surface-inverse-disabled: #747474;              /* Grey.11 */
+
+  --astral-color-surface-inverse-secondary-default: #191919;     /* Grey.15 */
+  --astral-color-surface-inverse-secondary-hover: #424242;       /* Grey.13 */
+  --astral-color-surface-inverse-secondary-pressed: #5e5e5e;     /* Grey.12 */
+  --astral-color-surface-inverse-secondary-selected: #747474;    /* Grey.11 */
+  --astral-color-surface-inverse-secondary-disabled: #8a8a8a;    /* Grey.10 */
+
+  --astral-color-surface-inverse-tertiary-default: #424242;      /* Grey.13 */
+  --astral-color-surface-inverse-tertiary-hover: #5e5e5e;        /* Grey.12 */
+  --astral-color-surface-inverse-tertiary-pressed: #747474;      /* Grey.11 */
+  --astral-color-surface-inverse-tertiary-selected: #8a8a8a;     /* Grey.10 */
+  --astral-color-surface-inverse-tertiary-disabled: #a0a0a0;     /* Grey.9  */
+}
+
+/* ============================================================
+   Dark Mode — semantic overrides
+   Apply via `<html data-theme="dark">` or `.dark` wrapper.
+   Primitives, fonts, units, and radii stay identical.
+   ============================================================ */
+[data-theme='dark'],
+.dark {
+  /* Text */
+  --astral-color-text-default: #fafafa;            /* Grey.2  */
+  --astral-color-text-secondary: #e5e5e5;          /* Grey.5  */
+  --astral-color-text-tertiary: #d9d9d9;           /* Grey.6  */
+  --astral-color-text-disabled: #b5b5b5;           /* Grey.8  */
+  --astral-color-text-inverse-default: #141414;    /* Grey.16 */
+  --astral-color-text-inverse-secondary: #191919;  /* Grey.15 */
+  --astral-color-text-inverse-tertiary: #424242;   /* Grey.13 */
+  --astral-color-text-brand-default: #00ae35;      /* Brand.9  */
+  --astral-color-text-brand-secondary: #b8e3c8;    /* Brand.3  */
+  --astral-color-text-success-default: #95deaf;    /* Green.4  */
+  --astral-color-text-error-default: #f1979f;      /* Red.6    */
+  --astral-color-text-warning-default: #d19942;    /* Yellow.7 */
+
+  /* Stroke */
+  --astral-color-stroke-subtle: #2c2c2c;           /* Grey.14 */
+  --astral-color-stroke-default: #424242;          /* Grey.13 */
+  --astral-color-stroke-medium: #8a8a8a;           /* Grey.10 */
+  --astral-color-stroke-hover: #747474;            /* Grey.11 */
+  --astral-color-stroke-pressed: #424242;          /* Grey.13 */
+  --astral-color-stroke-disabled: #747474;         /* Grey.11 */
+  --astral-color-stroke-white: #141414;            /* Grey.16 */
+  --astral-color-stroke-brand: #042f0b;            /* Brand.15 */
+  --astral-color-stroke-brand-active: #02972c;     /* Brand.10 */
+  --astral-color-stroke-success: #00ae35;          /* Green.9  */
+  --astral-color-stroke-error: #ec0033;            /* Red.9    */
+  --astral-color-stroke-warning: #cd4b00;          /* Yellow.9 */
+
+  /* Surface */
+  --astral-color-surface-background: #191919;                    /* Grey.15 */
+  --astral-color-surface-default: #141414;                        /* Grey.16 */
+  --astral-color-surface-hover: #2c2c2c;                          /* Grey.14 */
+  --astral-color-surface-pressed: #5e5e5e;                        /* Grey.12 */
+  --astral-color-surface-selected: #424242;                       /* Grey.13 */
+  --astral-color-surface-disabled: #2c2c2c;                       /* Grey.14 */
+
+  --astral-color-surface-secondary-default: #191919;              /* Grey.15 */
+  --astral-color-surface-secondary-hover: #424242;                /* Grey.13 */
+  --astral-color-surface-secondary-pressed: #747474;              /* Grey.11 */
+  --astral-color-surface-secondary-selected: #5e5e5e;             /* Grey.12 */
+  --astral-color-surface-secondary-disabled: #424242;             /* Grey.13 */
+
+  --astral-color-surface-tertiary-default: #424242;               /* Grey.13 */
+  --astral-color-surface-tertiary-hover: #5e5e5e;                 /* Grey.12 */
+  --astral-color-surface-tertiary-pressed: #8a8a8a;               /* Grey.10 */
+  --astral-color-surface-tertiary-selected: #747474;              /* Grey.11 */
+  --astral-color-surface-tertiary-disabled: #5e5e5e;              /* Grey.12 */
+
+  --astral-color-surface-brand-default: #031c06;                  /* Brand.16 */
+  --astral-color-surface-brand-hover: #042f0b;                    /* Brand.15 */
+  --astral-color-surface-brand-pressed: #055716;                  /* Brand.13 */
+  --astral-color-surface-brand-selected: #031c06;                 /* Brand.16 */
+  --astral-color-surface-brand-disabled: #054210;                 /* Brand.14 */
+
+  --astral-color-surface-brand-secondary-default: #042f0b;        /* Brand.15 */
+  --astral-color-surface-brand-secondary-hover: #054210;          /* Brand.14 */
+  --astral-color-surface-brand-secondary-pressed: #056c1d;        /* Brand.12 */
+  --astral-color-surface-brand-secondary-selected: #042f0b;       /* Brand.15 */
+  --astral-color-surface-brand-secondary-disabled: #055716;       /* Brand.13 */
+
+  --astral-color-surface-brand-tertiary-default: #00ae35;         /* Brand.9  */
+  --astral-color-surface-brand-tertiary-hover: #95deaf;           /* Brand.4  */
+  --astral-color-surface-brand-tertiary-pressed: #b8e3c8;         /* Brand.3  */
+  --astral-color-surface-brand-tertiary-selected: #00ae35;        /* Brand.9  */
+  --astral-color-surface-brand-tertiary-disabled: #056c1d;        /* Brand.12 */
+
+  --astral-color-surface-brand-quaternary-default: #6fdd95;       /* Brand.5  */
+
+  --astral-color-surface-neutral-default: #5e5e5e;                /* Grey.12 */
+  --astral-color-surface-neutral-secondary: #e5e5e5;              /* Grey.5  */
+  --astral-color-surface-neutral-tertiary: #2c2c2c;               /* Grey.14 */
+
+  --astral-color-surface-success-default: #042f0b;                /* Green.15 */
+  --astral-color-surface-success-secondary: #00ae35;              /* Green.9  */
+  --astral-color-surface-success-tertiary: #95deaf;               /* Green.4  */
+
+  --astral-color-surface-error-default: #1d0004;                  /* Red.15 */
+  --astral-color-surface-error-secondary: #ec0033;                /* Red.9  */
+  --astral-color-surface-error-tertiary: #f4b4b9;                 /* Red.5  */
+
+  --astral-color-surface-warning-default: #150500;                /* Yellow.15 */
+  --astral-color-surface-warning-secondary: #cd4b00;              /* Yellow.9  */
+  --astral-color-surface-warning-tertiary: #eacc9f;               /* Yellow.5  */
+
+  --astral-color-surface-inverse-default: #ffffff;                /* Grey.1  */
+  --astral-color-surface-inverse-hover: #f4f4f4;                  /* Grey.3  */
+  --astral-color-surface-inverse-pressed: #f4f4f4;                /* Grey.3  */
+  --astral-color-surface-inverse-selected: #e5e5e5;               /* Grey.5  */
+  --astral-color-surface-inverse-disabled: #d9d9d9;               /* Grey.6  */
+
+  --astral-color-surface-inverse-secondary-default: #fafafa;      /* Grey.2  */
+  --astral-color-surface-inverse-secondary-hover: #eeeeee;        /* Grey.4  */
+  --astral-color-surface-inverse-secondary-pressed: #e5e5e5;      /* Grey.5  */
+  --astral-color-surface-inverse-secondary-selected: #e5e5e5;     /* Grey.5  */
+  --astral-color-surface-inverse-secondary-disabled: #c9c9c9;     /* Grey.7  */
+
+  --astral-color-surface-inverse-tertiary-default: #eeeeee;       /* Grey.4  */
+  --astral-color-surface-inverse-tertiary-hover: #e5e5e5;         /* Grey.5  */
+  --astral-color-surface-inverse-tertiary-pressed: #d9d9d9;       /* Grey.6  */
+  --astral-color-surface-inverse-tertiary-selected: #c9c9c9;      /* Grey.7  */
+  --astral-color-surface-inverse-tertiary-disabled: #b5b5b5;      /* Grey.8  */
+}
+
+/* ============================================================
+   Text Styles — composed tokens (from Figma textStyles.json)
+   Each style bundles: font-family + font-weight + font-size + letter-spacing.
+   Use the utility class (.astral-text-*) for one-shot application,
+   or reference individual variables to override a single property.
+   ============================================================ */
+:root {
+  /* Mobile text styles (from Figma) */
+  --astral-text-mobile-heading-xl-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-heading-xl-font-weight: 700;
+  --astral-text-mobile-heading-xl-font-size: 64px;
+  --astral-text-mobile-heading-xl-letter-spacing: -0.9px;
+
+  --astral-text-mobile-heading-l-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-heading-l-font-weight: 700;
+  --astral-text-mobile-heading-l-font-size: 48px;
+  --astral-text-mobile-heading-l-letter-spacing: -0.6px;
+
+  --astral-text-mobile-heading-m-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-heading-m-font-weight: 700;
+  --astral-text-mobile-heading-m-font-size: 40px;
+  --astral-text-mobile-heading-m-letter-spacing: -0.6px;
+
+  --astral-text-mobile-heading-s-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-heading-s-font-weight: 700;
+  --astral-text-mobile-heading-s-font-size: 32px;
+  --astral-text-mobile-heading-s-letter-spacing: -0.4px;
+
+  --astral-text-mobile-heading-xs-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-heading-xs-font-weight: 700;
+  --astral-text-mobile-heading-xs-font-size: 24px;
+  --astral-text-mobile-heading-xs-letter-spacing: -0.2px;
+
+  --astral-text-mobile-heading-xxs-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-heading-xxs-font-weight: 700;
+  --astral-text-mobile-heading-xxs-font-size: 18px;
+  --astral-text-mobile-heading-xxs-letter-spacing: 0px;
+
+  --astral-text-mobile-body-l-bold-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-l-bold-font-weight: 700;
+  --astral-text-mobile-body-l-bold-font-size: 24px;
+  --astral-text-mobile-body-l-bold-letter-spacing: 0px;
+
+  --astral-text-mobile-body-l-med-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-l-med-font-weight: 500;
+  --astral-text-mobile-body-l-med-font-size: 24px;
+  --astral-text-mobile-body-l-med-letter-spacing: 0px;
+
+  --astral-text-mobile-body-l-reg-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-l-reg-font-weight: 400;
+  --astral-text-mobile-body-l-reg-font-size: 24px;
+  --astral-text-mobile-body-l-reg-letter-spacing: 0px;
+
+  --astral-text-mobile-body-m-bold-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-m-bold-font-weight: 700;
+  --astral-text-mobile-body-m-bold-font-size: 18px;
+  --astral-text-mobile-body-m-bold-letter-spacing: 0px;
+
+  --astral-text-mobile-body-m-med-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-m-med-font-weight: 500;
+  --astral-text-mobile-body-m-med-font-size: 18px;
+  --astral-text-mobile-body-m-med-letter-spacing: 0px;
+
+  --astral-text-mobile-body-m-reg-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-m-reg-font-weight: 400;
+  --astral-text-mobile-body-m-reg-font-size: 18px;
+  --astral-text-mobile-body-m-reg-letter-spacing: 0px;
+
+  --astral-text-mobile-body-s-bold-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-s-bold-font-weight: 700;
+  --astral-text-mobile-body-s-bold-font-size: 16px;
+  --astral-text-mobile-body-s-bold-letter-spacing: 0px;
+
+  --astral-text-mobile-body-s-med-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-s-med-font-weight: 500;
+  --astral-text-mobile-body-s-med-font-size: 16px;
+  --astral-text-mobile-body-s-med-letter-spacing: 0px;
+
+  --astral-text-mobile-body-s-reg-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-s-reg-font-weight: 400;
+  --astral-text-mobile-body-s-reg-font-size: 16px;
+  --astral-text-mobile-body-s-reg-letter-spacing: 0px;
+
+  --astral-text-mobile-body-xs-bold-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-xs-bold-font-weight: 700;
+  --astral-text-mobile-body-xs-bold-font-size: 14px;
+  --astral-text-mobile-body-xs-bold-letter-spacing: 0px;
+
+  --astral-text-mobile-body-xs-med-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-xs-med-font-weight: 500;
+  --astral-text-mobile-body-xs-med-font-size: 14px;
+  --astral-text-mobile-body-xs-med-letter-spacing: 0px;
+
+  --astral-text-mobile-body-xs-reg-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-xs-reg-font-weight: 400;
+  --astral-text-mobile-body-xs-reg-font-size: 14px;
+  --astral-text-mobile-body-xs-reg-letter-spacing: 0px;
+
+  --astral-text-mobile-body-xxs-bold-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-xxs-bold-font-weight: 700;
+  --astral-text-mobile-body-xxs-bold-font-size: 12px;
+  --astral-text-mobile-body-xxs-bold-letter-spacing: 0px;
+
+  --astral-text-mobile-body-xxs-med-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-xxs-med-font-weight: 500;
+  --astral-text-mobile-body-xxs-med-font-size: 12px;
+  --astral-text-mobile-body-xxs-med-letter-spacing: 0px;
+
+  --astral-text-mobile-body-xxs-reg-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-body-xxs-reg-font-weight: 400;
+  --astral-text-mobile-body-xxs-reg-font-size: 12px;
+  --astral-text-mobile-body-xxs-reg-letter-spacing: 0px;
+
+  --astral-text-mobile-list-list-title-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-list-list-title-font-weight: 500;
+  --astral-text-mobile-list-list-title-font-size: 16px;
+  --astral-text-mobile-list-list-title-letter-spacing: 0px;
+
+  --astral-text-mobile-overline-overline-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-overline-overline-font-weight: 700;
+  --astral-text-mobile-overline-overline-font-size: 12px;
+  --astral-text-mobile-overline-overline-letter-spacing: 0px;
+
+  --astral-text-mobile-button-button-font-family: var(--astral-font-family-sans);
+  --astral-text-mobile-button-button-font-weight: 700;
+  --astral-text-mobile-button-button-font-size: 16px;
+  --astral-text-mobile-button-button-letter-spacing: 0px;
+
+  /* Desktop text styles (from Figma) */
+  --astral-text-desktop-display-2xl-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-2xl-font-weight: 900;
+  --astral-text-desktop-display-2xl-font-size: 88px;
+  --astral-text-desktop-display-2xl-letter-spacing: 0px;
+
+  --astral-text-desktop-display-xl-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-xl-font-weight: 800;
+  --astral-text-desktop-display-xl-font-size: 64px;
+  --astral-text-desktop-display-xl-letter-spacing: 0px;
+
+  --astral-text-desktop-display-l-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-l-font-weight: 700;
+  --astral-text-desktop-display-l-font-size: 56px;
+  --astral-text-desktop-display-l-letter-spacing: 0px;
+
+  --astral-text-desktop-display-m-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-m-font-weight: 700;
+  --astral-text-desktop-display-m-font-size: 48px;
+  --astral-text-desktop-display-m-letter-spacing: 0px;
+
+  --astral-text-desktop-display-s-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-s-font-weight: 400;
+  --astral-text-desktop-display-s-font-size: 40px;
+  --astral-text-desktop-display-s-letter-spacing: -0.6px;
+
+  --astral-text-desktop-display-xs-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-xs-font-weight: 500;
+  --astral-text-desktop-display-xs-font-size: 32px;
+  --astral-text-desktop-display-xs-letter-spacing: -0.4px;
+
+  --astral-text-desktop-display-2xs-font-family: var(--astral-font-family-display);
+  --astral-text-desktop-display-2xs-font-weight: 400;
+  --astral-text-desktop-display-2xs-font-size: 24px;
+  --astral-text-desktop-display-2xs-letter-spacing: -0.2px;
+
+  --astral-text-desktop-heading-2xl-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-heading-2xl-font-weight: 600;
+  --astral-text-desktop-heading-2xl-font-size: 24px;
+  --astral-text-desktop-heading-2xl-letter-spacing: 0px;
+
+  --astral-text-desktop-heading-xl-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-heading-xl-font-weight: 600;
+  --astral-text-desktop-heading-xl-font-size: 18px;
+  --astral-text-desktop-heading-xl-letter-spacing: 0px;
+
+  --astral-text-desktop-heading-l-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-heading-l-font-weight: 600;
+  --astral-text-desktop-heading-l-font-size: 16px;
+  --astral-text-desktop-heading-l-letter-spacing: 0px;
+
+  --astral-text-desktop-heading-m-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-heading-m-font-weight: 600;
+  --astral-text-desktop-heading-m-font-size: 14px;
+  --astral-text-desktop-heading-m-letter-spacing: 0px;
+
+  --astral-text-desktop-body-2xl-prominent-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-2xl-prominent-font-weight: 500;
+  --astral-text-desktop-body-2xl-prominent-font-size: 24px;
+  --astral-text-desktop-body-2xl-prominent-letter-spacing: 0px;
+
+  --astral-text-desktop-body-xl-prominent-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-xl-prominent-font-weight: 500;
+  --astral-text-desktop-body-xl-prominent-font-size: 18px;
+  --astral-text-desktop-body-xl-prominent-letter-spacing: 0px;
+
+  --astral-text-desktop-body-xl-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-xl-font-weight: 400;
+  --astral-text-desktop-body-xl-font-size: 18px;
+  --astral-text-desktop-body-xl-letter-spacing: 0px;
+
+  --astral-text-desktop-body-l-prominent-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-l-prominent-font-weight: 500;
+  --astral-text-desktop-body-l-prominent-font-size: 16px;
+  --astral-text-desktop-body-l-prominent-letter-spacing: 0px;
+
+  --astral-text-desktop-body-l-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-l-font-weight: 400;
+  --astral-text-desktop-body-l-font-size: 16px;
+  --astral-text-desktop-body-l-letter-spacing: 0px;
+
+  --astral-text-desktop-body-m-prominent-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-m-prominent-font-weight: 500;
+  --astral-text-desktop-body-m-prominent-font-size: 14px;
+  --astral-text-desktop-body-m-prominent-letter-spacing: 0px;
+
+  --astral-text-desktop-body-m-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-m-font-weight: 400;
+  --astral-text-desktop-body-m-font-size: 14px;
+  --astral-text-desktop-body-m-letter-spacing: 0px;
+
+  --astral-text-desktop-body-s-prominent-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-s-prominent-font-weight: 500;
+  --astral-text-desktop-body-s-prominent-font-size: 12px;
+  --astral-text-desktop-body-s-prominent-letter-spacing: 0px;
+
+  --astral-text-desktop-body-s-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-s-font-weight: 400;
+  --astral-text-desktop-body-s-font-size: 12px;
+  --astral-text-desktop-body-s-letter-spacing: 0px;
+
+  --astral-text-desktop-body-xs-prominent-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-xs-prominent-font-weight: 500;
+  --astral-text-desktop-body-xs-prominent-font-size: 11px;
+  --astral-text-desktop-body-xs-prominent-letter-spacing: 0px;
+
+  --astral-text-desktop-body-xs-font-family: var(--astral-font-family-sans);
+  --astral-text-desktop-body-xs-font-weight: 400;
+  --astral-text-desktop-body-xs-font-size: 11px;
+  --astral-text-desktop-body-xs-letter-spacing: 0px;
+
+}
+
+/* Utility classes — apply a full text style in one shot */
+.astral-text-mobile-heading-xl {
+  font-family: var(--astral-text-mobile-heading-xl-font-family);
+  font-weight: var(--astral-text-mobile-heading-xl-font-weight);
+  font-size: var(--astral-text-mobile-heading-xl-font-size);
+  letter-spacing: var(--astral-text-mobile-heading-xl-letter-spacing);
+}
+.astral-text-mobile-heading-l {
+  font-family: var(--astral-text-mobile-heading-l-font-family);
+  font-weight: var(--astral-text-mobile-heading-l-font-weight);
+  font-size: var(--astral-text-mobile-heading-l-font-size);
+  letter-spacing: var(--astral-text-mobile-heading-l-letter-spacing);
+}
+.astral-text-mobile-heading-m {
+  font-family: var(--astral-text-mobile-heading-m-font-family);
+  font-weight: var(--astral-text-mobile-heading-m-font-weight);
+  font-size: var(--astral-text-mobile-heading-m-font-size);
+  letter-spacing: var(--astral-text-mobile-heading-m-letter-spacing);
+}
+.astral-text-mobile-heading-s {
+  font-family: var(--astral-text-mobile-heading-s-font-family);
+  font-weight: var(--astral-text-mobile-heading-s-font-weight);
+  font-size: var(--astral-text-mobile-heading-s-font-size);
+  letter-spacing: var(--astral-text-mobile-heading-s-letter-spacing);
+}
+.astral-text-mobile-heading-xs {
+  font-family: var(--astral-text-mobile-heading-xs-font-family);
+  font-weight: var(--astral-text-mobile-heading-xs-font-weight);
+  font-size: var(--astral-text-mobile-heading-xs-font-size);
+  letter-spacing: var(--astral-text-mobile-heading-xs-letter-spacing);
+}
+.astral-text-mobile-heading-xxs {
+  font-family: var(--astral-text-mobile-heading-xxs-font-family);
+  font-weight: var(--astral-text-mobile-heading-xxs-font-weight);
+  font-size: var(--astral-text-mobile-heading-xxs-font-size);
+  letter-spacing: var(--astral-text-mobile-heading-xxs-letter-spacing);
+}
+.astral-text-mobile-body-l-bold {
+  font-family: var(--astral-text-mobile-body-l-bold-font-family);
+  font-weight: var(--astral-text-mobile-body-l-bold-font-weight);
+  font-size: var(--astral-text-mobile-body-l-bold-font-size);
+  letter-spacing: var(--astral-text-mobile-body-l-bold-letter-spacing);
+}
+.astral-text-mobile-body-l-med {
+  font-family: var(--astral-text-mobile-body-l-med-font-family);
+  font-weight: var(--astral-text-mobile-body-l-med-font-weight);
+  font-size: var(--astral-text-mobile-body-l-med-font-size);
+  letter-spacing: var(--astral-text-mobile-body-l-med-letter-spacing);
+}
+.astral-text-mobile-body-l-reg {
+  font-family: var(--astral-text-mobile-body-l-reg-font-family);
+  font-weight: var(--astral-text-mobile-body-l-reg-font-weight);
+  font-size: var(--astral-text-mobile-body-l-reg-font-size);
+  letter-spacing: var(--astral-text-mobile-body-l-reg-letter-spacing);
+}
+.astral-text-mobile-body-m-bold {
+  font-family: var(--astral-text-mobile-body-m-bold-font-family);
+  font-weight: var(--astral-text-mobile-body-m-bold-font-weight);
+  font-size: var(--astral-text-mobile-body-m-bold-font-size);
+  letter-spacing: var(--astral-text-mobile-body-m-bold-letter-spacing);
+}
+.astral-text-mobile-body-m-med {
+  font-family: var(--astral-text-mobile-body-m-med-font-family);
+  font-weight: var(--astral-text-mobile-body-m-med-font-weight);
+  font-size: var(--astral-text-mobile-body-m-med-font-size);
+  letter-spacing: var(--astral-text-mobile-body-m-med-letter-spacing);
+}
+.astral-text-mobile-body-m-reg {
+  font-family: var(--astral-text-mobile-body-m-reg-font-family);
+  font-weight: var(--astral-text-mobile-body-m-reg-font-weight);
+  font-size: var(--astral-text-mobile-body-m-reg-font-size);
+  letter-spacing: var(--astral-text-mobile-body-m-reg-letter-spacing);
+}
+.astral-text-mobile-body-s-bold {
+  font-family: var(--astral-text-mobile-body-s-bold-font-family);
+  font-weight: var(--astral-text-mobile-body-s-bold-font-weight);
+  font-size: var(--astral-text-mobile-body-s-bold-font-size);
+  letter-spacing: var(--astral-text-mobile-body-s-bold-letter-spacing);
+}
+.astral-text-mobile-body-s-med {
+  font-family: var(--astral-text-mobile-body-s-med-font-family);
+  font-weight: var(--astral-text-mobile-body-s-med-font-weight);
+  font-size: var(--astral-text-mobile-body-s-med-font-size);
+  letter-spacing: var(--astral-text-mobile-body-s-med-letter-spacing);
+}
+.astral-text-mobile-body-s-reg {
+  font-family: var(--astral-text-mobile-body-s-reg-font-family);
+  font-weight: var(--astral-text-mobile-body-s-reg-font-weight);
+  font-size: var(--astral-text-mobile-body-s-reg-font-size);
+  letter-spacing: var(--astral-text-mobile-body-s-reg-letter-spacing);
+}
+.astral-text-mobile-body-xs-bold {
+  font-family: var(--astral-text-mobile-body-xs-bold-font-family);
+  font-weight: var(--astral-text-mobile-body-xs-bold-font-weight);
+  font-size: var(--astral-text-mobile-body-xs-bold-font-size);
+  letter-spacing: var(--astral-text-mobile-body-xs-bold-letter-spacing);
+}
+.astral-text-mobile-body-xs-med {
+  font-family: var(--astral-text-mobile-body-xs-med-font-family);
+  font-weight: var(--astral-text-mobile-body-xs-med-font-weight);
+  font-size: var(--astral-text-mobile-body-xs-med-font-size);
+  letter-spacing: var(--astral-text-mobile-body-xs-med-letter-spacing);
+}
+.astral-text-mobile-body-xs-reg {
+  font-family: var(--astral-text-mobile-body-xs-reg-font-family);
+  font-weight: var(--astral-text-mobile-body-xs-reg-font-weight);
+  font-size: var(--astral-text-mobile-body-xs-reg-font-size);
+  letter-spacing: var(--astral-text-mobile-body-xs-reg-letter-spacing);
+}
+.astral-text-mobile-body-xxs-bold {
+  font-family: var(--astral-text-mobile-body-xxs-bold-font-family);
+  font-weight: var(--astral-text-mobile-body-xxs-bold-font-weight);
+  font-size: var(--astral-text-mobile-body-xxs-bold-font-size);
+  letter-spacing: var(--astral-text-mobile-body-xxs-bold-letter-spacing);
+}
+.astral-text-mobile-body-xxs-med {
+  font-family: var(--astral-text-mobile-body-xxs-med-font-family);
+  font-weight: var(--astral-text-mobile-body-xxs-med-font-weight);
+  font-size: var(--astral-text-mobile-body-xxs-med-font-size);
+  letter-spacing: var(--astral-text-mobile-body-xxs-med-letter-spacing);
+}
+.astral-text-mobile-body-xxs-reg {
+  font-family: var(--astral-text-mobile-body-xxs-reg-font-family);
+  font-weight: var(--astral-text-mobile-body-xxs-reg-font-weight);
+  font-size: var(--astral-text-mobile-body-xxs-reg-font-size);
+  letter-spacing: var(--astral-text-mobile-body-xxs-reg-letter-spacing);
+}
+.astral-text-mobile-list-list-title {
+  font-family: var(--astral-text-mobile-list-list-title-font-family);
+  font-weight: var(--astral-text-mobile-list-list-title-font-weight);
+  font-size: var(--astral-text-mobile-list-list-title-font-size);
+  letter-spacing: var(--astral-text-mobile-list-list-title-letter-spacing);
+}
+.astral-text-mobile-overline-overline {
+  font-family: var(--astral-text-mobile-overline-overline-font-family);
+  font-weight: var(--astral-text-mobile-overline-overline-font-weight);
+  font-size: var(--astral-text-mobile-overline-overline-font-size);
+  letter-spacing: var(--astral-text-mobile-overline-overline-letter-spacing);
+}
+.astral-text-mobile-button-button {
+  font-family: var(--astral-text-mobile-button-button-font-family);
+  font-weight: var(--astral-text-mobile-button-button-font-weight);
+  font-size: var(--astral-text-mobile-button-button-font-size);
+  letter-spacing: var(--astral-text-mobile-button-button-letter-spacing);
+}
+.astral-text-desktop-display-2xl {
+  font-family: var(--astral-text-desktop-display-2xl-font-family);
+  font-weight: var(--astral-text-desktop-display-2xl-font-weight);
+  font-size: var(--astral-text-desktop-display-2xl-font-size);
+  letter-spacing: var(--astral-text-desktop-display-2xl-letter-spacing);
+}
+.astral-text-desktop-display-xl {
+  font-family: var(--astral-text-desktop-display-xl-font-family);
+  font-weight: var(--astral-text-desktop-display-xl-font-weight);
+  font-size: var(--astral-text-desktop-display-xl-font-size);
+  letter-spacing: var(--astral-text-desktop-display-xl-letter-spacing);
+}
+.astral-text-desktop-display-l {
+  font-family: var(--astral-text-desktop-display-l-font-family);
+  font-weight: var(--astral-text-desktop-display-l-font-weight);
+  font-size: var(--astral-text-desktop-display-l-font-size);
+  letter-spacing: var(--astral-text-desktop-display-l-letter-spacing);
+}
+.astral-text-desktop-display-m {
+  font-family: var(--astral-text-desktop-display-m-font-family);
+  font-weight: var(--astral-text-desktop-display-m-font-weight);
+  font-size: var(--astral-text-desktop-display-m-font-size);
+  letter-spacing: var(--astral-text-desktop-display-m-letter-spacing);
+}
+.astral-text-desktop-display-s {
+  font-family: var(--astral-text-desktop-display-s-font-family);
+  font-weight: var(--astral-text-desktop-display-s-font-weight);
+  font-size: var(--astral-text-desktop-display-s-font-size);
+  letter-spacing: var(--astral-text-desktop-display-s-letter-spacing);
+}
+.astral-text-desktop-display-xs {
+  font-family: var(--astral-text-desktop-display-xs-font-family);
+  font-weight: var(--astral-text-desktop-display-xs-font-weight);
+  font-size: var(--astral-text-desktop-display-xs-font-size);
+  letter-spacing: var(--astral-text-desktop-display-xs-letter-spacing);
+}
+.astral-text-desktop-display-2xs {
+  font-family: var(--astral-text-desktop-display-2xs-font-family);
+  font-weight: var(--astral-text-desktop-display-2xs-font-weight);
+  font-size: var(--astral-text-desktop-display-2xs-font-size);
+  letter-spacing: var(--astral-text-desktop-display-2xs-letter-spacing);
+}
+.astral-text-desktop-heading-2xl {
+  font-family: var(--astral-text-desktop-heading-2xl-font-family);
+  font-weight: var(--astral-text-desktop-heading-2xl-font-weight);
+  font-size: var(--astral-text-desktop-heading-2xl-font-size);
+  letter-spacing: var(--astral-text-desktop-heading-2xl-letter-spacing);
+}
+.astral-text-desktop-heading-xl {
+  font-family: var(--astral-text-desktop-heading-xl-font-family);
+  font-weight: var(--astral-text-desktop-heading-xl-font-weight);
+  font-size: var(--astral-text-desktop-heading-xl-font-size);
+  letter-spacing: var(--astral-text-desktop-heading-xl-letter-spacing);
+}
+.astral-text-desktop-heading-l {
+  font-family: var(--astral-text-desktop-heading-l-font-family);
+  font-weight: var(--astral-text-desktop-heading-l-font-weight);
+  font-size: var(--astral-text-desktop-heading-l-font-size);
+  letter-spacing: var(--astral-text-desktop-heading-l-letter-spacing);
+}
+.astral-text-desktop-heading-m {
+  font-family: var(--astral-text-desktop-heading-m-font-family);
+  font-weight: var(--astral-text-desktop-heading-m-font-weight);
+  font-size: var(--astral-text-desktop-heading-m-font-size);
+  letter-spacing: var(--astral-text-desktop-heading-m-letter-spacing);
+}
+.astral-text-desktop-body-2xl-prominent {
+  font-family: var(--astral-text-desktop-body-2xl-prominent-font-family);
+  font-weight: var(--astral-text-desktop-body-2xl-prominent-font-weight);
+  font-size: var(--astral-text-desktop-body-2xl-prominent-font-size);
+  letter-spacing: var(--astral-text-desktop-body-2xl-prominent-letter-spacing);
+}
+.astral-text-desktop-body-xl-prominent {
+  font-family: var(--astral-text-desktop-body-xl-prominent-font-family);
+  font-weight: var(--astral-text-desktop-body-xl-prominent-font-weight);
+  font-size: var(--astral-text-desktop-body-xl-prominent-font-size);
+  letter-spacing: var(--astral-text-desktop-body-xl-prominent-letter-spacing);
+}
+.astral-text-desktop-body-xl {
+  font-family: var(--astral-text-desktop-body-xl-font-family);
+  font-weight: var(--astral-text-desktop-body-xl-font-weight);
+  font-size: var(--astral-text-desktop-body-xl-font-size);
+  letter-spacing: var(--astral-text-desktop-body-xl-letter-spacing);
+}
+.astral-text-desktop-body-l-prominent {
+  font-family: var(--astral-text-desktop-body-l-prominent-font-family);
+  font-weight: var(--astral-text-desktop-body-l-prominent-font-weight);
+  font-size: var(--astral-text-desktop-body-l-prominent-font-size);
+  letter-spacing: var(--astral-text-desktop-body-l-prominent-letter-spacing);
+}
+.astral-text-desktop-body-l {
+  font-family: var(--astral-text-desktop-body-l-font-family);
+  font-weight: var(--astral-text-desktop-body-l-font-weight);
+  font-size: var(--astral-text-desktop-body-l-font-size);
+  letter-spacing: var(--astral-text-desktop-body-l-letter-spacing);
+}
+.astral-text-desktop-body-m-prominent {
+  font-family: var(--astral-text-desktop-body-m-prominent-font-family);
+  font-weight: var(--astral-text-desktop-body-m-prominent-font-weight);
+  font-size: var(--astral-text-desktop-body-m-prominent-font-size);
+  letter-spacing: var(--astral-text-desktop-body-m-prominent-letter-spacing);
+}
+.astral-text-desktop-body-m {
+  font-family: var(--astral-text-desktop-body-m-font-family);
+  font-weight: var(--astral-text-desktop-body-m-font-weight);
+  font-size: var(--astral-text-desktop-body-m-font-size);
+  letter-spacing: var(--astral-text-desktop-body-m-letter-spacing);
+}
+.astral-text-desktop-body-s-prominent {
+  font-family: var(--astral-text-desktop-body-s-prominent-font-family);
+  font-weight: var(--astral-text-desktop-body-s-prominent-font-weight);
+  font-size: var(--astral-text-desktop-body-s-prominent-font-size);
+  letter-spacing: var(--astral-text-desktop-body-s-prominent-letter-spacing);
+}
+.astral-text-desktop-body-s {
+  font-family: var(--astral-text-desktop-body-s-font-family);
+  font-weight: var(--astral-text-desktop-body-s-font-weight);
+  font-size: var(--astral-text-desktop-body-s-font-size);
+  letter-spacing: var(--astral-text-desktop-body-s-letter-spacing);
+}
+.astral-text-desktop-body-xs-prominent {
+  font-family: var(--astral-text-desktop-body-xs-prominent-font-family);
+  font-weight: var(--astral-text-desktop-body-xs-prominent-font-weight);
+  font-size: var(--astral-text-desktop-body-xs-prominent-font-size);
+  letter-spacing: var(--astral-text-desktop-body-xs-prominent-letter-spacing);
+}
+.astral-text-desktop-body-xs {
+  font-family: var(--astral-text-desktop-body-xs-font-family);
+  font-weight: var(--astral-text-desktop-body-xs-font-weight);
+  font-size: var(--astral-text-desktop-body-xs-font-size);
+  letter-spacing: var(--astral-text-desktop-body-xs-letter-spacing);
 }
