@@ -10,44 +10,61 @@
     max-width: none !important;
   }
 
-  /* ── SVG icons → brand green ── */
+  /* ── SVG icons → brand green by default ── */
   #root svg { color: #00AE35 !important; }
-  #root [data-selected="true"] svg,
-  #root [data-selected="true"] svg *,
-  #root a[data-selected="true"] svg,
-  #root a[data-selected="true"] svg * {
-    color: #ffffff !important;
-    fill: currentColor !important;
-  }
 
-  /* ═══════════════════════════════════════════════════════════════════
-     NUCLEAR FOCUS/ACTIVE/PRESSED RING KILLER
-     Applies to EVERY element inside #root, on EVERY state.
-     This must come BEFORE the colored rules below.
-     ═══════════════════════════════════════════════════════════════════ */
-  #root *,
-  #root *::before,
-  #root *::after,
-  #root *:hover,
-  #root *:focus,
-  #root *:focus-visible,
-  #root *:focus-within,
-  #root *:active,
-  #root *:target {
+  /* ── Kill ALL strokes/borders/shadows on every sidebar element & state ── */
+  #root a,
+  #root a *,
+  #root a:hover,
+  #root a:hover *,
+  #root a:focus,
+  #root a:focus *,
+  #root a:focus-visible,
+  #root a:focus-visible *,
+  #root a:active,
+  #root a:active *,
+  #root a::before,
+  #root a::after,
+  #root a:hover::before,
+  #root a:hover::after,
+  #root a:focus::before,
+  #root a:focus::after,
+  #root button,
+  #root button:hover,
+  #root button:focus,
+  #root button:focus-visible,
+  #root button:active,
+  #root [data-selected],
+  #root [data-selected] > *,
+  #root [data-selected]:hover,
+  #root [data-selected]:hover > *,
+  #root [data-selected]:focus,
+  #root [data-selected]:focus-visible,
+  #root [data-selected="true"],
+  #root [data-selected="true"] > *,
+  #root [data-selected="true"]:hover,
+  #root [data-selected="true"]:hover > *,
+  #root [data-selected="true"]:focus,
+  #root [data-selected="true"]:focus-visible,
+  #root li,
+  #root li:hover,
+  #root li > * {
     outline: 0 none transparent !important;
     outline-offset: 0 !important;
-    outline-width: 0 !important;
-    outline-style: none !important;
-    outline-color: transparent !important;
     box-shadow: none !important;
-    border-color: transparent !important;
+    border: 0 none transparent !important;
+    border-top: 0 none transparent !important;
+    border-bottom: 0 none transparent !important;
+    border-left: 0 none transparent !important;
+    border-right: 0 none transparent !important;
+    text-decoration: none !important;
     -webkit-tap-highlight-color: transparent !important;
   }
 
-  /* ── Hover ONLY on non-selected sidebar items → soft green tint ── */
+  /* ── Hover on NON-selected items → soft green tint (the good hover) ── */
   #root a[href*="path="]:not([data-selected="true"]):hover,
-  #root [data-selected="false"]:hover > a,
-  #root [data-selected]:not([data-selected="true"]):hover > a,
+  #root [data-selected]:not([data-selected="true"]):hover,
   #root [data-selected]:not([data-selected="true"]) > a:hover {
     background-color: #F2F7F4 !important;
     color: #191919 !important;
@@ -58,7 +75,7 @@
     color: #00AE35 !important;
   }
 
-  /* ── Selected state — brand green pill (stays the same on hover/focus/active) ── */
+  /* ── Selected state → solid green pill, UNCHANGED on hover/focus/active ── */
   #root [data-selected="true"] > a,
   #root [data-selected="true"] > a:hover,
   #root [data-selected="true"] > a:focus,
@@ -73,8 +90,17 @@
     color: #ffffff !important;
     border-radius: 6px !important;
   }
+  #root [data-selected="true"] svg,
+  #root [data-selected="true"] svg *,
+  #root a[data-selected="true"] svg,
+  #root a[data-selected="true"] svg *,
+  #root [data-selected="true"]:hover svg,
+  #root a[data-selected="true"]:hover svg {
+    color: #ffffff !important;
+    fill: currentColor !important;
+  }
 
-  /* ── Strip inline Storybook blue tints if any slip through ── */
+  /* ── Kill any residual Storybook blue inline tints ── */
   #root [style*="rgb(235, 243, 255)"],
   #root [style*="#EBF3FF"],
   #root [style*="#ebf3ff"],
