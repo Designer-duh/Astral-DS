@@ -17,20 +17,31 @@
     border: none !important;
   }
 
-  /* ── Hover state → brand green tint only, no strokes ── */
+  /* ── Hover state → very soft green tint, no strokes anywhere ── */
   #root [data-selected]:not([data-selected="true"]) > a:hover,
   #root a[href*="?path="]:hover,
   #root a[href*="?path="]:hover *,
-  #root [data-selected]:not([data-selected="true"]) > a:hover * {
-    background-color: #D7EBDF !important;
+  #root [data-selected]:not([data-selected="true"]) > a:hover *,
+  #root li:has(a[href*="?path="]:hover),
+  #root li:has(a[href*="?path="]:hover) * {
+    background-color: #F2F7F4 !important;
     color: #191919 !important;
     border-radius: 6px !important;
-    border: none !important;
-    border-bottom: none !important;
-    border-top: none !important;
-    outline: none !important;
+    border: 0 none #F2F7F4 !important;
+    border-top: 0 none #F2F7F4 !important;
+    border-bottom: 0 none #F2F7F4 !important;
+    border-left: 0 none #F2F7F4 !important;
+    border-right: 0 none #F2F7F4 !important;
+    outline: 0 none #F2F7F4 !important;
     box-shadow: none !important;
     text-decoration: none !important;
+  }
+
+  /* ── Icons inside hovered items keep green for contrast ── */
+  #root a[href*="?path="]:hover svg,
+  #root [data-selected]:not([data-selected="true"]) > a:hover svg {
+    color: #00AE35 !important;
+    background: transparent !important;
   }
 
   /* ── Any remaining blue tint backgrounds → green tint ── */
