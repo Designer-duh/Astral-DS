@@ -3,6 +3,16 @@
      ASTRAL DS — Storybook Manager Overrides
      ═══════════════════════════════════════════════════════════════════ */
 
+  /* ── Hide "Create a new story" (+) button next to search ── */
+  #root button[title*="reate" i],
+  #root button[aria-label*="reate" i],
+  #root button[title*="ew story" i],
+  #root button[aria-label*="ew story" i],
+  #root [data-tour*="create" i],
+  #root [data-testid*="create" i] {
+    display: none !important;
+  }
+
   /* ── Brand logo sizing ── */
   #root img[src*="nav-logo"] {
     height: 60px !important;
