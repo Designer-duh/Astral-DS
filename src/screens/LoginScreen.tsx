@@ -200,9 +200,9 @@ const AstralButton: React.FC<ButtonProps> = ({
     ...(variant === 'primary'
       ? {
           backgroundColor: hovered
-            ? 'var(--astral-color-brand-10)'
-            : 'var(--astral-color-brand-9)',
-          color: 'var(--astral-color-text-inverse-default)',
+            ? 'var(--astral-color-button-primary-bg-hover)'
+            : 'var(--astral-color-button-primary-bg)',
+          color: 'var(--astral-color-button-primary-label)',
         }
       : {
           backgroundColor: 'transparent',

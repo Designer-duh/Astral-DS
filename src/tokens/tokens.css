@@ -13,6 +13,14 @@
 
 :root {
   /* ----------------------------------------------------------
+     Mode-invariant button tokens — DO NOT override in dark mode.
+     Buttons must render identically in light & dark.
+     ---------------------------------------------------------- */
+  --astral-color-button-primary-bg: #00ae35;         /* Brand.9  */
+  --astral-color-button-primary-bg-hover: #02972c;   /* Brand.10 */
+  --astral-color-button-primary-label: #ffffff;      /* constant white */
+
+  /* ----------------------------------------------------------
      Font Family
      ---------------------------------------------------------- */
   --astral-font-family-sans: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -524,6 +532,119 @@
   --astral-color-surface-inverse-tertiary-pressed: #d9d9d9;       /* Grey.6  */
   --astral-color-surface-inverse-tertiary-selected: #c9c9c9;      /* Grey.7  */
   --astral-color-surface-inverse-tertiary-disabled: #b5b5b5;      /* Grey.8  */
+}
+
+/* ============================================================
+   Auto Dark Mode — respects device preference.
+   Applies the same overrides as [data-theme='dark'] / .dark when the
+   OS is in dark mode, unless the user explicitly opts into light via
+   [data-theme='light'] / .light on <html> or <body>.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not(.light),
+  body:not([data-theme='light']):not(.light) {
+    /* Text */
+    --astral-color-text-default: #fafafa;
+    --astral-color-text-secondary: #e5e5e5;
+    --astral-color-text-tertiary: #d9d9d9;
+    --astral-color-text-disabled: #b5b5b5;
+    --astral-color-text-inverse-default: #141414;
+    --astral-color-text-inverse-secondary: #191919;
+    --astral-color-text-inverse-tertiary: #424242;
+    --astral-color-text-brand-default: #00ae35;
+    --astral-color-text-brand-secondary: #b8e3c8;
+    --astral-color-text-success-default: #95deaf;
+    --astral-color-text-error-default: #f1979f;
+    --astral-color-text-warning-default: #d19942;
+
+    /* Stroke */
+    --astral-color-stroke-subtle: #2c2c2c;
+    --astral-color-stroke-default: #424242;
+    --astral-color-stroke-medium: #8a8a8a;
+    --astral-color-stroke-hover: #747474;
+    --astral-color-stroke-pressed: #424242;
+    --astral-color-stroke-disabled: #747474;
+    --astral-color-stroke-white: #141414;
+    --astral-color-stroke-brand: #042f0b;
+    --astral-color-stroke-brand-active: #02972c;
+    --astral-color-stroke-success: #00ae35;
+    --astral-color-stroke-error: #ec0033;
+    --astral-color-stroke-warning: #cd4b00;
+
+    /* Surface */
+    --astral-color-surface-background: #191919;
+    --astral-color-surface-default: #141414;
+    --astral-color-surface-hover: #2c2c2c;
+    --astral-color-surface-pressed: #5e5e5e;
+    --astral-color-surface-selected: #424242;
+    --astral-color-surface-disabled: #2c2c2c;
+
+    --astral-color-surface-secondary-default: #191919;
+    --astral-color-surface-secondary-hover: #424242;
+    --astral-color-surface-secondary-pressed: #747474;
+    --astral-color-surface-secondary-selected: #5e5e5e;
+    --astral-color-surface-secondary-disabled: #424242;
+
+    --astral-color-surface-tertiary-default: #424242;
+    --astral-color-surface-tertiary-hover: #5e5e5e;
+    --astral-color-surface-tertiary-pressed: #8a8a8a;
+    --astral-color-surface-tertiary-selected: #747474;
+    --astral-color-surface-tertiary-disabled: #5e5e5e;
+
+    --astral-color-surface-brand-default: #031c06;
+    --astral-color-surface-brand-hover: #042f0b;
+    --astral-color-surface-brand-pressed: #055716;
+    --astral-color-surface-brand-selected: #031c06;
+    --astral-color-surface-brand-disabled: #054210;
+
+    --astral-color-surface-brand-secondary-default: #042f0b;
+    --astral-color-surface-brand-secondary-hover: #054210;
+    --astral-color-surface-brand-secondary-pressed: #056c1d;
+    --astral-color-surface-brand-secondary-selected: #042f0b;
+    --astral-color-surface-brand-secondary-disabled: #055716;
+
+    --astral-color-surface-brand-tertiary-default: #00ae35;
+    --astral-color-surface-brand-tertiary-hover: #95deaf;
+    --astral-color-surface-brand-tertiary-pressed: #b8e3c8;
+    --astral-color-surface-brand-tertiary-selected: #00ae35;
+    --astral-color-surface-brand-tertiary-disabled: #056c1d;
+
+    --astral-color-surface-brand-quaternary-default: #6fdd95;
+
+    --astral-color-surface-neutral-default: #5e5e5e;
+    --astral-color-surface-neutral-secondary: #e5e5e5;
+    --astral-color-surface-neutral-tertiary: #2c2c2c;
+
+    --astral-color-surface-success-default: #042f0b;
+    --astral-color-surface-success-secondary: #00ae35;
+    --astral-color-surface-success-tertiary: #95deaf;
+
+    --astral-color-surface-error-default: #1d0004;
+    --astral-color-surface-error-secondary: #ec0033;
+    --astral-color-surface-error-tertiary: #f4b4b9;
+
+    --astral-color-surface-warning-default: #150500;
+    --astral-color-surface-warning-secondary: #cd4b00;
+    --astral-color-surface-warning-tertiary: #eacc9f;
+
+    --astral-color-surface-inverse-default: #ffffff;
+    --astral-color-surface-inverse-hover: #f4f4f4;
+    --astral-color-surface-inverse-pressed: #f4f4f4;
+    --astral-color-surface-inverse-selected: #e5e5e5;
+    --astral-color-surface-inverse-disabled: #d9d9d9;
+
+    --astral-color-surface-inverse-secondary-default: #fafafa;
+    --astral-color-surface-inverse-secondary-hover: #eeeeee;
+    --astral-color-surface-inverse-secondary-pressed: #e5e5e5;
+    --astral-color-surface-inverse-secondary-selected: #e5e5e5;
+    --astral-color-surface-inverse-secondary-disabled: #c9c9c9;
+
+    --astral-color-surface-inverse-tertiary-default: #eeeeee;
+    --astral-color-surface-inverse-tertiary-hover: #e5e5e5;
+    --astral-color-surface-inverse-tertiary-pressed: #d9d9d9;
+    --astral-color-surface-inverse-tertiary-selected: #c9c9c9;
+    --astral-color-surface-inverse-tertiary-disabled: #b5b5b5;
+  }
 }
 
 /* ============================================================

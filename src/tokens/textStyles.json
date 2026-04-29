@@ -1,0 +1,511 @@
+{
+  "fileName": "Astral DS",
+  "textStyles": [
+    {
+      "name": "en/Mobile/Heading/XL",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 64,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.8999999761581421
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Heading/L",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.6000000238418579
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Heading/M",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 40,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.6000000238418579
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Heading/S",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 32,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.4000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Heading/XS",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.20000000298023224
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Heading/XXS",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/L-Bold",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/L-Med",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/L-Reg",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/M-Bold",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/M-Med",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/M-Reg",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/S-Bold",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/S-Med",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/S-Reg",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/XS-Bold",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/XS-Med",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/XS-Reg",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/XXS-Bold",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/XXS-Med",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Body/XXS-Reg",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/List/List-title",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Overline/Overline",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Mobile/Button/Button",
+      "fontFamily": "Geist",
+      "fontWeight": "Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/2xl",
+      "fontFamily": "Denton Test",
+      "fontWeight": "Black",
+      "fontSize": 88,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/xl",
+      "fontFamily": "Denton Test",
+      "fontWeight": "ExtraBold",
+      "fontSize": 64,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/l",
+      "fontFamily": "Denton Test",
+      "fontWeight": "Bold",
+      "fontSize": 56,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/m",
+      "fontFamily": "Denton Test",
+      "fontWeight": "Bold",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/s",
+      "fontFamily": "Denton Test",
+      "fontWeight": "Regular",
+      "fontSize": 40,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.6000000238418579
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/xs",
+      "fontFamily": "Denton Test",
+      "fontWeight": "Medium",
+      "fontSize": 32,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.4000000059604645
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Display/2xs",
+      "fontFamily": "Denton Test",
+      "fontWeight": "Regular",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": -0.20000000298023224
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Heading/2xl",
+      "fontFamily": "Geist",
+      "fontWeight": "SemiBold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Heading/xl",
+      "fontFamily": "Geist",
+      "fontWeight": "SemiBold",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Heading/l",
+      "fontFamily": "Geist",
+      "fontWeight": "SemiBold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Heading/m",
+      "fontFamily": "Geist",
+      "fontWeight": "SemiBold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/2xl-prominent",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/xl-prominent",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/xl",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/l-prominent",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/l",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/m-prominent",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/m",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/s-prominent",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/s",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/xs-prominent",
+      "fontFamily": "Geist",
+      "fontWeight": "Medium",
+      "fontSize": 11,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "en/Desktop/Body/xs",
+      "fontFamily": "Geist",
+      "fontWeight": "Regular",
+      "fontSize": 11,
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    }
+  ]
+}

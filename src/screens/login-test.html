@@ -61,6 +61,11 @@
       --astral-color-brand-9:  #00ae35;
       --astral-color-brand-10: #02972c;
 
+      /* Mode-invariant button tokens — identical in light & dark */
+      --astral-color-button-primary-bg:       #00ae35;
+      --astral-color-button-primary-bg-hover: #02972c;
+      --astral-color-button-primary-label:    #ffffff;
+
       /* Text */
       --astral-color-text-default:       #191919;
       --astral-color-text-secondary:     #5e5e5e;
@@ -78,6 +83,32 @@
       /* Surface */
       --astral-color-surface-background: #fafafa;
       --astral-color-surface-default:    #ffffff;
+    }
+
+    /* ── Auto Dark Mode (respects OS preference) ───────────── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme='light']) {
+        /* Brand stays constant */
+        --astral-color-brand-2:  #042f0b;
+
+        /* Text */
+        --astral-color-text-default:         #fafafa;
+        --astral-color-text-secondary:       #e5e5e5;
+        --astral-color-text-tertiary:        #d9d9d9;
+        --astral-color-text-disabled:        #b5b5b5;
+        --astral-color-text-inverse-default: #141414;
+        --astral-color-text-brand-default:   #00ae35;
+        --astral-color-text-error-default:   #f1979f;
+
+        /* Stroke */
+        --astral-color-stroke-default:      #424242;
+        --astral-color-stroke-brand-active: #02972c;
+        --astral-color-stroke-error:        #ec0033;
+
+        /* Surface */
+        --astral-color-surface-background: #191919;
+        --astral-color-surface-default:    #141414;
+      }
     }
 
     /* ── Reset ───────────────────────────────────────────────── */
@@ -236,14 +267,14 @@
       font-weight: var(--astral-font-weight-600);
       letter-spacing: var(--astral-letter-spacing-comfy);
       line-height: var(--astral-line-height-s);
-      color: var(--astral-color-text-inverse-default);
-      background: var(--astral-color-brand-9);
+      color: var(--astral-color-button-primary-label);
+      background: var(--astral-color-button-primary-bg);
       border: none;
       border-radius: var(--astral-border-radius-m);
       cursor: pointer;
       transition: background-color 150ms ease;
     }
-    .btn-primary:hover { background: var(--astral-color-brand-10); }
+    .btn-primary:hover { background: var(--astral-color-button-primary-bg-hover); }
     .btn-primary:disabled { opacity: 0.7; cursor: wait; }
 
     /* ── Divider ─────────────────────────────────────────────── */

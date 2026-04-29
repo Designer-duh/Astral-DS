@@ -47,6 +47,32 @@ Every design decision traces back to a CSS variable from `tokens.css`.
 - ✅ ALWAYS: `border-radius: var(--astral-border-radius-xs)`
 - Scale: none(0) → xxs(4px) → xs(8px) → s(12px) → m(16px) → l(20px) → xl(24px) → 2xl(28px) → 3xl(32px) → 4xl(40px) → full(9999px)
 
+### Buttons — identical in Light & Dark mode (DO NOT flip)
+- **Button background, button text, and button border MUST render identically in light and dark mode.** The button's brand identity never changes with system theme.
+- ✅ Primary button bg = `var(--astral-color-brand-9)` (green — constant in both modes)
+- ✅ Primary button text = hardcoded constant like `#ffffff` via a **mode-invariant** token (do NOT use `--astral-color-text-inverse-default`, which flips in dark mode)
+- ✅ Secondary/ghost button bg and text = use brand tokens or create mode-invariant button tokens — never tokens that auto-flip
+- ❌ NEVER use semantic tokens that flip in dark mode (`--astral-color-text-inverse-default`, `--astral-color-surface-default`, etc.) for button fills or button labels
+- **Why:** the CTA must stay visually consistent so users recognize the action regardless of OS theme. The surrounding card/page adapts to dark mode, but the button stays green-with-white-text always.
+- When building a button in this DS, prefer `--astral-color-brand-9` / `--astral-color-brand-10` (hover) for bg, and `#ffffff` via an explicitly light-locked token for the label.
+
+### Dark Mode — auto-flip via `prefers-color-scheme`
+- Dark mode is driven by the OS, via `@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) { … } }` in `tokens.css`. Users can force a mode with `<html data-theme="light">` or `data-theme="dark"`.
+- ✅ Use semantic tokens (`--astral-color-text-default`, `--astral-color-surface-default`, `--astral-color-stroke-default`, etc.) — they auto-adapt.
+- ⚠️ **Brand tint surfaces MUST flip too.** If you use `--astral-color-brand-1/2/3/6` (light green washes) as a card/row/pill background in light mode, the dark override MUST remap them to dark green washes (Brand.16/15/14/13 → `#031c06` / `#042f0b` / `#054210` / `#055716`). Otherwise light text lands on a light surface in dark mode = unreadable.
+- ⚠️ **Grey primitives used as surfaces must also flip.** If `--astral-color-grey-3/4/5` are used as card backgrounds, they need dark equivalents in the dark override (`#2c2c2c` / `#424242` / `#191919`).
+- ❌ NEVER use a light-tint brand/grey primitive as a surface without adding its dark flip. When in doubt, use `--astral-color-surface-brand-*` / `--astral-color-surface-*` semantic tokens instead — they're already defined for both modes.
+- **Self-check for dark mode:** for every `background: var(--astral-color-X)` in your CSS, verify that `X` is either (a) a semantic token that auto-flips, (b) a mode-invariant button token, or (c) a primitive that is explicitly overridden in the dark block.
+
+### Type hierarchy — don't inflate sizes (IMPORTANT)
+- ❌ NEVER use `font-size-l` (16px) or larger for normal body/list/metadata text. Do not default every row title to Large "just because it's a title".
+- ✅ Normal text (list row titles, descriptions, metadata, secondary info, card body) = **`font-size-m` (14px)**
+- ✅ Subtext / captions / helper text = **`font-size-s` (12px)**
+- ✅ Reserve `font-size-l` (16px) for **genuinely important** standalone text: CTA button labels, the single emphasized item in a card, a highlighted stat.
+- ✅ Reserve `font-size-xl` and above for **actual headings** — page titles, screen titles, section headers. Not for list item labels.
+- **Why:** the user called out that defaulting everything to Large/Heading sizes makes the UI feel shouty and flattens hierarchy — Large should stand out, Headings should be headings. Normal UI text lives at Medium.
+- **How to apply:** when sizing any text, ask "is this a heading, an important standalone element, or normal UI text?" — pick xl+, l, or m accordingly. Default is m. Bump only with a reason.
+
 ### Card & Content Body Text — ALWAYS Medium
 - ❌ NEVER use `font-weight-400` (Regular) for body text inside cards, list items, settings rows, or any UI content area
 - ✅ ALWAYS use `font-weight-500` (Medium) for descriptive/body copy inside cards and content
